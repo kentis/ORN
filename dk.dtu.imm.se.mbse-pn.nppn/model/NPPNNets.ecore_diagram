@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<notation:Diagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:notation="http://www.eclipse.org/gmf/runtime/1.0.2/notation" xmi:id="_F85XML3UEeCazsPN8ZGEjA" type="Ecore" measurementUnit="Pixel">
+  <children xmi:type="notation:Shape" xmi:id="_H1M8oL3UEeCazsPN8ZGEjA" type="2001" fontName="Cantarell">
+    <children xmi:type="notation:DecorationNode" xmi:id="_H1VfgL3UEeCazsPN8ZGEjA" type="5001"/>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_H1XUsL3UEeCazsPN8ZGEjA" type="7001">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_H1XUsb3UEeCazsPN8ZGEjA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_H1XUsr3UEeCazsPN8ZGEjA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_H1XUs73UEeCazsPN8ZGEjA" type="7002">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_H1XUtL3UEeCazsPN8ZGEjA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_H1XUtb3UEeCazsPN8ZGEjA"/>
+    </children>
+    <children xmi:type="notation:BasicCompartment" xmi:id="_H1X7wL3UEeCazsPN8ZGEjA" type="7003">
+      <styles xmi:type="notation:SortingStyle" xmi:id="_H1X7wb3UEeCazsPN8ZGEjA"/>
+      <styles xmi:type="notation:FilteringStyle" xmi:id="_H1X7wr3UEeCazsPN8ZGEjA"/>
+    </children>
+    <element xmi:type="ecore:EClass" href="NPPNNets.ecore#//NPPNType"/>
+    <layoutConstraint xmi:type="notation:Bounds" xmi:id="_H1M8ob3UEeCazsPN8ZGEjA" x="159" y="55"/>
+  </children>
+  <styles xmi:type="notation:DiagramStyle" xmi:id="_F85XMb3UEeCazsPN8ZGEjA"/>
+  <element xmi:type="ecore:EPackage" href="NPPNNets.ecore#/"/>
+</notation:Diagram>

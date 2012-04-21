@@ -1,0 +1,29 @@
+Testsuite: org.k1s.orn.templates.BindingsDSLTests
+Tests run: 4, Failures: 1, Errors: 0, Time elapsed: 2.518 sec
+------------- Standard Output ---------------
+inititating: 562
+closing: 214
+checking: 514
+------------- ---------------- ---------------
+
+Testcase: testgroovy took 0.715 sec
+Testcase: testgroovyPlattformIsValid took 1.416 sec
+Testcase: testgroovyForBindings took 0.051 sec
+Testcase: testgroovyForBindingsContent took 0.053 sec
+	FAILED
+
+Expected: is "mainClass.tmpl"
+     got: "platform/groovy/mainClass.tmpl"
+
+junit.framework.AssertionFailedError: 
+Expected: is "mainClass.tmpl"
+     got: "platform/groovy/mainClass.tmpl"
+
+Expected: is "mainClass.tmpl"
+     got: "platform/groovy/mainClass.tmpl"
+
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:179)
+	at org.k1s.orn.templates.BindingsDSLTests.testgroovyForBindingsContent(BindingsDSLTests.groovy:64)
+

@@ -1,0 +1,18 @@
+uri "http://k1s.org/OntologyReastrictedNets/basic_networking_in_cpn" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/11/07 20:16:57 $" .
+
+import "http://k1s.org/OntologyReastrictedNets/basic" as basic.
+
+import "http://k1s.org/OntologyReastrictedNets/basicnetworking" as basic_network.
+
+import "http://hib.no/SADLTest/cpn" as cpn.
+
+/*
+PragmaticsForElement is a class described by pragmatics with  values of type Pragmatic,
+                                described by element with a single value of type CPNElement.
+*/
+
+bla is a Pragmatic.
+
+//pragmaticsForPlace is a PragmaticsForElement has element Place,
+//                                             has pragmatics bla.

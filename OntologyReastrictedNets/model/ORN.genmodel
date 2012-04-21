@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/OntologyReastrictedNets/src"
+    modelPluginID="OntologyReastrictedNets" modelName="ORN" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.pnml.tools.epnk.pntypes.hlpngs.datatypes/model/HLPNGDataTypes.genmodel#//datatypes platform:/plugin/org.pnml.tools.epnk.pntypes.hlpng.pntd/model/HLPNGDefinition.genmodel#//hlpngdefinition platform:/plugin/org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel platform:/plugin/org.pnml.tools.epnk/model/PNMLStructuredPNTypeModel.genmodel#//structuredpntypemodel">
+  <foreignModel>ORN.ecore</foreignModel>
+  <genPackages prefix="Orn" resource="XML" disposableProviderFactory="true" ecorePackage="ORN.ecore#/">
+    <genClasses ecoreClass="ORN.ecore#//ORNType"/>
+    <genClasses ecoreClass="ORN.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//Place/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//Transition/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Pragmatics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//Pragmatics/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//Page/pragmatics"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ORN.ecore#//Page/ontology"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Arc">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//Arc/inscription"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Inscription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ORN.ecore#//Inscription/text"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//PragStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ORN.ecore#//PragStructure/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ORN.ecore#//PragStructure/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//RefPlace">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference ORN.ecore#//RefPlace/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//Ontology">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference ORN.ecore#//Ontology/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="ORN.ecore#//OntologyStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute ORN.ecore#//OntologyStructure/name"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

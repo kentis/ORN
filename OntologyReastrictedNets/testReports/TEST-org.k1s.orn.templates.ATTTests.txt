@@ -1,0 +1,27 @@
+Testsuite: org.k1s.orn.templates.ATTTests
+Tests run: 5, Failures: 0, Errors: 0, Time elapsed: 1.337 sec
+------------- Standard Output ---------------
+PRAGDEF: Send()
+PRAGDEF: External()
+PRAGDEF: Principal()
+orn.impl.PageImpl@20873723 (id: null)
+PRAGDEF: Send()
+PRAGDEF: External()
+PRAGDEF: Send()
+PRAGDEF: External()
+PRAGDEF: Send()
+PRAGDEF: Principal()
+PRAGDEF: Principal()
+PRAGDEF: External(msg)
+PRAGDEF: Send(msg)
+PRAGDEF: External(msg)
+PRAGDEF: Recieve(msg)
+orn.impl.PageImpl@3fde891b (id: null)
+orn.impl.PageImpl@5f0f0625 (id: null)
+------------- ---------------- ---------------
+
+Testcase: testAttBuilderBuildPrincipal took 1.012 sec
+Testcase: testAttBuilderBuildExternal took 0.005 sec
+Testcase: testFindNextnode took 0.002 sec
+Testcase: testAttBuilderBuildSend took 0.003 sec
+Testcase: testATTForSimpleProtocol took 0.033 sec

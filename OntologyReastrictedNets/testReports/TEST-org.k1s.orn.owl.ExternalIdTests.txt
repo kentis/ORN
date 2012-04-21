@@ -1,0 +1,26 @@
+Testsuite: org.k1s.orn.owl.ExternalIdTests
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 2.457 sec
+------------- Standard Output ---------------
+inititating: 527
+closing: 266
+checking: 295
+inititating: 20
+closing: 32
+checking: 28
+inititating: 26
+closing: 45
+checking: 29
+inititating: 31
+closing: 43
+checking: 23
+inititating: 30
+closing: 11
+checking: 18
+INCONSISTENT
+reason: Cannot do reasoning with inconsistent ontologies!
+Reason for inconsistency: No specific explanation was generated. Generic explanation: An individual belongs to a type and its complement
+------------- ---------------- ---------------
+
+Testcase: testValid took 1.618 sec
+Testcase: testValidFromNet took 0.197 sec
+Testcase: testInvalid took 0.357 sec

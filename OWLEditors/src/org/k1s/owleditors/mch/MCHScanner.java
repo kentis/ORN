@@ -1,0 +1,50 @@
+package org.k1s.owleditors.mch;
+
+import org.coode.owlapi.manchesterowlsyntax.ManchesterOWLSyntax;
+import org.eclipse.jface.text.TextAttribute;
+import org.eclipse.jface.text.rules.IRule;
+import org.eclipse.jface.text.rules.IWordDetector;
+import org.eclipse.jface.text.rules.RuleBasedScanner;
+import org.eclipse.jface.text.rules.Token;
+import org.eclipse.jface.text.rules.WordRule;
+import org.eclipse.swt.SWT;
+
+import org.eclipse.swt.widgets.Display;
+
+
+public class MCHScanner extends RuleBasedScanner {
+    
+	
+	
+	public MCHScanner() {
+    	
+        WordRule rule = new WordRule(new IWordDetector() {
+           public boolean isWordStart(char c) { 
+        	return Character.isJavaIdentifierStart(c); 
+           }
+           public boolean isWordPart(char c) {   
+           	return Character.isJavaIdentifierPart(c); 
+           }
+        });
+        
+        Token keyword = new Token(new TextAttribute(Display.getCurrent().getSystemColor(SWT.COLOR_BLUE), null, SWT.BOLD));
+//        Token comment = new Token(new TextAttribute(Display.getCurrent().getSystemColor(SWT.COLOR_GRAY)));
+//        Token string = new Token(new TextAttribute(Display.getCurrent().getSystemColor(SWT.COLOR_GREEN)));
+//        //add tokens for each reserved word
+        ManchesterOWLSyntax[] KEYWORDS = ManchesterOWLSyntax.values();
+        for (int n = 0; n < KEYWORDS.length; n++) {
+           rule.addWord(KEYWORDS[n].toString(), keyword);
+        }
+        setRules(new IRule[] {
+           rule
+//           new SingleLineRule("#", null, comment),
+//           new SingleLineRule("\"", "\"", string, '\\'),
+//           new SingleLineRule("'", "'", string, '\\'),
+//           new WhitespaceRule(new IWhitespaceDetector() {
+//              public boolean isWhitespace(char c) {
+//                 return Character.isWhitespace(c);
+//              }
+//           }),
+        });
+     }
+}

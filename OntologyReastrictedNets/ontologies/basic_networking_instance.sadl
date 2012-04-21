@@ -1,0 +1,13 @@
+uri "http://k1s.org/OntologyReastrictedNets/basic_networking_instance" version 
+"$Revision: 0.02 $ Last modified on $Date: 2011/11/07 20:16:57 $" .
+
+
+import "http://k1s.org/OntologyReastrictedNets/basicnetworking" as nww.
+import "http://k1s.org/OntologyReastrictedNets/basic" as basic.
+
+
+
+Ask: basic:Pragmatic is a subclass of x.
+
+Ask: x is subclass of nww:Principal.
+Ask: nww:Channel is a subclass of z.

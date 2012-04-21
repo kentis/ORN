@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   
+<extension
+ 	point="org.eclipse.ui.editors">
+   <editor
+      name="Manchester Syntax OWL editor"
+      extensions="mch"
+      class="org.k1s.owleditors.mch.MCHEditor"
+      id="org.k1s.owleditors.mch.MCHEditor">
+   </editor>
+</extension>
+
+
+<extension
+ 	point="org.eclipse.ui.editors">
+   <editor
+      name="Functional Syntax OWL editor"
+      extensions="fowl"
+      class="org.k1s.owleditors.fowl.FunctionalEditor"
+      id="org.k1s.owleditors.fowl.FunctionalEditor">
+   </editor>
+</extension>
+
+
+</plugin>

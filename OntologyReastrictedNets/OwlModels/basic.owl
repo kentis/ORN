@@ -1,0 +1,25 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://k1s.org/OntologyReastrictedNets/basic">
+  <owl:Ontology rdf:about="http://k1s.org/OntologyReastrictedNets/basic">
+    <owl:versionInfo>$Revision: 0.01 $ Last modified on $Date: 2011/11/07 20:16:57 $</owl:versionInfo>
+    <rdfs:comment xml:lang="en">This ontology was created from a SADL file 'basic.sadl' and should not be edited.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Pragmatic"/>
+  <owl:Class rdf:ID="Export">
+    <rdfs:subClassOf rdf:resource="http://k1s.org/OntologyReastrictedNets/basic#Pragmatic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Import">
+    <rdfs:subClassOf rdf:resource="http://k1s.org/OntologyReastrictedNets/basic#Pragmatic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Operation">
+    <rdfs:subClassOf rdf:resource="http://k1s.org/OntologyReastrictedNets/basic#Pragmatic"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Property"/>
+  <owl:DatatypeProperty rdf:ID="inputParameter">
+    <rdfs:domain rdf:resource="http://k1s.org/OntologyReastrictedNets/basic#Export"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+</rdf:RDF>

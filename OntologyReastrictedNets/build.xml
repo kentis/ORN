@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="OntologyReastrictedNets" default="build.jars" basedir=".">
+
+	<property name="p2.build.repo" value="file:${buildDirectory}/buildRepo"/>
+	<property name="basews" value="${ws}"/>
+	<property name="baseos" value="${os}"/>
+	<property name="basearch" value="${arch}"/>
+	<property name="basenl" value="${nl}"/>
+	<property name="bundleId" value="OntologyReastrictedNets"/>
+	<property name="bundleVersion" value="1.0.0"/>
+	<property name="p2.publishonerror" value="false"/>
+
+	<!-- Compiler settings. -->
+	<property name="javacFailOnError" value="false"/>
+	<property name="javacDebugInfo" value="on"/>
+	<property name="javacVerbose" value="false"/>
+	<property name="logExtension" value=".log"/>
+	<property name="compilerArg" value=""/>
+	<property name="compilation.prereq.log" value="${buildDirectory}/prereqErrors.log"/>
+	<property name="javacSource" value="1.3"/>
+	<property name="javacTarget" value="1.2"/>
+	<condition property="dir_bootclasspath" value="${java.home}/../Classes">
+		<os family="mac"/>
+	</condition>
+	<property name="dir_bootclasspath" value="${java.home}/lib"/>
+	<path id="path_bootclasspath">
+		<fileset dir="${dir_bootclasspath}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<property name="bootclasspath" refid="path_bootclasspath"/>
+	<condition property="bundleBootClasspath" value="${JavaSE-1.6}"	>
+		<isset property="JavaSE-1.6"/>
+	</condition>
+	<condition property="bundleJavacSource" value="1.6"	>
+		<isset property="JavaSE-1.6"/>
+	</condition>
+	<condition property="bundleJavacTarget" value="1.6"	>
+		<isset property="JavaSE-1.6"/>
+	</condition>
+	<property name="bundleJavacSource" value="${javacSource}"/>
+	<property name="bundleJavacTarget" value="${javacTarget}"/>
+	<property name="bundleBootClasspath" value="${bootclasspath}"/>
+<path id="groovy.path">
+<pathelement location="lib/"/>
+<pathelement location="buildlib/groovy-all-1.8.6.jar"/>
+</path>
+
+<taskdef name="groovyc"
+         classname="org.codehaus.groovy.ant.Groovyc"
+         classpathref="groovy.path"/>
+
+	<target name="init" depends="properties">
+		<condition property="pluginTemp" value="${buildTempFolder}/plugins"		>
+			<isset property="buildTempFolder"/>
+		</condition>
+		<property name="pluginTemp" value="${basedir}"/>
+		<condition property="build.result.folder" value="${pluginTemp}/OntologyReastrictedNets_1.0.0"		>
+			<isset property="buildTempFolder"/>
+		</condition>
+		<property name="build.result.folder" value="${basedir}"/>
+		<property name="temp.folder" value="${basedir}/temp.folder"/>
+		<property name="plugin.destination" value="${basedir}"/>
+		<condition property="p2.publish.parts" value="true"		>
+			<istrue value="${p2.gathering}"/>
+		</condition>
+		<property name="compilation.problem.marker" value="${build.result.folder}/compilation.problem"/>
+		<condition property="compilation.problem.marker.exists" value="true"		>
+			<and>
+			<available file="${compilation.problem.marker}"/>
+			<isfalse value="p2.publishonerror"/>
+			</and>
+		</condition>
+	</target>
+
+	<target name="properties" if="eclipse.running">
+		<property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+
+	</target>
+
+	<target name="build.update.jar" depends="init" description="Build the plug-in: OntologyReastrictedNets for an update site.">
+		<delete dir="${temp.folder}"/>
+		<mkdir dir="${temp.folder}"/>
+		<antcall target="build.jars"/>
+		<antcall target="gather.bin.parts">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<jar destfile="${plugin.destination}/OntologyReastrictedNets_1.0.0.jar" basedir="${temp.folder}/OntologyReastrictedNets_1.0.0" filesetmanifest="merge"/>
+		<delete dir="${temp.folder}"/>
+	</target>
+
+	<target name="@dot" depends="init" unless="@dot" description="Create jar: OntologyReastrictedNets @dot.">
+		<delete dir="${build.result.folder}/@dot"/>
+		<mkdir dir="${build.result.folder}/@dot"/>
+		<path id="@dot.classpath">
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.runtime_3.6.0.v20100505.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.osgi_3.6.0.v20100517.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.common_3.6.0.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.jobs_3.5.0.v20100515.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.3.0.v20100520/runtime_registry_compatibility.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.runtime.compatibility.registry_3.3.0.v20100520"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.registry_3.5.0.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.preferences_3.3.0.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.contenttype_3.4.100.v20100505-1235.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.runtime.compatibility.auth_3.2.200.v20100517.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.app_1.3.0.v20100512.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.osgi.services_3.2.100.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/javax.servlet_2.5.0.v200910301333.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.common_2.6.0.v20100914-1218.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.resources_3.6.0.v20100526-0737.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.core_3.2.200.v20100427.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.variables_3.2.400.v20100505.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.expressions_3.4.200.v20100505.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.filesystem_1.3.0.v20100526-0737.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.filesystem.linux.x86_64_1.2.0.v20100505-1235.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.ecore.xmi_2.5.0.v20100521-1846.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.validation_1.4.0.v20100428-2315.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/com.ibm.icu_4.2.1.v20100412.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.edit_2.6.0.v20100914-1218.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.ecore.change_2.5.1.v20100907-1643.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.gmf.runtime.notation_1.4.0.v20100512-1416.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpng.pntd_0.9.2.201106162130.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes.concretesyntax_0.9.0.201106162130.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.log4j_1.2.15.v201005080500.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext.logging_1.2.15.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext_1.0.2.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext.util_1.0.2.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/com.google.collect_0.8.0.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/com.google.inject_2.0.0.v201003051000.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.aopalliance_1.0.0.v200905130917.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.antlr.runtime_3.0.0.v200803061811.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.codegen_2.6.0.v20100914-1218.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.core_3.6.0.xx-20100811-1700-e36.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.compiler.apt_1.0.300.v20100513-0845.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.compiler.tool_1.0.100.v_A58.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.text_3.5.0.v20100601-1300.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.commands_3.6.0.I20100512-1500.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.team.core_3.5.100.I20100527-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.launching_3.5.100.v20100526.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.debug.core_3.6.0.v20100519.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.debug_3.6.0.v20100526/jdi.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.debug_3.6.0.v20100526/jdimodel.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.debug_3.6.0.v20100526/tools.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.codegen.ecore_2.6.1.v20100914-1218.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.mwe.core_1.0.2.v201102150556.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.commons.logging_1.1.1.v201101211721.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-antlr.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-bcel.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-bsf.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-log4j.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-oro.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-regexp.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-apache-resolver.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-commons-logging.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-commons-net.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-jai.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-javamail.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-jdepend.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-jmf.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-jsch.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-junit.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-launcher.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-netrexx.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-nodeps.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-starteam.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-stylebook.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-swing.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-trax.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.ant_1.7.1.v20100518-1145/lib/ant-weblogic.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-antlr.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-bcel.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-bsf.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-log4j.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-oro.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-regexp.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-apache-resolver.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-commons-logging.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-commons-net.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-jai.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-javamail.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-jdepend.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-jmf.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-jsch.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-junit.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-launcher.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-netrexx.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-nodeps.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-starteam.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-stylebook.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-swing.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-trax.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ant.optional.junit_3.2.200/lib/ant-weblogic.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.runtime.compatibility_3.2.100.v20100505.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.update.configurator_3.3.100.v20100512.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.junit_4.8.1.v4_8_1_v20100427-1100/junit.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.hamcrest.core_1.1.0.v20090501071000.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.commons.cli_1.2.0.v201105210650.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.apache.commons.lang_2.4.0.v201005080502.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.mwe2.runtime_1.0.2.v201102150556.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.mwe.utils_1.0.2.v201102150556.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtend_1.0.1.v201008251147.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.antlr.runtime_3.2.0.v201101311130.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtend.typesystem.emf_1.0.1.v201008251147.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext.generator_1.0.2.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xpand_1.0.1.v201008251147.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext.common.types_1.0.2.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.mwe2.launch_1.0.2.v201102151014.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.mwe2.language_1.0.2.v201102151014.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.xtext.xtend_1.0.2.v201102150722.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.debug.ui_3.6.0.v20100601-1530.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.forms_3.5.0.v20100427.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jface_3.6.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.swt_3.6.0.v3650b.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.swt.gtk.linux.x86_64_3.6.0.v3650b.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui_3.6.0.I20100603-1100.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.workbench_3.6.0.I20100603-1100.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.workbench.compatibility_3.2.100.I20100511-0800/compatibility.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.workbench.compatibility_3.2.100.I20100511-0800/e4-workbench.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.workbench.compatibility_3.2.100.I20100511-0800"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.help_3.5.0.v20100524.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jface.databinding_1.4.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.databinding.observable_1.3.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.databinding.property_1.3.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.databinding_1.3.100.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.console_3.5.0.v20100526.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jface.text_3.6.0.v20100526-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.workbench.texteditor_3.6.0.v20100520-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.compare.core_3.5.100.I20100526-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.ide_3.6.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.views_3.5.0.I20100527-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.engine_2.0.0.v20100606.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.core_2.0.0.v20100510.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.metadata_2.0.0.v20100601.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.repository_2.0.0.v20100519.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.security_1.0.200.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf.filetransfer_4.0.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf_3.1.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf.ssl_1.0.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.concurrent_1.0.200.v20110502.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf.identity_3.1.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf.provider.filetransfer_3.1.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ecf.provider.filetransfer.ssl_1.0.0.v20100529-0735.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.net_1.2.100.I20100511-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.net.linux.x86_64_1.1.0.I20100505-1245.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.metadata.repository_1.1.0.v20100513.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.editors_3.6.0.v20100520-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.core.filebuffers_3.5.100.v20100520-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.debug.ui_3.5.0.v20100602-0830.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.ui_3.6.0.v20100602-1600.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.search_3.6.0.v20100520-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ltk.core.refactoring_3.5.100.v20100526-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ltk.ui.refactoring_3.5.0.v20100526-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.navigator_3.5.0.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.compare_3.5.100.I20100526-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.team.ui_3.5.100.I20100527-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.navigator.resources_3.4.200.I20100601-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ui.views.properties.tabbed_3.5.100.I20100509-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.jdt.core.manipulation_1.3.0.v20100520-0800.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.emf.validation.ocl_1.4.0.v20100224-1657.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ocl_3.0.2.R30x_v201101110610.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/lpg.runtime.java_2.0.17.v201004271640.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.ocl.ecore_3.0.2.R30x_v201101110610.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/groovy-eclipse.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/asm-3.2.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/asm-tree-3.2.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/antlr-2.7.7.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/ivy-2.1.0.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/commons-cli-1.2.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/bsf-2.4.0.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.codehaus.groovy_1.7.3.xx-20100811-1700-e36/lib/groovy-1.7.3.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.metadata.generator_1.0.200.v20100503a.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.frameworkadmin_2.0.0.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.frameworkadmin.equinox_1.0.200.v20100505.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.artifact.repository_1.1.0.v20100513.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.p2.jarprocessor_1.0.200.v20100503a.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.simpleconfigurator.manipulator_2.0.0.v20100503.jar"/>
+			<pathelement path="../../usr/eclipse/plugins/org.eclipse.equinox.simpleconfigurator_1.0.200.v20100503.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.cosimulation/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.cosimulation/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine.highlevel/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine.highlevel/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine.proxy/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.engine.proxy/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/bin"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/lib/collections-generic-4.01.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/lib/colt-1.2.0.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/lib/jung-algorithms-2.0.1.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/lib/jung-api-2.0.1.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/lib/jung-graph-impl-2.0.1.jar"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/@dot"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.importer/bin/"/>
+			<pathelement path="../../src/accessCPN/trunk/org.cpntools.accesscpn.model.importer/@dot"/>
+			<pathelement path="lib/owlapi-bin.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/owlapi-bin.jar"/>
+			<pathelement path="lib/HermiT.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/HermiT.jar"/>
+			<pathelement path="lib/pellet/aterm-java-1.6.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/aterm-java-1.6.jar"/>
+			<pathelement path="lib/pellet/pellet-cli.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-cli.jar"/>
+			<pathelement path="lib/pellet/pellet-core.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-core.jar"/>
+			<pathelement path="lib/pellet/pellet-datatypes.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-datatypes.jar"/>
+			<pathelement path="lib/pellet/pellet-dig.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-dig.jar"/>
+			<pathelement path="lib/pellet/pellet-el.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-el.jar"/>
+			<pathelement path="lib/pellet/pellet-explanation.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-explanation.jar"/>
+			<pathelement path="lib/pellet/pellet-jena.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-jena.jar"/>
+			<pathelement path="lib/pellet/pellet-modularity.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-modularity.jar"/>
+			<pathelement path="lib/pellet/pellet-owlapi.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-owlapi.jar"/>
+			<pathelement path="lib/pellet/pellet-owlapiv3.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-owlapiv3.jar"/>
+			<pathelement path="lib/pellet/pellet-pellint.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-pellint.jar"/>
+			<pathelement path="lib/pellet/pellet-query.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-query.jar"/>
+			<pathelement path="lib/pellet/pellet-rules.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-rules.jar"/>
+			<pathelement path="lib/pellet/pellet-test.jar"/>
+			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-test.jar"/>
+		</path>
+		<!-- compile the source code -->
+		<groovyc destdir="${build.result.folder}/@dot" >		
+		<!-- <javac destdir="${build.result.folder}/@dot" failonerror="${javacFailOnError}" verbose="${javacVerbose}" debug="${javacDebugInfo}" includeAntRuntime="no" bootclasspath="${bundleBootClasspath}" source="${bundleJavacSource}" target="${bundleJavacTarget}"		> -->
+			<!-- <compilerarg line="${compilerArg}" compiler="${build.compiler}"/> -->
+			<classpath>
+				<path refid="@dot.classpath" />
+			</classpath>
+			<src path="src/"			/>
+<!-- 			<compilerarg value="@${basedir}/javaCompiler...args" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/>
+			<compilerarg line="-log &apos;${build.result.folder}/@dot${logExtension}&apos;" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/> -->
+			<javac source="1.6" target="1.6" debug="on" />
+		</groovyc>
+		<antcall target="checkCompilationResults"/>
+		<!-- Copy necessary resources -->
+		<copy todir="${build.result.folder}/@dot" failonerror="true" overwrite="false">
+			<fileset dir="src/">
+				<exclude name="**/*.java"/>
+				<exclude name="**/package.htm*"/>
+			</fileset>
+		</copy>
+	</target>
+
+
+	<target name="test" depends="@dot">
+		<groovyc srcdir="test/" destdir="sandbox/">
+			<classpath>
+				<path location="@dot" />
+				<path refid="@dot.classpath" />
+			</classpath>
+		</groovyc>
+
+		<junit failureProperty="test.failure" fork="yes" printsummary="yes" >
+			<classpath>
+				<path location="@dot" />
+				<path location="sandbox"/>
+				<path refid="@dot.classpath" />
+				<pathelement location="lib/"/>
+				<pathelement location="buildlib/groovy-all-1.8.6.jar"/>
+			</classpath>
+
+			<batchtest todir="testReports">
+				<fileset dir="sandbox" includes="**/*Test.class"/>
+				<fileset dir="sandbox" includes="**/*Tests.class"/>
+
+			</batchtest>
+			<formatter type="plain"/>
+			<formatter type="xml"/>
+		</junit>
+		<junitreport todir="./testReports">
+  <fileset dir="./testReports">
+    <include name="TEST-*.xml"/>
+  </fileset>
+  <report format="frames" todir="./testReports/html"/>
+</junitreport>
+		<fail message="test failed" if="test.failure" />
+	</target>
+
+	<target name="src.zip" depends="init" unless="src.zip">
+		<mkdir dir="${build.result.folder}"/>
+		<antcall target="zip.src.zip"/>
+	</target>
+	<target name="zip.src.zip">
+		<zip destfile="${build.result.folder}/src.zip" filesonly="false" whenempty="skip" update="false">
+			<fileset dir="src/">
+				<include name="**/*.java"/>
+			</fileset>
+		</zip>
+	</target>
+	<target name="copy.src.zip">
+		<copy todir="${source.destination.folder}/" failonerror="true" overwrite="true">
+			<fileset dir="src/">
+				<include name="**/*.java"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="build.jars" depends="init" description="Compile classes and build nested jars for the plug-in: OntologyReastrictedNets.">
+		<delete file="${compilation.problem.marker}" quiet="true"/>
+		<available property="@dot" file="${build.result.folder}/@dot"/>
+		<antcall target="@dot"/>
+	</target>
+
+	<target name="checkCompilationResults" if="compilation.error.occured">
+		<echo file="${compilation.problem.marker}" message="OntologyReastrictedNets_1.0.0${line.separator}compilation.error.occured=${compilation.error.occured}"/>
+		<eclipse.logCompileError bundle="OntologyReastrictedNets_1.0.0" log="${compilation.prereq.log}">
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.model/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.model_2.1.0/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.cosimulation/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.cosimulation_2.0.2/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.model.exporter/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.model.exporter_2.1.0/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.engine.proxy/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.engine.proxy_2.0.0/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.model.importer/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.model.importer_2.1.0/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.engine/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.engine_2.0.2/compilation.problem"/>
+			<include name="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.engine.highlevel/compilation.problem"/>
+			<include name="${pluginTemp}/org.cpntools.accesscpn.engine.highlevel_2.1.0/compilation.problem"/>
+		</eclipse.logCompileError>
+	</target>
+
+	<target name="build.sources" depends="init">
+		<available property="src.zip" file="${build.result.folder}/src.zip"/>
+		<antcall target="src.zip"/>
+	</target>
+
+	<target name="publish.bin.parts" depends="init" if="p2.publish.parts" unless="compilation.problem.marker.exists">
+		<mkdir dir="${build.result.folder}/OntologyReastrictedNets_1.0.0"/>
+		<copy todir="${build.result.folder}" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="META-INF/MANIFEST.MF"/>
+				<include name="plugin.xml"/>
+				<include name="fragment.xml"/>
+			</fileset>
+		</copy>
+		<antcall target="apitools.generation">
+			<param name="target.folder" value="${build.result.folder}"/>
+			<param name="projectLocation" value="${basedir}"/>
+			<param name="binary.folders" value="${build.result.folder}/@dot:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-rules.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-query.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-el.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-core.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-owlapi.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/aterm-java-1.6.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-pellint.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-test.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-dig.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/HermiT.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-jena.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/owlapi-bin.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-modularity.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-explanation.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-cli.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-datatypes.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-owlapiv3.jar"/>
+			<param name="projectName" value="${bundleId}_${bundleVersion}"/>
+		</antcall>
+		<eclipse.gatherBundle 
+		   metadataRepository="${p2.build.repo}"
+		   artifactRepository="${p2.build.repo}"
+		   buildResultFolder="${build.result.folder}"
+		   baseDirectory="${basedir}"
+		/>
+	</target>
+
+	<target name="gather.bin.parts" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0"/>
+		<copy todir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0" failonerror="true" overwrite="false">
+			<fileset dir="${build.result.folder}/@dot">
+				<include name="**"/>
+			</fileset>
+		</copy>
+		<copy todir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0" failonerror="true" overwrite="true">
+			<fileset dir="${basedir}">
+				<include name="model/"/>
+				<include name="META-INF/"/>
+				<include name="plugin.xml"/>
+				<include name="plugin.properties"/>
+				<include name="lib/"/>
+				<include name="lib/owlapi-bin.jar"/>
+				<include name="lib/HermiT.jar"/>
+				<include name="lib/pellet/aterm-java-1.6.jar"/>
+				<include name="lib/pellet/pellet-cli.jar"/>
+				<include name="lib/pellet/pellet-core.jar"/>
+				<include name="lib/pellet/pellet-datatypes.jar"/>
+				<include name="lib/pellet/pellet-dig.jar"/>
+				<include name="lib/pellet/pellet-el.jar"/>
+				<include name="lib/pellet/pellet-explanation.jar"/>
+				<include name="lib/pellet/pellet-jena.jar"/>
+				<include name="lib/pellet/pellet-modularity.jar"/>
+				<include name="lib/pellet/pellet-owlapi.jar"/>
+				<include name="lib/pellet/pellet-owlapiv3.jar"/>
+				<include name="lib/pellet/pellet-pellint.jar"/>
+				<include name="lib/pellet/pellet-query.jar"/>
+				<include name="lib/pellet/pellet-rules.jar"/>
+				<include name="lib/pellet/pellet-test.jar"/>
+			</fileset>
+		</copy>
+		<antcall target="apitools.generation">
+			<param name="target.folder" value="${destination.temp.folder}/OntologyReastrictedNets_1.0.0"/>
+			<param name="projectLocation" value="${basedir}"/>
+			<param name="binary.folders" value="${build.result.folder}/@dot:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-rules.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-query.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-el.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-core.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-owlapi.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/aterm-java-1.6.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-pellint.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-test.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-dig.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/HermiT.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-jena.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/owlapi-bin.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-modularity.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-explanation.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-cli.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-datatypes.jar:/home/kent/ws-ePNK/OntologyReastrictedNets/lib/pellet/pellet-owlapiv3.jar"/>
+			<param name="projectName" value="${bundleId}_${bundleVersion}"/>
+		</antcall>
+	</target>
+
+	<target name="build.zips" depends="init">
+	</target>
+
+	<target name="gather.sources" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0"/>
+		<copy file="${build.result.folder}/src.zip" todir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0" failonerror="false" overwrite="false"/>
+		<antcall target="copy.src.includes">
+			<param name="source.destination.folder" value="${destination.temp.folder}/OntologyReastrictedNets_1.0.0"/>
+		</antcall>
+	</target>
+
+	<target name="gather.individual.sources" depends="init">
+		<antcall target="copy.src.zip">
+			<param name="source.destination.folder" value="${destination.temp.folder}"/>
+		</antcall>
+		<antcall target="copy.src.includes">
+			<param name="source.destination.folder" value="${destination.temp.folder}"/>
+		</antcall>
+	</target>
+
+	<target name="copy.src.includes" depends="init">
+	</target>
+
+	<target name="gather.logs" depends="init" if="destination.temp.folder">
+		<mkdir dir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0"/>
+		<copy todir="${destination.temp.folder}/OntologyReastrictedNets_1.0.0" failonerror="false" overwrite="false">
+			<fileset dir="${build.result.folder}">
+				<include name="@dot${logExtension}"/>
+			</fileset>
+		</copy>
+	</target>
+
+	<target name="clean" depends="init" description="Clean the plug-in: OntologyReastrictedNets of all the zips, jars and logs created.">
+		<delete dir="${build.result.folder}/@dot"/>
+		<delete file="${build.result.folder}/src.zip"/>
+		<delete file="${plugin.destination}/OntologyReastrictedNets_1.0.0.jar"/>
+		<delete file="${plugin.destination}/OntologyReastrictedNets_1.0.0.zip"/>
+		<delete dir="${temp.folder}"/>
+		<delete file="${compilation.problem.marker}" quiet="true"/>
+	</target>
+
+	<target name="refresh" depends="init" if="eclipse.running" description="Refresh this folder.">
+		<eclipse.convertPath fileSystemPath="/home/kent/ws-ePNK/OntologyReastrictedNets" property="resourcePath"/>
+		<eclipse.refreshLocal resource="${resourcePath}" depth="infinite"/>
+	</target>
+
+	<target name="zip.plugin" depends="init" description="Create a zip containing all the elements for the plug-in: OntologyReastrictedNets.">
+		<delete dir="${temp.folder}"/>
+		<mkdir dir="${temp.folder}"/>
+		<antcall target="build.jars"/>
+		<antcall target="build.sources"/>
+		<antcall target="gather.bin.parts">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<antcall target="gather.sources">
+			<param name="destination.temp.folder" value="${temp.folder}/"/>
+		</antcall>
+		<delete>
+			<fileset dir="${temp.folder}">
+				<include name="**/*.bin${logExtension}"/>
+			</fileset>
+		</delete>
+		<zip destfile="${plugin.destination}/OntologyReastrictedNets_1.0.0.zip" basedir="${temp.folder}" filesonly="true" whenempty="skip" update="false"/>
+		<delete dir="${temp.folder}"/>
+	</target>
+
+	<target name="apitools.generation" if="generateAPIDescription">
+		<apitooling.apigeneration  projectName="${projectName}" project="${projectLocation}" binary="${binary.folders}" target="${target.folder}" extramanifests="${extraManifests}"		/>
+	</target>
+
+</project>

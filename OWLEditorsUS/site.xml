@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<site>
+   <feature url="features/OWLEditorsFeautures_0.0.2.jar" id="OWLEditorsFeautures" version="0.0.2">
+      <category name="org.k1s.owleditors"/>
+   </feature>
+   <category-def name="org.k1s.owleditors" label="OWLEditors"/>
+</site>

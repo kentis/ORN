@@ -1,0 +1,15 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:basic="http://k1s.org/OntologyReastrictedNets/basic#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://k1s.org/OntologyReastrictedNets/basic_networking_in_cpn">
+  <owl:Ontology rdf:about="http://k1s.org/OntologyReastrictedNets/basic_networking_in_cpn">
+    <owl:imports rdf:resource="http://hib.no/SADLTest/cpn"/>
+    <owl:imports rdf:resource="http://k1s.org/OntologyReastrictedNets/basicnetworking"/>
+    <owl:imports rdf:resource="http://k1s.org/OntologyReastrictedNets/basic"/>
+    <owl:versionInfo>$Revision: 0.01 $ Last modified on $Date: 2011/11/07 20:16:57 $</owl:versionInfo>
+    <rdfs:comment xml:lang="en">This ontology was created from a SADL file 'BasicNetworkingInCpn.sadl' and should not be edited.</rdfs:comment>
+  </owl:Ontology>
+  <basic:Pragmatic rdf:ID="bla"/>
+</rdf:RDF>

@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://jena.hpl.hp.com/schemas/2003/03/ont-manager#"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <OntologySpec>
+    <prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >def</prefix>
+    <publicURI rdf:resource="http://research.ge.com/Acuity/defaults.owl"/>
+    <altURL rdf:resource="file:/home/kent/ws-ePNK/ontology/OwlModels/defaults.owl"/>
+    <language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <createdBy>SADL</createdBy>
+  </OntologySpec>
+  <OntologySpec>
+    <altURL rdf:resource="http://protege.stanford.edu/plugins/owl/dc/protege-dc.owl"/>
+    <publicURI rdf:resource="http://purl.org/dc/elements/1.1/"/>
+    <language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >dc</prefix>
+  </OntologySpec>
+  <OntologySpec>
+    <language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <publicURI rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >owl</prefix>
+  </OntologySpec>
+  <DocumentManagerPolicy>
+    <cacheModels rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</cacheModels>
+    <processImports rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean"
+    >true</processImports>
+  </DocumentManagerPolicy>
+  <OntologySpec>
+    <createdBy>SADL</createdBy>
+    <language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <altURL rdf:resource="file:/home/kent/ws-ePNK/ontology/OwlModels/BasicSecurityProtocols.owl"/>
+    <publicURI rdf:resource="http://k1s.org/BasicSecurityProtocol"/>
+  </OntologySpec>
+  <OntologySpec>
+    <publicURI rdf:resource="http://k1s.org/protocol"/>
+    <altURL rdf:resource="file:/home/kent/ws-ePNK/ontology/OwlModels/protocol.owl"/>
+    <language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <createdBy>SADL</createdBy>
+  </OntologySpec>
+</rdf:RDF>

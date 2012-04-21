@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://k1s.org/epnk/orn"
+            class="orn.OrnPackage"
+            genModel="model/ORN.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="orn"
+            class="orn.util.OrnResourceFactoryImpl"/>
+   </extension>
+
+
+<extension
+         id="org.k1s.epnk.orn"
+         name="ORN"
+         point="org.pnml.tools.epnk.pntd">
+      <type
+            class="orn.impl.ORNTypeImpl"
+            description="ORN">
+      </type>
+   </extension>
+
+<!-- <extension
+ 	point="org.eclipse.ui.editors">
+   <editor
+      name="Manchester Syntax OWL editor"
+      extensions="mch"
+      class="org.k1s.orn.MCHEditor"
+      id="org.k1s.orn.MCHEditor">
+   </editor>
+</extension> -->
+
+<extension
+      point="org.eclipse.ui.menus">
+     
+       <menuContribution
+        locationURI="popup:org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML"    >
+         <menu
+               id="org.pnml.tools.epnk.actions.standardmenu3"
+               label="ORN"
+            >
+         <command
+               commandId="org.k1s.nppn.epnk.GenerateCommand"
+               id="org.k1s.orn.epnk.GenerateCommand"
+               label="Generate"
+               >
+         </command>
+         <command
+               commandId="org.k1s.orn.epnk.ValidateCommand"
+               id="org.k1s.orn.epnk.menu.ValidateCommand"
+               label="Validate"
+               >
+         </command>
+         <command
+               commandId="org.k1s.orn.epnk.ImportCommand"
+               id="org.k1s.orn.epnk.menu.ImportCommand"
+               label="Import"
+               >
+         </command>
+         
+         </menu>
+         
+      </menuContribution>
+</extension>
+ 
+<extension
+         point="org.eclipse.ui.commands">
+         <command
+            name="generate"
+            id="org.k1s.orn.epnk.GenerateCommand">
+      </command>
+</extension>
+
+
+<extension
+         point="org.eclipse.ui.commands">
+         <command
+            name="generate"
+            id="org.k1s.orn.epnk.ValidateCommand">
+      </command>
+</extension>
+
+<extension
+         point="org.eclipse.ui.commands">
+         <command
+            name="import"
+            id="org.k1s.orn.epnk.ImportCommand">
+      </command>
+</extension>
+
+<extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="org.k1s.orn.epnk.ValidateCommand"
+            class="ontologyreastrictednets.popup.actions.ORNValidate">
+      </handler>
+
+</extension>
+
+
+<extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="org.k1s.orn.epnk.ImportCommand"
+            class="ontologyreastrictednets.popup.actions.ORNImport">
+      </handler>
+
+</extension>
+
+</plugin>

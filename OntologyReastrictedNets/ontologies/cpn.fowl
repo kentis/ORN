@@ -1,0 +1,13 @@
+Prefix(:=<http://hib.no/SADLTest/cpn>)
+ Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
+ Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
+
+ Ontology(<http://hib.no/SADLTest/cpn>
+
+ Declaration(Class(:Page))
+ Declaration(Class(:Place))
+ Declaration(Class(:Transition))
+ Declaration(Class(:Arc))
+ 
+
+)

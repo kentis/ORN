@@ -1,0 +1,15 @@
+# 3/31/12 6:28:33 PM CEST
+# Eclipse Compiler for Java(TM) 0.A58, 3.6.0, Copyright IBM Corp 2000, 2010. All rights reserved.
+----------
+1. ERROR in /home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalCompletionProcessor.java (at line 28)
+	ICompletionProposal compl = new CompletionProposal(FunctionalConstants.OWL_TEMPLATE, 
+	                                                   ^^^^^^^^^^^^^^^^^^^
+FunctionalConstants cannot be resolved to a variable
+----------
+----------
+2. ERROR in /home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/mch/MCHCompletionProcessor.java (at line 28)
+	ICompletionProposal compl = new CompletionProposal(MCHConstants.OWL_TEMPLATE, 
+	                                                   ^^^^^^^^^^^^
+MCHConstants cannot be resolved to a variable
+----------
+2 problems (2 errors)

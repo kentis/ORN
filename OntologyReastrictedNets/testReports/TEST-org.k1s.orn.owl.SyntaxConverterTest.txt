@@ -1,0 +1,52 @@
+Testsuite: org.k1s.orn.owl.SyntaxConverterTest
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.356 sec
+------------- Standard Output ---------------
+Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
+Prefix: owl: <http://www.w3.org/2002/07/owl#>
+Prefix: xml: <http://www.w3.org/XML/1998/namespace>
+Prefix: rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+Prefix: rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+Prefix: skos: <http://www.w3.org/2004/02/skos/core#>
+
+
+
+Ontology: <http://example.com/owl/families>
+
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Class: <http://example.com/owl/families/Person>
+
+    Annotations: 
+        rdfs:comment "Represents the set of all people."^^rdf:PlainLiteral
+    
+    
+Class: <http://example.com/owl/families/Woman>
+
+    SubClassOf: 
+        <http://example.com/owl/families/Person>
+    
+    DisjointWith: 
+        <http://example.com/owl/families/Man>
+    
+    
+Class: <http://example.com/owl/families/Man>
+
+    SubClassOf: 
+        Annotations: rdfs:comment "States that every man is a person."^^rdf:PlainLiteral
+        
+        <http://example.com/owl/families/Person>
+    
+    DisjointWith: 
+        <http://example.com/owl/families/Woman>
+    
+    
+
+------------- ---------------- ---------------
+
+Testcase: testManchesterToRDF took 1.006 sec
+Testcase: testRDFXMLToManchester took 0.043 sec

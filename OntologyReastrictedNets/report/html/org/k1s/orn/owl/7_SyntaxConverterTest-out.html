@@ -1,0 +1,54 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from SyntaxConverterTest</title>
+</head>
+<body>
+<pre>Prefix: xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt;
+Prefix: owl: &lt;http://www.w3.org/2002/07/owl#&gt;
+Prefix: xml: &lt;http://www.w3.org/XML/1998/namespace&gt;
+Prefix: rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
+Prefix: rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
+Prefix: skos: &lt;http://www.w3.org/2004/02/skos/core#&gt;
+
+
+
+Ontology: &lt;http://example.com/owl/families&gt;
+
+
+AnnotationProperty: rdfs:comment
+
+    
+Datatype: rdf:PlainLiteral
+
+    
+Class: &lt;http://example.com/owl/families/Person&gt;
+
+    Annotations: 
+        rdfs:comment "Represents the set of all people."^^rdf:PlainLiteral
+    
+    
+Class: &lt;http://example.com/owl/families/Woman&gt;
+
+    SubClassOf: 
+        &lt;http://example.com/owl/families/Person&gt;
+    
+    DisjointWith: 
+        &lt;http://example.com/owl/families/Man&gt;
+    
+    
+Class: &lt;http://example.com/owl/families/Man&gt;
+
+    SubClassOf: 
+        Annotations: rdfs:comment "States that every man is a person."^^rdf:PlainLiteral
+        
+        &lt;http://example.com/owl/families/Person&gt;
+    
+    DisjointWith: 
+        &lt;http://example.com/owl/families/Woman&gt;
+    
+    
+
+</pre>
+</body>
+</html>

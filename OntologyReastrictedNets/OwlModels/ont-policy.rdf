@@ -1,0 +1,44 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:j.0="http://jena.hpl.hp.com/schemas/2003/03/ont-manager#">
+  <j.0:OntologySpec>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/cpn.owl"/>
+    <j.0:publicURI rdf:resource="http://hib.no/SADLTest/cpn"/>
+    <j.0:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >CPN</j.0:prefix>
+  </j.0:OntologySpec>
+  <j.0:OntologySpec>
+    <j.0:publicURI rdf:resource="http://research.ge.com/Acuity/defaults.owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/defaults.owl"/>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:prefix rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >def</j.0:prefix>
+  </j.0:OntologySpec>
+  <j.0:OntologySpec>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/basic_networking.owl"/>
+    <j.0:publicURI rdf:resource="http://k1s.org/OntologyReastrictedNets/basicnetworking"/>
+  </j.0:OntologySpec>
+  <j.0:OntologySpec>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/basic_networking_instance.owl"/>
+    <j.0:publicURI rdf:resource="http://k1s.org/OntologyReastrictedNets/basic_networking_instance"/>
+  </j.0:OntologySpec>
+  <j.0:OntologySpec>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/BasicNetworkingInCpn.owl"/>
+    <j.0:publicURI rdf:resource="http://k1s.org/OntologyReastrictedNets/basic_networking_in_cpn"/>
+  </j.0:OntologySpec>
+  <j.0:OntologySpec>
+    <j.0:createdBy>SADL</j.0:createdBy>
+    <j.0:language rdf:resource="http://www.w3.org/2002/07/owl"/>
+    <j.0:altURL rdf:resource="file:/home/kent/ws-ePNK/OntologyReastrictedNets/OwlModels/basic.owl"/>
+    <j.0:publicURI rdf:resource="http://k1s.org/OntologyReastrictedNets/basic"/>
+  </j.0:OntologySpec>
+</rdf:RDF>

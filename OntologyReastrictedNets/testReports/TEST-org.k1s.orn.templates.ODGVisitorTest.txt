@@ -1,0 +1,21 @@
+Testsuite: org.k1s.orn.templates.ODGVisitorTest
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.572 sec
+------------- Standard Output ---------------
+PRAGDEF: Send()
+PRAGDEF: External()
+PRAGDEF: Principal()
+orn.impl.PageImpl@6ef2ea42 (id: null)
+|null, null, null|
+|null, null, null|
+|null, null, null|
+[|null, null, null|, |null, null, null|, |null, null, null|]
+PRAGDEF: External()
+PRAGDEF: External()
+def External(){
+	%%yield%%
+}
+------------- ---------------- ---------------
+
+Testcase: testFlatten took 0.939 sec
+Testcase: testParameterVisitor took 0.01 sec
+Testcase: testTemplateVisitor took 0.286 sec

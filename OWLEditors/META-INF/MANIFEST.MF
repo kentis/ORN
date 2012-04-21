@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: OWLEditors
+Bundle-SymbolicName: OWLEditors;singleton:=true
+Bundle-Version: 0.0.2
+Bundle-Activator: org.k1s.owleditors.Activator
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.eclipse.jface.text,
+ org.eclipse.ui.editors,
+ org.codehaus.groovy;bundle-version="1.7.3"
+Bundle-ActivationPolicy: lazy
+Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+Bundle-ClassPath: lib/owlapi-bin.jar,
+ .

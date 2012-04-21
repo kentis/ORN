@@ -1,0 +1,44 @@
+uri "http://k1s.org/OntologyReastrictedNets/basicnetworking" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/11/07 20:16:57 $" .
+
+import "http://k1s.org/OntologyReastrictedNets/basic" as basic.
+
+
+
+/* A participant in the protocol, e.g Client or Server, Alice or Bob */
+Principal is a type of basic:Pragmatic,
+described by name with a single value of type string. 
+
+/* A channel should connect two principals*/
+Channel is a type of basic:Pragmatic
+described by property with values of type ChannelProperty,
+described by endpoints with values of type Principal.
+
+
+ChannelProperty is a type of basic:Property , must be one of{GuaranteedDelivery, PreservesOrder}.
+
+
+Stream is a type of Channel.
+Datagram is a type of Channel.
+//a Stream has property GuaranteedDelivery.
+//a Stream has property preservesOrder.
+
+//a Channel is a Stream only if property has value preservesOrder.
+
+
+SEND is a type of Operation.
+RECIEVE is a type of Operation.
+
+
+Rule stream
+ given c is any Channel
+ if property of c is GuaranteedDelivery
+        property of c is PreservesOrder
+ then c is a Stream .
+
+Rule datagram
+ given c is any Channel
+ then c is a Datagram .
+
+
+

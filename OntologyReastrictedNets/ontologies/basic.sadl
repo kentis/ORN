@@ -1,0 +1,18 @@
+uri "http://k1s.org/OntologyReastrictedNets/basic" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/11/07 20:16:57 $" .
+
+Pragmatic is a class.
+Property is a class. 
+
+
+Export is a type of Pragmatic,
+described by inputParameter with values of type string.
+
+Import is a type of Pragmatic.
+
+/*Have side-effects, stateless*/
+Operation is a type of Pragmatic.
+
+Test: Principal is not a Property.
+Ask: x is subclass of Pragmatic.
+Ask: Pragmatic  is subclass of z.

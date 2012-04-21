@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="inhibitornets.presentation.InhibitornetsModelWizardID"
+            name="%_UI_InhibitornetsModelWizard_label"
+            class="inhibitornets.presentation.InhibitornetsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/InhibitornetsModelFile.gif">
+         <description>%_UI_InhibitornetsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="inhibitornets.presentation.InhibitornetsEditorID"
+            name="%_UI_InhibitornetsEditor_label"
+            icon="icons/full/obj16/InhibitornetsModelFile.gif"
+            extensions="inhibitornets"
+            class="inhibitornets.presentation.InhibitornetsEditor"
+            contributorClass="inhibitornets.presentation.InhibitornetsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

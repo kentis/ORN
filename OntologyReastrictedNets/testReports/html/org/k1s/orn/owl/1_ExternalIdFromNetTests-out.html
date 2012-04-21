@@ -1,0 +1,236 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from ExternalIdFromNetTests</title>
+</head>
+<body>
+<pre>PRAGDEF: channel(null)
+PRAGDEF: channel(null)
+PRAGDEF: Id(null)
+PRAGDEF: External(null)
+orn.impl.PageImpl@75568654 (id: null)
+orn.impl.PlaceImpl@b05eb6f (id: null)
+orn.impl.TransitionImpl@d34eb84 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@158105e8 (id: null)
+orn.impl.PageImpl@33f98d58 (id: null)
+orn.impl.PlaceImpl@44aea710 (id: null)
+orn.impl.PlaceImpl@6aadae91 (id: null)
+
+	Prefix(:=&lt;http://org.k1s/orn/ext/&gt;)
+ Prefix(basic:=&lt;http://t.k1s.org/OntologyReastrictedNets/basic/&gt;)
+ Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
+ Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)
+ Prefix(cpn:=&lt;http://hib.no/SADLTest/cpn&gt;)
+ 
+ Ontology(&lt;http://org.k1s/orn/ext/&gt;
+  Import( &lt;http://t.k1s.org/OntologyReastrictedNets/basic.owl&gt; )
+  Import( &lt;http://t.k1s.org/OntologyReastrictedNets/cpn.owl&gt; )
+   
+  
+  SubClassOf( :Id basic:Pragmatic )
+  SubClassOf( :Id ObjectAllValuesFrom( :belongsTo cpn:Place ) ) 
+
+  SubClassOf( :External basic:Pragmatic )
+  SubClassOf( :External ObjectAllValuesFrom( :belongsTo :TransitionConnectedToId ) ) 
+
+
+  SubClassOf( :IdPlace ObjectAllValuesFrom( :hasPragmatic :id))
+  
+    SubClassOf( :IdPlace ObjectIntersectionOf(
+      cpn:Place
+  	  ObjectAllValuesFrom( :hasPragmatic :Id) 
+  	  ObjectExactCardinality( 1 :hasPragmatic )
+    )
+  )
+
+
+SubClassOf( :ArcFromId ObjectIntersectionOf(
+  		cpn:Arc
+  		ObjectAllValuesFrom( cpn:source :IdPlace) 
+  		ObjectExactCardinality( 1 cpn:source :IdPlace)
+  	)
+  )
+ 
+ SubClassOf( :TransitionConnectedToId ObjectIntersectionOf(
+  		cpn:Transition
+  		ObjectAllValuesFrom( :in :ArcFromId) 
+		
+  		)
+  	)
+  	
+
+Declaration( NamedIndividual( :toppage_Page ) )
+ClassAssertion( cpn:Page :toppage_Page )
+
+
+Declaration( NamedIndividual( :Client_Page ) )
+ClassAssertion( cpn:Page :Client_Page )
+
+
+Declaration( NamedIndividual( :start_Place))
+ClassAssertion( cpn:Place :start_Place) 
+
+
+Declaration( NamedIndividual( :Id_597457953))
+ClassAssertion( :Id :Id_597457953  ) 
+ObjectPropertyAssertion( :belongsTo :Id_597457953 :start_Place )
+ObjectPropertyAssertion( :hasPragmatic :start_Place :Id_597457953)
+
+Declaration( NamedIndividual( :extern_Transisiton))
+ClassAssertion( cpn:Transition :extern_Transisiton) 
+
+
+Declaration( NamedIndividual( :External_830274872))
+ClassAssertion( :External :External_830274872  ) 
+ObjectPropertyAssertion( :belongsTo :External_830274872 :extern_Transisiton )
+ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_830274872)
+
+Declaration( NamedIndividual( :arc))
+ClassAssertion( cpn:Arc :arc) 
+ObjectPropertyAssertion( cpn:source :arc :start_Place )
+ObjectPropertyAssertion( cpn:target :arc :extern_Transisiton )
+ObjectPropertyAssertion( :out  :start_Place :arc )
+ObjectPropertyAssertion( :in  :extern_Transisiton :arc)
+
+
+Declaration( NamedIndividual( :Server_Page ) )
+ClassAssertion( cpn:Page :Server_Page )
+
+
+Declaration( NamedIndividual( :ClientToServer_Place))
+ClassAssertion( cpn:Place :ClientToServer_Place) 
+
+
+Declaration( NamedIndividual( :channel_643444394))
+ClassAssertion( :channel :channel_643444394  ) 
+ObjectPropertyAssertion( :belongsTo :channel_643444394 :ClientToServer_Place )
+ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_643444394)
+
+Declaration( NamedIndividual( :ServerToClient_Place))
+ClassAssertion( cpn:Place :ServerToClient_Place) 
+
+
+Declaration( NamedIndividual( :channel_2056454348))
+ClassAssertion( :channel :channel_2056454348  ) 
+ObjectPropertyAssertion( :belongsTo :channel_2056454348 :ServerToClient_Place )
+ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_2056454348)
+
+)
+inititating: 468
+closing: 374
+checking: 314
+PRAGDEF: channel(null)
+PRAGDEF: channel(null)
+PRAGDEF: External(null)
+orn.impl.PageImpl@55eb1db2 (id: null)
+orn.impl.PlaceImpl@3eeabd2f (id: null)
+orn.impl.TransitionImpl@252a78ee (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@1839474b (id: null)
+orn.impl.PageImpl@5d4fa79d (id: null)
+orn.impl.PlaceImpl@18856447 (id: null)
+orn.impl.PlaceImpl@23087d61 (id: null)
+
+	Prefix(:=&lt;http://org.k1s/orn/ext/&gt;)
+ Prefix(basic:=&lt;http://t.k1s.org/OntologyReastrictedNets/basic/&gt;)
+ Prefix(xsd:=&lt;http://www.w3.org/2001/XMLSchema#&gt;)
+ Prefix(owl:=&lt;http://www.w3.org/2002/07/owl#&gt;)
+ Prefix(cpn:=&lt;http://hib.no/SADLTest/cpn&gt;)
+ 
+ Ontology(&lt;http://org.k1s/orn/ext/&gt;
+  Import( &lt;http://t.k1s.org/OntologyReastrictedNets/basic.owl&gt; )
+  Import( &lt;http://t.k1s.org/OntologyReastrictedNets/cpn.owl&gt; )
+   
+  
+  SubClassOf( :Id basic:Pragmatic )
+  SubClassOf( :Id ObjectAllValuesFrom( :belongsTo cpn:Place ) ) 
+
+  SubClassOf( :External basic:Pragmatic )
+  SubClassOf( :External ObjectAllValuesFrom( :belongsTo :TransitionConnectedToId ) ) 
+
+
+  SubClassOf( :IdPlace ObjectAllValuesFrom( :hasPragmatic :id))
+  
+    SubClassOf( :IdPlace ObjectIntersectionOf(
+      cpn:Place
+  	  ObjectAllValuesFrom( :hasPragmatic :Id) 
+  	  ObjectExactCardinality( 1 :hasPragmatic )
+    )
+  )
+
+
+SubClassOf( :ArcFromId ObjectIntersectionOf(
+  		cpn:Arc
+  		ObjectAllValuesFrom( cpn:source :IdPlace) 
+  		ObjectExactCardinality( 1 cpn:source :IdPlace)
+  	)
+  )
+ 
+ SubClassOf( :TransitionConnectedToId ObjectIntersectionOf(
+  		cpn:Transition
+  		ObjectAllValuesFrom( :in :ArcFromId) 
+		
+  		)
+  	)
+  	
+
+Declaration( NamedIndividual( :toppage_Page ) )
+ClassAssertion( cpn:Page :toppage_Page )
+
+
+Declaration( NamedIndividual( :Client_Page ) )
+ClassAssertion( cpn:Page :Client_Page )
+
+
+Declaration( NamedIndividual( :start_Place))
+ClassAssertion( cpn:Place :start_Place) 
+
+
+Declaration( NamedIndividual( :extern_Transisiton))
+ClassAssertion( cpn:Transition :extern_Transisiton) 
+
+
+Declaration( NamedIndividual( :External_124347474))
+ClassAssertion( :External :External_124347474  ) 
+ObjectPropertyAssertion( :belongsTo :External_124347474 :extern_Transisiton )
+ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_124347474)
+
+Declaration( NamedIndividual( :arc))
+ClassAssertion( cpn:Arc :arc) 
+ObjectPropertyAssertion( cpn:source :arc :start_Place )
+ObjectPropertyAssertion( cpn:target :arc :extern_Transisiton )
+ObjectPropertyAssertion( :out  :start_Place :arc )
+ObjectPropertyAssertion( :in  :extern_Transisiton :arc)
+
+
+Declaration( NamedIndividual( :Server_Page ) )
+ClassAssertion( cpn:Page :Server_Page )
+
+
+Declaration( NamedIndividual( :ClientToServer_Place))
+ClassAssertion( cpn:Place :ClientToServer_Place) 
+
+
+Declaration( NamedIndividual( :channel_1568308708))
+ClassAssertion( :channel :channel_1568308708  ) 
+ObjectPropertyAssertion( :belongsTo :channel_1568308708 :ClientToServer_Place )
+ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_1568308708)
+
+Declaration( NamedIndividual( :ServerToClient_Place))
+ClassAssertion( cpn:Place :ServerToClient_Place) 
+
+
+Declaration( NamedIndividual( :channel_20911796))
+ClassAssertion( :channel :channel_20911796  ) 
+ObjectPropertyAssertion( :belongsTo :channel_20911796 :ServerToClient_Place )
+ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_20911796)
+
+)
+inititating: 28
+closing: 67
+checking: 66
+INCONSISTENT
+reason: Cannot do reasoning with inconsistent ontologies!
+Reason for inconsistency: No specific explanation was generated. Generic explanation: An individual belongs to a type and its complement
+</pre>
+</body>
+</html>

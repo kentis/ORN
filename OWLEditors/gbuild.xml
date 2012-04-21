@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ====================================================================== 
+     Mar 31, 2012 3:51:07 PM                                                        
+
+     project    
+     description
+                   
+     kent                                                                
+     ====================================================================== -->
+<project name="project" default="default">
+    <description>
+            description
+    </description>
+	<path id="groovy.path">
+	      <pathelement path="lib/groovy-all-1.8.6.jar"/>
+	    </path>
+	
+	<taskdef name="groovyc"
+	         classname="org.codehaus.groovy.ant.Groovyc"
+		classpathref="groovy.path"
+	         />
+    <!-- ================================= 
+          target: default              
+         ================================= -->
+    <target name="default" depends="depends" description="description">
+    	<groovyc srcdir="src/" destdir="bin/">
+    		<javac  debug="on" />	
+    	</groovyc>
+    		
+    </target>
+
+    <!-- - - - - - - - - - - - - - - - - - 
+          target: depends                      
+         - - - - - - - - - - - - - - - - - -->
+    <target name="depends">
+    </target>
+
+</project>

@@ -1,0 +1,37 @@
+uri "http://k1s.org/BasicSecurityProtocol" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $" .
+
+import "file://protocol.sadl" as protocol.
+
+CryptoAlgorithm is a class, described by reference with values of type string,
+					  described by fullfills with values of type string,
+					  described by approved_by with values of type string,
+					  described by updated with values of type date,
+					  described by keysize with a single value of type int.
+					  
+					  
+//CryptoAlgorithm is a type of Algorithm.
+
+
+AES(alias "RINJDAL-192") is an CryptoAlgorithm,
+has approved_by "NIST",
+has reference "Federal Information Processing Standards Publication 197, November 2001",
+has keysize 192 .
+
+
+RINJDAL-256 is an CryptoAlgorithm, has keysize 256 .
+RINJDAL-512 is an CryptoAlgorithm, has keysize 512 .
+
+RSA-1024 is an CryptoAlgorithm.
+
+Encrypt is a type of Oper, described by algoritm with values of type CryptoAlgorithm .
+Decrypt is a type of Oper, described by algorithm with values of type CryptoAlgorithm .
+
+
+
+
+
+
+Test: approved_by of AES is "NIST".
+Test: approved_by of RINJDAL-256 is not "NIST".
+Test: approved_by of RINJDAL-512 is not "NIST".

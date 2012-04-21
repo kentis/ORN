@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/dk.dtu.imm.se.mbse-pn.nppn/src"
+    modelPluginID="dk.dtu.imm.se.mbse-pn.nppn" modelName="NPPNNets" importerID="org.eclipse.emf.importer.ecore"
+    complianceLevel="6.0" copyrightFields="false" usedGenPackages="platform:/plugin/org.pnml.tools.epnk.pntypes.hlpngs.datatypes/model/HLPNGDataTypes.genmodel#//datatypes platform:/plugin/org.pnml.tools.epnk.pntypes.hlpng.pntd/model/HLPNGDefinition.genmodel#//hlpngdefinition platform:/plugin/org.pnml.tools.epnk/model/PNMLCoreModel.genmodel#//pnmlcoremodel platform:/plugin/org.pnml.tools.epnk/model/PNMLStructuredPNTypeModel.genmodel#//structuredpntypemodel">
+  <foreignModel>NPPNNets.ecore</foreignModel>
+  <genPackages prefix="Nppnnets" resource="XML" disposableProviderFactory="true" ecorePackage="NPPNNets.ecore#/">
+    <genClasses ecoreClass="NPPNNets.ecore#//NPPNType">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NPPNNets.ecore#//NPPNType/EReference0"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference NPPNNets.ecore#//NPPNType/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//Place">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NPPNNets.ecore#//Place/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//Transition">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NPPNNets.ecore#//Transition/pragmatics"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//Pragmatics">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference NPPNNets.ecore#//Pragmatics/structure"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//Arc">
+      <genFeatures createChild="false" ecoreFeature="ecore:EReference NPPNNets.ecore#//Arc/inscription"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//Inscription">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NPPNNets.ecore#//Inscription/text"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//PragStructure">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NPPNNets.ecore#//PragStructure/name"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute NPPNNets.ecore#//PragStructure/arguments"/>
+    </genClasses>
+    <genClasses ecoreClass="NPPNNets.ecore#//RefPlace"/>
+  </genPackages>
+</genmodel:GenModel>

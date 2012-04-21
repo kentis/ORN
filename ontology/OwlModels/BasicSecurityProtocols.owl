@@ -1,0 +1,75 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns="http://k1s.org/BasicSecurityProtocol#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xml:base="http://k1s.org/BasicSecurityProtocol">
+  <owl:Ontology rdf:about="http://k1s.org/BasicSecurityProtocol">
+    <owl:imports rdf:resource="http://k1s.org/protocol"/>
+    <owl:versionInfo>$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $</owl:versionInfo>
+    <rdfs:comment xml:lang="en">This ontology was created from a SADL file 'BasicSecurityProtocols.sadl' and should not be edited.</rdfs:comment>
+  </owl:Ontology>
+  <owl:Class rdf:ID="Decrypt">
+    <rdfs:subClassOf rdf:resource="http://k1s.org/protocol#Oper"/>
+  </owl:Class>
+  <owl:Class rdf:ID="Encrypt">
+    <rdfs:subClassOf rdf:resource="http://k1s.org/protocol#Oper"/>
+  </owl:Class>
+  <owl:Class rdf:ID="CryptoAlgorithm">
+    <rdfs:subClassOf>
+      <owl:Restriction>
+        <owl:maxCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+        >1</owl:maxCardinality>
+        <owl:onProperty>
+          <owl:DatatypeProperty rdf:ID="keysize"/>
+        </owl:onProperty>
+      </owl:Restriction>
+    </rdfs:subClassOf>
+  </owl:Class>
+  <owl:ObjectProperty rdf:ID="algoritm">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#Encrypt"/>
+    <rdfs:range rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+  </owl:ObjectProperty>
+  <owl:ObjectProperty rdf:ID="algorithm">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#Decrypt"/>
+    <rdfs:range rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+  </owl:ObjectProperty>
+  <owl:DatatypeProperty rdf:ID="fullfills">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:about="http://k1s.org/BasicSecurityProtocol#keysize">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="updated">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#date"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="approved_by">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <owl:DatatypeProperty rdf:ID="reference">
+    <rdfs:domain rdf:resource="http://k1s.org/BasicSecurityProtocol#CryptoAlgorithm"/>
+    <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+  </owl:DatatypeProperty>
+  <CryptoAlgorithm rdf:ID="RINJDAL-512">
+    <keysize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >512</keysize>
+  </CryptoAlgorithm>
+  <CryptoAlgorithm rdf:ID="RINJDAL-256">
+    <keysize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >256</keysize>
+  </CryptoAlgorithm>
+  <CryptoAlgorithm rdf:ID="AES">
+    <rdfs:label>RINJDAL-192</rdfs:label>
+    <keysize rdf:datatype="http://www.w3.org/2001/XMLSchema#int"
+    >192</keysize>
+    <reference rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >Federal Information Processing Standards Publication 197, November 2001</reference>
+    <approved_by rdf:datatype="http://www.w3.org/2001/XMLSchema#string"
+    >NIST</approved_by>
+  </CryptoAlgorithm>
+  <CryptoAlgorithm rdf:ID="RSA-1024"/>
+</rdf:RDF>

@@ -1,0 +1,24 @@
+<html xmlns:lxslt="http://xml.apache.org/xslt" xmlns:stringutils="xalan://org.apache.tools.ant.util.StringUtils">
+<head>
+<META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Standard Output from ORNUtilsTests</title>
+</head>
+<body>
+<pre>axioms
+Declaration(NamedIndividual(&lt;http://org.k1s/orn/ext/theId&gt;))
+ClassAssertion(&lt;http://org.k1s/orn/ext/external&gt; &lt;http://org.k1s/orn/ext/theExt&gt;)
+SubClassOf(&lt;http://org.k1s/orn/ext/external&gt; ObjectIntersectionOf(ObjectAllValuesFrom(&lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/id&gt;) ObjectMinCardinality(1 &lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/id&gt;)))
+SubClassOf(owl:Thing ObjectOneOf(&lt;http://org.k1s/orn/ext/theExt&gt; &lt;http://org.k1s/orn/ext/theId&gt;))
+Declaration(NamedIndividual(&lt;http://org.k1s/orn/ext/theExt&gt;))
+Declaration(Class(&lt;http://org.k1s/orn/ext/external&gt;))
+NegativeObjectPropertyAssertion(&lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/theId&gt; &lt;http://org.k1s/orn/ext/theExt&gt;)
+NegativeObjectPropertyAssertion(&lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/theExt&gt; &lt;http://org.k1s/orn/ext/theExt&gt;)
+DisjointClasses(&lt;http://org.k1s/orn/ext/external&gt; &lt;http://org.k1s/orn/ext/id&gt;)
+ClassAssertion(&lt;http://org.k1s/orn/ext/id&gt; &lt;http://org.k1s/orn/ext/theId&gt;)
+NegativeObjectPropertyAssertion(&lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/theId&gt; &lt;http://org.k1s/orn/ext/theId&gt;)
+Declaration(Class(&lt;http://org.k1s/orn/ext/id&gt;))
+ObjectPropertyAssertion(&lt;http://org.k1s/orn/ext/ids&gt; &lt;http://org.k1s/orn/ext/theExt&gt; &lt;http://org.k1s/orn/ext/theId&gt;)
+-----------------------------------
+</pre>
+</body>
+</html>

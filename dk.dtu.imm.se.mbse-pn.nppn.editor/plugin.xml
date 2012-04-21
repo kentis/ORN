@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="nppnnets.presentation.NppnnetsModelWizardID"
+            name="%_UI_NppnnetsModelWizard_label"
+            class="nppnnets.presentation.NppnnetsModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/NppnnetsModelFile.gif">
+         <description>%_UI_NppnnetsModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <editor
+            id="nppnnets.presentation.NppnnetsEditorID"
+            name="%_UI_NppnnetsEditor_label"
+            icon="icons/full/obj16/NppnnetsModelFile.gif"
+            extensions="nppnnets"
+            class="nppnnets.presentation.NppnnetsEditor"
+            contributorClass="nppnnets.presentation.NppnnetsActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

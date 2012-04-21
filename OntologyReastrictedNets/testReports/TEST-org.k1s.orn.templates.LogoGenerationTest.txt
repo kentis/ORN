@@ -1,0 +1,33 @@
+Testsuite: org.k1s.orn.templates.LogoGenerationTest
+Tests run: 3, Failures: 0, Errors: 0, Time elapsed: 1.892 sec
+------------- Standard Output ---------------
+PRAGDEF: External()
+PRAGDEF: pd()
+PRAGDEF: fd(10)
+External()
+PRAGDEF: External()
+PRAGDEF: pd()
+PRAGDEF: fd(10)
+PRAGDEF: External()
+PRAGDEF: repeat(2)
+PRAGDEF: pd()
+PRAGDEF: fd(10)
+searching for orn.impl.PlaceImpl@a1e940b (id: null)
+searching for orn.impl.PlaceImpl@a1e940b (id: null) in Testpage
+checking orn.impl.TransitionImpl@176f5261 (id: null)
+checking orn.impl.PageImpl@d896a4c (id: null)
+checking orn.impl.PlaceImpl@a1e940b (id: null)
+returning  page2
+checking orn.impl.TransitionImpl@38a1aa85 (id: null)
+checking org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@7dc21ece (id: null)
+checking org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@5374a6e2 (id: null)
+retval: page2
+got page2 from orn.impl.PageImpl@d896a4c (id: null)
+retval: page2
+found page2
+found page page2
+------------- ---------------- ---------------
+
+Testcase: testFindExternal took 1.091 sec
+Testcase: testGenerateLogoNet took 0.379 sec
+Testcase: testGenerateLogoNetWithRepeat took 0.116 sec

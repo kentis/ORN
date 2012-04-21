@@ -1,0 +1,22 @@
+Testsuite: org.k1s.orn.owl.ORNUtilsTests
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.884 sec
+------------- Standard Output ---------------
+axioms
+Declaration(NamedIndividual(<http://org.k1s/orn/ext/theId>))
+ClassAssertion(<http://org.k1s/orn/ext/external> <http://org.k1s/orn/ext/theExt>)
+SubClassOf(<http://org.k1s/orn/ext/external> ObjectIntersectionOf(ObjectAllValuesFrom(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/id>) ObjectMinCardinality(1 <http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/id>)))
+SubClassOf(owl:Thing ObjectOneOf(<http://org.k1s/orn/ext/theExt> <http://org.k1s/orn/ext/theId>))
+Declaration(NamedIndividual(<http://org.k1s/orn/ext/theExt>))
+Declaration(Class(<http://org.k1s/orn/ext/external>))
+NegativeObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/theId> <http://org.k1s/orn/ext/theExt>)
+NegativeObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/theExt> <http://org.k1s/orn/ext/theExt>)
+DisjointClasses(<http://org.k1s/orn/ext/external> <http://org.k1s/orn/ext/id>)
+ClassAssertion(<http://org.k1s/orn/ext/id> <http://org.k1s/orn/ext/theId>)
+NegativeObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/theId> <http://org.k1s/orn/ext/theId>)
+Declaration(Class(<http://org.k1s/orn/ext/id>))
+ObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/theExt> <http://org.k1s/orn/ext/theId>)
+-----------------------------------
+------------- ---------------- ---------------
+
+Testcase: testcloseTheWorldForIndiviualsValid took 1.582 sec
+Testcase: testcloseTheWorldForIndiviualsInValid took 0.022 sec

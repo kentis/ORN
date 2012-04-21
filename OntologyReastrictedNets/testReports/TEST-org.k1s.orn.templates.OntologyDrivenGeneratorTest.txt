@@ -1,0 +1,51 @@
+Testsuite: org.k1s.orn.templates.OntologyDrivenGeneratorTest
+Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 1.744 sec
+------------- Standard Output ---------------
+PRAGDEF: Send()
+PRAGDEF: External()
+PRAGDEF: Principal()
+|ROOT, ROOT, null|
+created |ROOT, ROOT, null|
+with children []
+[]
+PRAGDEF: Principal()
+PRAGDEF: Principal()
+PRAGDEF: External(msg)
+PRAGDEF: Send(msg)
+PRAGDEF: External(msg)
+PRAGDEF: Recieve(msg)
+orn.impl.PageImpl@2dc0435 (id: null)
+orn.impl.PageImpl@23de4dd8 (id: null)
+|ROOT, ROOT, null|
+|null, null, null|
+|null, null, null|
+|null, null, null|
+|null, null, null|
+|null, null, null|
+created |ROOT, ROOT, null|
+with children [|null, null, class Server {
+	%%yield%%
+}|, |null, null, class Server {
+	%%yield%%
+}|]
+[class Server {
+	def start(){
+	send(msg)
+}
+}, class Server {
+	def start(){
+	
+}
+}]
+------------- ---------------- ---------------
+
+Testcase: testGenerate took 1.014 sec
+	FAILED
+
+junit.framework.AssertionFailedError: 
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:175)
+	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.testGenerate(OntologyDrivenGeneratorTest.groovy:23)
+
+Testcase: testSimpleProtocol took 0.47 sec
