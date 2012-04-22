@@ -38,6 +38,33 @@ class OntologyDrivenGeneratorTest {
 		println file
 		assertThat file, is(not(null))
 		
+		def output = []
+		def client = new ProtcolRunner().run(file[0], "new Client()")
+		
+		def server = new ProtcolRunner().run(file[1], "new Server()")
+		
+		//server.metaClass.println { String str -> output << str }
+		
+		
+		def buf = new ByteArrayOutputStream()
+		def newOut = new PrintStream(buf)
+		def saveOut = System.out
+		
+		
+		System.out = newOut
+		
+		
+		def t = Thread.start { server.start(31337) }
+		
+		client.start("hallo",[port: 31337, host:'localhost'])
+		
+		
+		Thread.sleep 1000
+		
+		
+		System.out = saveOut
+		println buf.toString().trim()
+		assertEquals( "hallo", buf.toString().trim() )
 	}
 	
 	

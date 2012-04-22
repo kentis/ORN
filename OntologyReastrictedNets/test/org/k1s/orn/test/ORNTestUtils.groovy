@@ -29,7 +29,7 @@ class ORNTestUtils {
 		//Root page
 		def root = getPage()
 		
-		Page client = getPage("Server")
+		Page client = getPage("Client")
 		addPrag "Principal", "", client
 		root.getObject().add client
 		
@@ -49,7 +49,7 @@ class ORNTestUtils {
 		//Client page
 		
 		def clientExt = getTransition("start")
-		addPrag "External", "msg", clientExt
+		addPrag "External", "msg, server", clientExt
 		 
 		def waitSend = getPlace("waitSend")
 		
@@ -68,12 +68,12 @@ class ORNTestUtils {
 		
 		//Server page
 		def serverExt = getTransition("start")
-		addPrag "External", "msg", serverExt
+		addPrag "External", "portNo", serverExt
 		
 		def waitRecieve = getPlace("waitRecieve")
 		
 		def recieve = getTransition("recieve")
-		addPrag "Recieve", "msg", send
+		addPrag "Recieve", "msg", recieve
 		
 		def arc4 = getArc(serverExt, waitRecieve)
 		def arc5 = getArc(waitRecieve, recieve)
@@ -112,7 +112,7 @@ class ORNTestUtils {
 			
 			Send(pragmatic: 'Send', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/sendMessage.tmpl', dependencies: 'channels')
 			
-			Recieve(pragmatic: 'Revieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl', dependencies: 'channels')
+			Recieve(pragmatic: 'Recieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl', dependencies: 'channels')
 		}
 	}
 	
