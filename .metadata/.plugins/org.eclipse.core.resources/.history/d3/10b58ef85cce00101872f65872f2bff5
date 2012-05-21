@@ -1,0 +1,26 @@
+uri "http://k1s.org/protocol" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $" .
+
+Pragmatic is a top-level class.
+Property is a top-level class.
+
+Entity is a type of Pragmatic.
+
+Channel is a type of Pragmatic, described by properties with values of type Property.
+
+
+Operation is a Pragmatic.
+
+
+
+Channelporoperty is a type of Property.
+
+Nonreordering is a Channelporoperty.
+
+
+
+Stream is a type of Channel.
+
+Stream has value of 
+
+Datagram is a type of Channel.

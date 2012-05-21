@@ -1,0 +1,202 @@
+package org.k1s.orn.templates;
+
+import org.eclipse.core.internal.runtime.InternalPlatform;
+import org.eclipse.core.runtime.Platform;
+import org.eclipse.emf.common.util.URI;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.resource.ResourceSet;
+import org.eclipse.emf.ecore.resource.impl.ResourceSetImpl;
+import org.junit.Test;
+import org.k1s.orn.test.ORNTestUtils;
+import org.k1s.orn.test.ePNKBuilder;
+import org.pnml.tools.epnk.pnmlcoremodel.Page;
+import org.pnml.tools.epnk.pnmlcoremodel.PnmlcoremodelPackage;
+import org.pnml.tools.epnk.pnmlcoremodel.Transition;
+import org.pnml.tools.epnk.pnmlcoremodel.impl.PetriNetDocImpl;
+import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLResource;
+import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLResourceFactory;
+
+import orn.OrnFactory;
+import orn.OrnPackage;
+
+import static org.junit.Assert.*;
+import static org.hamcrest.CoreMatchers.*;
+class OntologyDrivenGeneratorTest {
+	
+	
+	
+	
+//	@Test
+//	void testGenerate(){
+//		def pn = getPrincipalExternalNet()
+//		def bindings = ORNTestUtils.createGroovyBindings()
+//		
+//		def file = new OntologyDrivenGenerator().generate( pn, bindings )
+//		println file
+//		assertThat file, is(not(null))
+//		assertTrue file.size() > 0
+//		
+//		assertTrue file.contains("class")
+//		assertTrue file.contains("def External")
+//		assertTrue file.contains("send")
+//		
+//		println file
+//	}
+	
+	@Test
+	void testSimpleProtocol(){
+		def pn = ORNTestUtils.getSimpleProtocolPN()
+		def bindings = ORNTestUtils.createGroovyBindings()
+		assertThat pn, is(not(null))
+		def file = new OntologyDrivenGenerator().generate( pn, bindings )
+		println file
+		assertThat file, is(not(null))
+		
+		def output = []
+		def client = new ProtcolRun().run(file[0], "new Client()")
+		
+		def server = new ProtcolRun().run(file[1], "new Server()")
+		
+		//server.metaClass.println { String str -> output << str }
+		
+		
+		def buf = new ByteArrayOutputStream()
+		def newOut = new PrintStream(buf)
+		def saveOut = System.out
+		
+		
+		System.out = newOut
+		
+		
+		def t = Thread.start { server.start(31337) }
+		
+		client.start("hei",[port: 31337, host:'localhost'])
+		
+		
+		Thread.sleep 1000
+		
+		
+		System.out = saveOut
+		println buf.toString().trim()
+		assertEquals( "hei", buf.toString().trim() )
+	}
+	
+	@Test
+	void testWSNet() {
+		def pn = getWebSocetNet()
+		def bindings = ORNTestUtils.createGroovyBindingsTCP()
+		assertThat pn, is(not(null))
+		def file = new OntologyDrivenGenerator().generate( pn, bindings )
+		println file
+		assertThat file, is(not(null))
+		
+		fail("nyi")
+	}
+	
+	
+	@Test
+	void testSimpleBranchingNet(){
+		def pn = getBranchingNet()
+		
+		def bindings = ORNTestUtils.createGroovyBindings()
+		assertThat pn, is(not(null))
+		def file = new OntologyDrivenGenerator().generate( pn, bindings )
+		println pn.page[0].object[0].pragmatics
+		println "output: $file"
+		assertThat file, is(not(null))
+		fail("nyi")
+	}
+	
+	def getBranchingNet(){
+		def builder = new ePNKBuilder(OrnFactory.eINSTANCE)
+		
+		def pn = builder.make {
+			page(name:'root'){
+				def ch = place(name:'channel', labels:[pragmatics: "Channel()"])
+				
+				page(name: 'Client', labels:[pragmatics: "Principal()"]){
+					
+					def ext = transition(name:'ext', labels:[pragmatics: "External(a,b,c, server)"])
+					
+					def branch = place(name: 'branch',labels:[pragmatics: "Id(cond: '(c a1)(t a2)')"])
+					arc(ext,branch)
+					
+					def sendA = transition(name: 'sendA', labels:[pragmatics: "Send(a)"])
+					arc(branch, sendA, "a1")
+					
+					def sendB = transition(name: 'sendB', labels:[pragmatics: "Send(b)"])
+					arc(branch, sendB, "a2")
+					
+					
+					def merge = place(name: 'merge',labels:[pragmatics: "Id(closeCond: true)"])
+					arc(sendA, merge)
+					arc(sendB, merge)
+					
+					def	noop = transition(name: 'noop')
+				}
+			}
+		}
+	}
+	
+	def getWebSocetNet(){
+		def ornPackage = OrnPackage.eINSTANCE
+		def pnmlPackage = PnmlcoremodelPackage.eINSTANCE
+		ResourceSet rss = new ResourceSetImpl()
+		
+//		rss.getResourceFactoryRegistry().getExtensionToFactoryMap().put("pnml", new PNMLResourceFactory())
+//		
+//		rss.getPackageRegistry().put(ornPackage.getNsURI(), ornPackage)
+		//rss.getPackageRegistry().put(pnmlPackage.getNsURI(), pnmlPackage)
+		def uri = URI.createURI("file://home/kent/runtime-EclipseApplication/ornTest/model/ORNws.pnml")
+		//org.k1s.orn.templates.PNMLResource res = new org.k1s.orn.templates.PNMLResource(uri)
+//		println res.getAllContents()
+//		println res
+		Resource resource = rss.getResource(uri, true)
+		assertThat resource, is(not(null))
+//		resource.contents.each { 
+//			println "res: $it"	
+//		}
+		PetriNetDocImpl da
+		return  resource.contents[0].net[0]
+		//new PNMLSlurper().slurp new File('/home/kent/ws-ePNK/OntologyReastrictedNets/model/ORNws.pnml')
+	}
+	
+	def getPrincipalExternalNet(){
+		def pn = ORNTestUtils.getPetriNet()
+		
+		Transition send = ORNTestUtils.getTransition("Send")
+		ORNTestUtils.addPrag "Send", "", send
+		def external = ORNTestUtils.getTransition("External")
+		ORNTestUtils.addPrag "External", "", external
+		def place = ORNTestUtils.getPlace()
+	
+		def arcE2P = ORNTestUtils.getArc(external, place)
+		def arcP2E = ORNTestUtils.getArc(place, send)
+		
+		Page page = ORNTestUtils.getPage()
+		page.object.add send
+		page.object.add external
+		ORNTestUtils.addPrag "Principal", "", page
+		
+		
+		
+		pn.page << page
+		
+		
+		
+		return pn
+				
+		
+	}
+	
+	
+	
+}
+class ProtcolRun {
+	
+		def run(String code, String starter){
+			return new GroovyShell().evaluate("${code}\n${starter}")
+		}
+		
+	}
+	

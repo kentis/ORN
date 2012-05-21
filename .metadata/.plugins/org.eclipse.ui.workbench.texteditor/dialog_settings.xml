@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="317" key="DIALOG_WIDTH"/>
+		<item value="97" key="DIALOG_Y_ORIGIN"/>
+		<item value="523" key="DIALOG_HEIGHT"/>
+		<item value="1027" key="DIALOG_X_ORIGIN"/>
+		<item value="1|Cantarell|11.0|0|GTK|1|" key="DIALOG_FONT_NAME"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="true" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="javac" key="selection"/>
+		<list key="findhistory">
+			<item value="javac"/>
+			<item value="groovyc"/>
+			<item value=":ExternalTemplate"/>
+			<item value="READY_RefPlace_600370740"/>
+			<item value="2a5a6543-324e-4b14-a17c-d509feaf70c3"/>
+			<item value="READY_RefPlace_214674003"/>
+			<item value="READY_RefPlace"/>
+			<item value="RefPlace"/>
+		</list>
+		<list key="replacehistory">
+			<item value=":Recieve"/>
+			<item value=":Send"/>
+			<item value=""/>
+			<item value="OrnFactory"/>
+			<item value="OrnFactoryImpl"/>
+			<item value=".class.name == &quot;org.k1s.nppn.generator.Variable&quot;"/>
+			<item value=".class.name == &quot;"/>
+			<item value=".class.name == &quot;org.k1s.nppn.generator.VariableGroup&quot;"/>
+		</list>
+	</section>
+</section>

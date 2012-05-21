@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+ <copyright>
+ </copyright>
+
+ $Id$
+-->
+
+<plugin>
+
+<extension
+         id="dk.dtu.imm.se.mbse-pn.nppn"
+         name="NPPNNet"
+         point="org.pnml.tools.epnk.pntd">
+      <type
+            class="nppnnets.impl.NPPNTypeImpl"
+            description="NPPN">
+      </type>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <package
+            uri="http://k1s.org/epnk/nppn"
+            class="nppnnets.NppnnetsPackage"
+            genModel="model/NPPNNets.genmodel"/>
+   </extension>
+
+   <extension point="org.eclipse.emf.ecore.extension_parser">
+      <parser
+            type="nppnnets"
+            class="nppnnets.util.NppnnetsResourceFactoryImpl"/>
+   </extension>
+
+<extension
+         point="org.eclipse.ui.commands">
+         <command
+            name="import cpn"
+            
+            id="org.k1s.nppn.epnk.ImportCommand">
+      </command>
+         
+         
+</extension>
+
+
+         <extension
+         point="org.eclipse.ui.commands">
+         <command
+            name="generate"
+            
+            id="org.k1s.nppn.epnk.GenerateCommand">
+      </command>
+</extension>
+
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            commandId="org.k1s.nppn.epnk.ImportCommand"
+            class="org.k1s.epkn.cpnimport.ImportHandler">
+      </handler>
+      <handler
+            commandId="org.k1s.nppn.epnk.GenerateCommand"
+            class="org.k1s.nppn.generator.GenerateHandler">
+      </handler>
+
+
+   </extension>
+
+
+
+<extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+        locationURI="popup:org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML"    >
+         <menu
+               id="org.pnml.tools.epnk.actions.standardmenu2"
+               label="NPPN"
+            >
+            <separator
+                  name="group2">
+            </separator>
+         <command
+               commandId="org.k1s.nppn.epnk.ImportCommand"
+               id="org.k1s.epnk.actions.Import"
+               label="Import"
+               >
+         </command>
+         <command
+               commandId="org.k1s.nppn.epnk.GenerateCommand"
+               id="org.k1s.epnk.actions.Generate"
+               label="Generate"
+               >
+         </command>
+         </menu>
+         
+      </menuContribution>
+   </extension>
+
+
+
+</plugin>

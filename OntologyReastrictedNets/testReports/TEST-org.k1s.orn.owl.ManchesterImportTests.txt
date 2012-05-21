@@ -1,5 +1,5 @@
 Testsuite: org.k1s.orn.owl.ManchesterImportTests
-Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 1.895 sec
+Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 2.08 sec
 ------------- Standard Error -----------------
 org.semanticweb.owlapi.io.UnparsableOntologyException: Problem parsing string:ontology1
 Could not parse ontology.  Either a suitable parser could not be found, or parsing failed.  See parser logs below for explanation.
@@ -99,8 +99,8 @@ Encountered su:Thesuperclass at line 13 column 14. Expected one of:
 	at org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner.main(JUnitTestRunner.java:768)
 ------------- ---------------- ---------------
 
-Testcase: testRemoteIsParseable took 1.338 sec
-Testcase: testImports took 0.265 sec
+Testcase: testRemoteIsParseable took 1.492 sec
+Testcase: testImports took 0.271 sec
 	FAILED
 
 junit.framework.AssertionFailedError: 

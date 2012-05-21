@@ -1,9 +1,9 @@
 Testsuite: org.k1s.orn.owl.ManchesterSyntaxBuilderTests
-Tests run: 5, Failures: 1, Errors: 0, Time elapsed: 1.939 sec
+Tests run: 5, Failures: 1, Errors: 0, Time elapsed: 2.316 sec
 ------------- Standard Output ---------------
-org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@41021f34 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@345c98f3 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@2b3d9460 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@802b249 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@2fa6a1a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@64bef361 (id: null)
 Prefix: : <http://org.k1s/orn/customontology>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -34,9 +34,9 @@ Individual: arc1
 	Fact: Arc
 	Types: Arc
 
-org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@6328edf2 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@141dddba (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@34c7e8a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@7df1bd98 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@9d686c1 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@6328edf2 (id: null)
 ------------- ---------------- ---------------
 ------------- Standard Error -----------------
 org.semanticweb.owlapi.model.UnloadableImportException: Could not loaded imported ontology: <http://hib.no/SADLTest/cpn.owl> Cause: http://www.hib.no/SADLTest/cpn.owl
@@ -101,10 +101,10 @@ Caused by: java.io.FileNotFoundException: http://www.hib.no/SADLTest/cpn.owl
 	... 38 more
 ------------- ---------------- ---------------
 
-Testcase: testBuildPlace took 0.791 sec
-Testcase: testBuildTransition took 0.01 sec
-Testcase: testBuildEmptyPage took 0.085 sec
-Testcase: testBuildSmallPetriNet took 0.06 sec
+Testcase: testBuildPlace took 1.038 sec
+Testcase: testBuildTransition took 0.017 sec
+Testcase: testBuildEmptyPage took 0.093 sec
+Testcase: testBuildSmallPetriNet took 0.077 sec
 	FAILED
 
 junit.framework.AssertionFailedError: 
@@ -113,4 +113,4 @@ junit.framework.AssertionFailedError:
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:175)
 	at org.k1s.orn.owl.ManchesterSyntaxBuilderTests.testBuildSmallPetriNet(ManchesterSyntaxBuilderTests.groovy:108)
 
-Testcase: testBuildSmallPetriNetAndParse took 0.696 sec
+Testcase: testBuildSmallPetriNetAndParse took 0.732 sec

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="CopyToImageDialog">
+		<item value="svg" key="CopyToImageDialog.imageFormat"/>
+		<item value="/home/kent/projects/phd/dtu/images" key="CopyToImageDialog.folder"/>
+		<item value="false" key="CopyToImageDialog.overwriteExisting"/>
+		<item value="false" key="CopyToImageDialog.exportToHTML"/>
+	</section>
+</section>

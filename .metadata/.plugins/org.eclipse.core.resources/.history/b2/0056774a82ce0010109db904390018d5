@@ -1,0 +1,16 @@
+uri "http://k1s.org/BasicSecurityProtocol" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $" .
+
+import "file://protocol.sadl" as protocol.
+
+Encrypt is a type of Operation, described by property with values of type Property .
+
+Decrypt is a type of Operation, described by property with values of type Property .
+
+
+
+
+RSA is a Encrypt.
+
+
+Test: RSA is an Operation.

@@ -113,6 +113,76 @@ class ORNTestUtils {
 			Send(pragmatic: 'Send', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/sendMessage.tmpl', dependencies: 'channels')
 			
 			Recieve(pragmatic: 'Recieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl', dependencies: 'channels')
+			
+			
+			COND(pragmatic: '_COND_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/cond.tmpl')
+			TRUE(pragmatic: '_TRUE_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/true.tmpl')
+			EXPR(pragmatic: '_EXPR_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/expr.tmpl')
+			
+			Id(pragmatic: 'Id')
+			Cond(pragmatic: 'Cond', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/cond.tmpl', isContainer: true, isMultiContainer: true)
+			Loop(pragmatic: 'Loop', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/loop.tmpl', isContainer: true, isMultiContainer: true)
+			EndLoop(pragmatic: 'EndLoop', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/endLoop.tmpl')
+			Print(pragmatic: 'Print', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/print.tmpl')
+			RemoveHead(pragmatic: 'RemoveHead', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/remHead.tmpl')
+			Merge(pragmatic: 'Merge')
+			LCV(pragmatic: 'LCV')
+			Return(pragmatic: 'Return')
+			
+			STMT(pragmatic: 'Stmt', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/stmt.tmpl')
+		}
+	}
+	
+	static def createJavaBindings(){
+		return 	BindingsDSL.makeBindings {
+			
+			ClassTemplate(pragmatic: 'Principal', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/mainClass.tmpl', isContainer: true)
+			
+			ExternalTemplate(pragmatic: 'External', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/externalMethod.tmpl', isContainer: true)
+			
+			Send(pragmatic: 'Send', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/sendMessage.tmpl', dependencies: 'channels')
+			
+			Recieve(pragmatic: 'Recieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/recieveMessage.tmpl', dependencies: 'channels')
+			
+			COND(pragmatic: '_COND_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/cond.tmpl')
+			TRUE(pragmatic: '_TRUE_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/true.tmpl')
+			EXPR(pragmatic: '_EXPR_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/java/expr.tmpl')
+		}
+	}
+	
+	static def createLispBindings(){
+		return 	BindingsDSL.makeBindings {
+			
+			ClassTemplate(pragmatic: 'Principal', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/mainClass.tmpl', isContainer: true)
+			
+			ExternalTemplate(pragmatic: 'External', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/externalMethod.tmpl', isContainer: true)
+			
+			Send(pragmatic: 'Send', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/sendMessage.tmpl', dependencies: 'channels')
+			
+			Recieve(pragmatic: 'Recieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/recieveMessage.tmpl', dependencies: 'channels')
+			
+			COND(pragmatic: '_COND_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/cond.tmpl')
+			TRUE(pragmatic: '_TRUE_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/true.tmpl')
+			EXPR(pragmatic: '_EXPR_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/lisp/expr.tmpl')
+			
+		}
+	}
+	
+	static def createGroovyBindingsTCP(){
+		return 	BindingsDSL.makeBindings {
+			
+			ClassTemplate(pragmatic: 'Principal', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/mainClass.tmpl', isContainer: true)
+			
+			ExternalTemplate(pragmatic: 'External', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/externalMethod.tmpl', isContainer: true)
+			
+			Send(pragmatic: 'Send', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/sendMessageTCP.tmpl', dependencies: 'channels')
+			
+			Recieve(pragmatic: 'Recieve', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/recieveMessageTCP.tmpl', dependencies: 'channels')
+		
+			OpenChannel(pragmatic: 'OpenChannel', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/openChannel.tmpl', dependencies: 'channels')
+			COND(pragmatic: '_COND_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/cond.tmpl')
+			TRUE(pragmatic: '_TRUE_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/true.tmpl')
+			EXPR(pragmatic: '_EXPR_', template: '/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/expr.tmpl')
 		}
 	}
 	

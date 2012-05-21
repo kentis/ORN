@@ -1,0 +1,5 @@
+#Mon Apr 23 14:46:07 CEST 2012
+eclipse.preferences.version=1
+org.eclipse.debug.core.USE_STEP_FILTERS=true
+//org.eclipse.debug.core.PREFERRED_DELEGATES/org.eclipse.jdt.junit.launchconfig=org.eclipse.jdt.junit.launchconfig,debug;org.eclipse.jdt.junit.launchconfig,run
+org.eclipse.debug.core.PREF_BREAKPOINT_MANAGER_ENABLED_STATE=true

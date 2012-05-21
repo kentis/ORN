@@ -1,0 +1,64 @@
+package org.k1s.orn.owl
+
+
+import org.pnml.tools.epnk.pnmlcoremodel.Transition;
+import org.codehaus.groovy.tools.ast.TranformTestHelper;
+import org.pnml.tools.epnk.pnmlcoremodel.Page;
+import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
+
+class ManchesterSyntaxBuilder {
+
+	
+	String newIndividual(name, types, facts, sb){
+		sb.append("Individual: $name")
+		types.each {
+			sb.append("\t").append("Types: $it")		
+		}
+		
+		facts.each { 
+			sb.append("\t").append("Facts: $it")
+		}
+	}
+	
+	String pn2ManchesterSyntax(PetriNet pn){
+		def sb = new StringBuilder()
+		sb.append(ORNConstants.OWL_TEMPLATE).append("\n");
+		
+		Page topPage = pn.getPage().get(0);
+		
+		page2ManchesterSyntax(rootPage, sb, true);
+		
+		return sb.toString();
+	}
+	
+	def page2ManchesterSyntax(Page page, StringBuilder sb, isTop = false) {
+		sb.append("Individual: ${rootPage.name}")
+		sb.append("\t").append("Types: Page")
+		sb.append("\t").append("Facts: isTop \"${isTop}\"^^xsd:boolean")
+		
+		topPage.getObject().each { obj -> 
+			switch(obj){
+				case Page:
+					page2ManchesterSyntax(obj, sb)
+					break
+				case Place:
+					place2ManchesterSyntax(obj, page, sb)
+					break
+				case Transition:
+					transition2ManchesterSyntax(obj, page, sb)
+					break
+			}
+		}
+	}
+	
+	
+	def place2ManchesterSyntax(obj, page, sb){
+		
+	}
+	
+	def transition2ManchesterSyntax(obj, page, sb){
+		
+	}
+	
+	
+}

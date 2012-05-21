@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <testsuites>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="0" name="ORNImporterTests" package="org.k1s.orn" tests="1" time="2.562" timestamp="2012-04-21T17:30:50">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="0" name="ORNImporterTests" package="org.k1s.orn" tests="1" time="3.12" timestamp="2012-04-24T13:53:55">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -184,7 +184,7 @@
 
       </properties>
 
-      <testcase classname="org.k1s.orn.ORNImporterTests" name="testWS" time="2.252" />
+      <testcase classname="org.k1s.orn.ORNImporterTests" name="testWS" time="2.797" />
 
       <system-out><![CDATA[adding place
 PRAGDEF: channel()
@@ -212,14 +212,14 @@ adding place
 adding place
 adding place
 adding place
-[orn.impl.PageImpl@d2f41a5 (id: cb4ec598-9d25-4384-8dc0-cb59985083b0)]
-[orn.impl.PlaceImpl@2392d604 (id: f64fd860-fe4d-4318-8d9b-36c03da50f37), orn.impl.PlaceImpl@7d20b2da (id: 47841771-c4c7-4407-8908-bbae0a7ff019), orn.impl.PageImpl@6dbe4663 (id: ff933314-5d07-4146-b8db-b5576b3848fa), orn.impl.PageImpl@66ff45de (id: 5ffbe8bc-898a-4200-8085-2a8100f94ac9)]
+[orn.impl.PageImpl@1c67c1a6 (id: 65216305-61a5-4440-8f08-fb83fe6c960d)]
+[orn.impl.PlaceImpl@4412dd76 (id: 58b80d43-cbea-467f-a681-7cf95de420bf), orn.impl.PlaceImpl@328990e4 (id: 4f757a0f-ad73-4a80-a1ad-499a8f6d2b39), orn.impl.PageImpl@658782a7 (id: 168e5713-cecb-49e3-b7f5-7ab38223d3cf), orn.impl.PageImpl@2392d604 (id: db915243-6889-4ec3-bc92-5e130a3cd22a)]
 ]]></system-out>
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="1" name="ExternalIdFromNetTests" package="org.k1s.orn.owl" tests="2" time="3.12" timestamp="2012-04-21T17:30:53">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="1" name="ExternalIdFromNetTests" package="org.k1s.orn.owl" tests="2" time="3.404" timestamp="2012-04-24T13:53:59">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -403,21 +403,21 @@ adding place
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ExternalIdFromNetTests" name="testValidNetIsValid" time="2.318" />
+      <testcase classname="org.k1s.orn.owl.ExternalIdFromNetTests" name="testValidNetIsValid" time="2.436" />
 
-      <testcase classname="org.k1s.orn.owl.ExternalIdFromNetTests" name="testInValidNetIsValid" time="0.532" />
+      <testcase classname="org.k1s.orn.owl.ExternalIdFromNetTests" name="testInValidNetIsValid" time="0.65" />
 
       <system-out><![CDATA[PRAGDEF: channel(null)
 PRAGDEF: channel(null)
 PRAGDEF: Id(null)
 PRAGDEF: External(null)
-orn.impl.PageImpl@75568654 (id: null)
-orn.impl.PlaceImpl@b05eb6f (id: null)
-orn.impl.TransitionImpl@d34eb84 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@158105e8 (id: null)
-orn.impl.PageImpl@33f98d58 (id: null)
-orn.impl.PlaceImpl@44aea710 (id: null)
-orn.impl.PlaceImpl@6aadae91 (id: null)
+orn.impl.PageImpl@5d2a73d9 (id: null)
+orn.impl.PlaceImpl@2a48f675 (id: null)
+orn.impl.TransitionImpl@7b283052 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@317cfd38 (id: null)
+orn.impl.PageImpl@336d8196 (id: null)
+orn.impl.PlaceImpl@5a56b93a (id: null)
+orn.impl.PlaceImpl@33f98d58 (id: null)
 
 	Prefix(:=<http://org.k1s/orn/ext/>)
  Prefix(basic:=<http://t.k1s.org/OntologyReastrictedNets/basic/>)
@@ -474,19 +474,19 @@ Declaration( NamedIndividual( :start_Place))
 ClassAssertion( cpn:Place :start_Place) 
 
 
-Declaration( NamedIndividual( :Id_597457953))
-ClassAssertion( :Id :Id_597457953  ) 
-ObjectPropertyAssertion( :belongsTo :Id_597457953 :start_Place )
-ObjectPropertyAssertion( :hasPragmatic :start_Place :Id_597457953)
+Declaration( NamedIndividual( :Id_378423301))
+ClassAssertion( :Id :Id_378423301  ) 
+ObjectPropertyAssertion( :belongsTo :Id_378423301 :start_Place )
+ObjectPropertyAssertion( :hasPragmatic :start_Place :Id_378423301)
 
 Declaration( NamedIndividual( :extern_Transisiton))
 ClassAssertion( cpn:Transition :extern_Transisiton) 
 
 
-Declaration( NamedIndividual( :External_830274872))
-ClassAssertion( :External :External_830274872  ) 
-ObjectPropertyAssertion( :belongsTo :External_830274872 :extern_Transisiton )
-ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_830274872)
+Declaration( NamedIndividual( :External_404454518))
+ClassAssertion( :External :External_404454518  ) 
+ObjectPropertyAssertion( :belongsTo :External_404454518 :extern_Transisiton )
+ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_404454518)
 
 Declaration( NamedIndividual( :arc))
 ClassAssertion( cpn:Arc :arc) 
@@ -504,34 +504,34 @@ Declaration( NamedIndividual( :ClientToServer_Place))
 ClassAssertion( cpn:Place :ClientToServer_Place) 
 
 
-Declaration( NamedIndividual( :channel_643444394))
-ClassAssertion( :channel :channel_643444394  ) 
-ObjectPropertyAssertion( :belongsTo :channel_643444394 :ClientToServer_Place )
-ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_643444394)
+Declaration( NamedIndividual( :channel_1939520811))
+ClassAssertion( :channel :channel_1939520811  ) 
+ObjectPropertyAssertion( :belongsTo :channel_1939520811 :ClientToServer_Place )
+ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_1939520811)
 
 Declaration( NamedIndividual( :ServerToClient_Place))
 ClassAssertion( cpn:Place :ServerToClient_Place) 
 
 
-Declaration( NamedIndividual( :channel_2056454348))
-ClassAssertion( :channel :channel_2056454348  ) 
-ObjectPropertyAssertion( :belongsTo :channel_2056454348 :ServerToClient_Place )
-ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_2056454348)
+Declaration( NamedIndividual( :channel_1380741586))
+ClassAssertion( :channel :channel_1380741586  ) 
+ObjectPropertyAssertion( :belongsTo :channel_1380741586 :ServerToClient_Place )
+ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_1380741586)
 
 )
-inititating: 468
-closing: 374
-checking: 314
+inititating: 574
+closing: 396
+checking: 339
 PRAGDEF: channel(null)
 PRAGDEF: channel(null)
 PRAGDEF: External(null)
-orn.impl.PageImpl@55eb1db2 (id: null)
-orn.impl.PlaceImpl@3eeabd2f (id: null)
-orn.impl.TransitionImpl@252a78ee (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@1839474b (id: null)
-orn.impl.PageImpl@5d4fa79d (id: null)
-orn.impl.PlaceImpl@18856447 (id: null)
-orn.impl.PlaceImpl@23087d61 (id: null)
+orn.impl.PageImpl@3eeabd2f (id: null)
+orn.impl.PlaceImpl@252a78ee (id: null)
+orn.impl.TransitionImpl@7696452 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@58779959 (id: null)
+orn.impl.PageImpl@14df33ae (id: null)
+orn.impl.PlaceImpl@49b9ef36 (id: null)
+orn.impl.PlaceImpl@6913108b (id: null)
 
 	Prefix(:=<http://org.k1s/orn/ext/>)
  Prefix(basic:=<http://t.k1s.org/OntologyReastrictedNets/basic/>)
@@ -592,10 +592,10 @@ Declaration( NamedIndividual( :extern_Transisiton))
 ClassAssertion( cpn:Transition :extern_Transisiton) 
 
 
-Declaration( NamedIndividual( :External_124347474))
-ClassAssertion( :External :External_124347474  ) 
-ObjectPropertyAssertion( :belongsTo :External_124347474 :extern_Transisiton )
-ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_124347474)
+Declaration( NamedIndividual( :External_406406987))
+ClassAssertion( :External :External_406406987  ) 
+ObjectPropertyAssertion( :belongsTo :External_406406987 :extern_Transisiton )
+ObjectPropertyAssertion( :hasPragmatic :extern_Transisiton :External_406406987)
 
 Declaration( NamedIndividual( :arc))
 ClassAssertion( cpn:Arc :arc) 
@@ -613,24 +613,24 @@ Declaration( NamedIndividual( :ClientToServer_Place))
 ClassAssertion( cpn:Place :ClientToServer_Place) 
 
 
-Declaration( NamedIndividual( :channel_1568308708))
-ClassAssertion( :channel :channel_1568308708  ) 
-ObjectPropertyAssertion( :belongsTo :channel_1568308708 :ClientToServer_Place )
-ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_1568308708)
+Declaration( NamedIndividual( :channel_1309141002))
+ClassAssertion( :channel :channel_1309141002  ) 
+ObjectPropertyAssertion( :belongsTo :channel_1309141002 :ClientToServer_Place )
+ObjectPropertyAssertion( :hasPragmatic :ClientToServer_Place :channel_1309141002)
 
 Declaration( NamedIndividual( :ServerToClient_Place))
 ClassAssertion( cpn:Place :ServerToClient_Place) 
 
 
-Declaration( NamedIndividual( :channel_20911796))
-ClassAssertion( :channel :channel_20911796  ) 
-ObjectPropertyAssertion( :belongsTo :channel_20911796 :ServerToClient_Place )
-ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_20911796)
+Declaration( NamedIndividual( :channel_587758945))
+ClassAssertion( :channel :channel_587758945  ) 
+ObjectPropertyAssertion( :belongsTo :channel_587758945 :ServerToClient_Place )
+ObjectPropertyAssertion( :hasPragmatic :ServerToClient_Place :channel_587758945)
 
 )
-inititating: 28
-closing: 67
-checking: 66
+inititating: 33
+closing: 89
+checking: 83
 INCONSISTENT
 reason: Cannot do reasoning with inconsistent ontologies!
 Reason for inconsistency: No specific explanation was generated. Generic explanation: An individual belongs to a type and its complement
@@ -639,7 +639,7 @@ Reason for inconsistency: No specific explanation was generated. Generic explana
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="2" name="ExternalIdTests" package="org.k1s.orn.owl" tests="3" time="2.457" timestamp="2012-04-21T17:30:57">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="2" name="ExternalIdTests" package="org.k1s.orn.owl" tests="3" time="2.927" timestamp="2012-04-24T13:54:04">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -823,27 +823,27 @@ Reason for inconsistency: No specific explanation was generated. Generic explana
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testValid" time="1.619" />
+      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testValid" time="1.998" />
 
-      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testValidFromNet" time="0.197" />
+      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testValidFromNet" time="0.208" />
 
-      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testInvalid" time="0.357" />
+      <testcase classname="org.k1s.orn.owl.ExternalIdTests" name="testInvalid" time="0.374" />
 
-      <system-out><![CDATA[inititating: 527
-closing: 266
-checking: 295
-inititating: 20
-closing: 32
-checking: 28
-inititating: 26
-closing: 45
-checking: 29
+      <system-out><![CDATA[inititating: 723
+closing: 328
+checking: 322
 inititating: 31
-closing: 43
-checking: 23
+closing: 34
+checking: 29
 inititating: 30
-closing: 11
-checking: 18
+closing: 49
+checking: 36
+inititating: 39
+closing: 30
+checking: 23
+inititating: 28
+closing: 10
+checking: 13
 INCONSISTENT
 reason: Cannot do reasoning with inconsistent ontologies!
 Reason for inconsistency: No specific explanation was generated. Generic explanation: An individual belongs to a type and its complement
@@ -852,7 +852,7 @@ Reason for inconsistency: No specific explanation was generated. Generic explana
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="shrubbery" id="3" name="ManchesterImportTests" package="org.k1s.orn.owl" tests="2" time="1.895" timestamp="2012-04-21T17:31:01">
+  <testsuite errors="0" failures="1" hostname="shrubbery" id="3" name="ManchesterImportTests" package="org.k1s.orn.owl" tests="2" time="2.08" timestamp="2012-04-24T13:54:08">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -1036,9 +1036,9 @@ Reason for inconsistency: No specific explanation was generated. Generic explana
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testRemoteIsParseable" time="1.339" />
+      <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testRemoteIsParseable" time="1.492" />
 
-      <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testImports" time="0.268">
+      <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testImports" time="0.273">
           <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
@@ -1149,7 +1149,7 @@ Encountered su:Thesuperclass at line 13 column 14. Expected one of:
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="shrubbery" id="4" name="ManchesterSyntaxBuilderTests" package="org.k1s.orn.owl" tests="5" time="1.939" timestamp="2012-04-21T17:31:04">
+  <testsuite errors="0" failures="1" hostname="shrubbery" id="4" name="ManchesterSyntaxBuilderTests" package="org.k1s.orn.owl" tests="5" time="2.316" timestamp="2012-04-24T13:54:11">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -1333,13 +1333,13 @@ Encountered su:Thesuperclass at line 13 column 14. Expected one of:
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildPlace" time="0.792" />
+      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildPlace" time="1.04" />
 
-      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildTransition" time="0.011" />
+      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildTransition" time="0.017" />
 
-      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildEmptyPage" time="0.085" />
+      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildEmptyPage" time="0.094" />
 
-      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNet" time="0.064">
+      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNet" time="0.081">
           <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
@@ -1349,11 +1349,11 @@ Encountered su:Thesuperclass at line 13 column 14. Expected one of:
 
       </testcase>
 
-      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNetAndParse" time="0.696" />
+      <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNetAndParse" time="0.732" />
 
-      <system-out><![CDATA[org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@41021f34 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@345c98f3 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@2b3d9460 (id: null)
+      <system-out><![CDATA[org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@802b249 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@2fa6a1a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@64bef361 (id: null)
 Prefix: : <http://org.k1s/orn/customontology>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -1384,9 +1384,9 @@ Individual: arc1
 	Fact: Arc
 	Types: Arc
 
-org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@6328edf2 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@141dddba (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@34c7e8a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@7df1bd98 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@9d686c1 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@6328edf2 (id: null)
 ]]></system-out>
 
       <system-err><![CDATA[org.semanticweb.owlapi.model.UnloadableImportException: Could not loaded imported ontology: <http://hib.no/SADLTest/cpn.owl> Cause: http://www.hib.no/SADLTest/cpn.owl
@@ -1452,7 +1452,7 @@ Caused by: java.io.FileNotFoundException: http://www.hib.no/SADLTest/cpn.owl
 ]]></system-err>
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="5" name="ORNUtilsTests" package="org.k1s.orn.owl" tests="2" time="1.884" timestamp="2012-04-21T17:31:07">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="5" name="ORNUtilsTests" package="org.k1s.orn.owl" tests="2" time="2.057" timestamp="2012-04-24T13:54:14">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -1636,9 +1636,9 @@ Caused by: java.io.FileNotFoundException: http://www.hib.no/SADLTest/cpn.owl
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ORNUtilsTests" name="testcloseTheWorldForIndiviualsValid" time="1.583" />
+      <testcase classname="org.k1s.orn.owl.ORNUtilsTests" name="testcloseTheWorldForIndiviualsValid" time="1.71" />
 
-      <testcase classname="org.k1s.orn.owl.ORNUtilsTests" name="testcloseTheWorldForIndiviualsInValid" time="0.022" />
+      <testcase classname="org.k1s.orn.owl.ORNUtilsTests" name="testcloseTheWorldForIndiviualsInValid" time="0.021" />
 
       <system-out><![CDATA[axioms
 Declaration(NamedIndividual(<http://org.k1s/orn/ext/theId>))
@@ -1660,7 +1660,7 @@ ObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/the
       <system-err />
 
   </testsuite>
-  <testsuite errors="1" failures="0" hostname="shrubbery" id="6" name="ORNVerifierTest" package="org.k1s.orn.owl" tests="4" time="3.129" timestamp="2012-04-21T17:30:35">
+  <testsuite errors="1" failures="0" hostname="shrubbery" id="6" name="ORNVerifierTest" package="org.k1s.orn.owl" tests="4" time="3.494" timestamp="2012-04-24T13:53:37">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -1842,11 +1842,11 @@ ObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/the
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testVerifyLogo" time="1.146" />
+      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testVerifyLogo" time="1.296" />
 
-      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testInvalidNet" time="0.725" />
+      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testInvalidNet" time="0.779" />
 
-      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testPetiAugumentedNet" time="0.756">
+      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testPetiAugumentedNet" time="0.924">
           <error message="No such property: pragmatics for class: org.pnml.tools.epnk.pnmlcoremodel.impl.PageImpl" type="groovy.lang.MissingPropertyException">groovy.lang.MissingPropertyException: No such property: pragmatics for class: org.pnml.tools.epnk.pnmlcoremodel.impl.PageImpl
 	at org.codehaus.groovy.runtime.ScriptBytecodeAdapter.unwrap(ScriptBytecodeAdapter.java:49)
 	at org.codehaus.groovy.runtime.callsite.GetEffectivePojoPropertySite.getProperty(GetEffectivePojoPropertySite.java:63)
@@ -1863,7 +1863,7 @@ ObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/the
 
       </testcase>
 
-      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testRealInvalidNet" time="0.182" />
+      <testcase classname="org.k1s.orn.owl.ORNVerifierTest" name="testRealInvalidNet" time="0.175" />
 
       <system-out><![CDATA[false
 PRAGDEF: fd(10)
@@ -1874,7 +1874,7 @@ false
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="7" name="SyntaxConverterTest" package="org.k1s.orn.owl" tests="2" time="1.356" timestamp="2012-04-21T17:30:39">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="7" name="SyntaxConverterTest" package="org.k1s.orn.owl" tests="2" time="1.566" timestamp="2012-04-24T13:53:42">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -2058,9 +2058,9 @@ false
 
       </properties>
 
-      <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testManchesterToRDF" time="1.007" />
+      <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testManchesterToRDF" time="1.118" />
 
-      <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testRDFXMLToManchester" time="0.043" />
+      <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testRDFXMLToManchester" time="0.065" />
 
       <system-out><![CDATA[Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -2112,7 +2112,7 @@ Class: <http://example.com/owl/families/Man>
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="8" name="ATTTests" package="org.k1s.orn.templates" tests="5" time="1.337" timestamp="2012-04-21T17:31:09">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="8" name="ATTTests" package="org.k1s.orn.templates" tests="5" time="1.484" timestamp="2012-04-24T13:54:17">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -2296,20 +2296,20 @@ Class: <http://example.com/owl/families/Man>
 
       </properties>
 
-      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildPrincipal" time="1.012" />
+      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildPrincipal" time="1.11" />
 
-      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildExternal" time="0.0050" />
+      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildExternal" time="0.0060" />
 
       <testcase classname="org.k1s.orn.templates.ATTTests" name="testFindNextnode" time="0.0020" />
 
-      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildSend" time="0.0030" />
+      <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildSend" time="0.0020" />
 
-      <testcase classname="org.k1s.orn.templates.ATTTests" name="testATTForSimpleProtocol" time="0.033" />
+      <testcase classname="org.k1s.orn.templates.ATTTests" name="testATTForSimpleProtocol" time="0.042" />
 
       <system-out><![CDATA[PRAGDEF: Send()
 PRAGDEF: External()
 PRAGDEF: Principal()
-orn.impl.PageImpl@20873723 (id: null)
+orn.impl.PageImpl@4a504ec1 (id: null)
 PRAGDEF: Send()
 PRAGDEF: External()
 PRAGDEF: Send()
@@ -2317,18 +2317,18 @@ PRAGDEF: External()
 PRAGDEF: Send()
 PRAGDEF: Principal()
 PRAGDEF: Principal()
-PRAGDEF: External(msg)
+PRAGDEF: External(msg, server)
 PRAGDEF: Send(msg)
-PRAGDEF: External(msg)
+PRAGDEF: External(portNo)
 PRAGDEF: Recieve(msg)
-orn.impl.PageImpl@3fde891b (id: null)
-orn.impl.PageImpl@5f0f0625 (id: null)
+orn.impl.PageImpl@25cbfa42 (id: null)
+orn.impl.PageImpl@1420c906 (id: null)
 ]]></system-out>
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="shrubbery" id="9" name="BindingsDSLTests" package="org.k1s.orn.templates" tests="4" time="2.518" timestamp="2012-04-21T17:31:12">
+  <testsuite errors="0" failures="1" hostname="shrubbery" id="9" name="BindingsDSLTests" package="org.k1s.orn.templates" tests="4" time="2.963" timestamp="2012-04-24T13:54:20">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -2512,13 +2512,13 @@ orn.impl.PageImpl@5f0f0625 (id: null)
 
       </properties>
 
-      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovy" time="0.716" />
+      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovy" time="0.794" />
 
-      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyPlattformIsValid" time="1.416" />
+      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyPlattformIsValid" time="1.706" />
 
-      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyForBindings" time="0.051" />
+      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyForBindings" time="0.071" />
 
-      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyForBindingsContent" time="0.058">
+      <testcase classname="org.k1s.orn.templates.BindingsDSLTests" name="testgroovyForBindingsContent" time="0.065">
           <failure message=" Expected: is &quot;mainClass.tmpl&quot;      got: &quot;platform/groovy/mainClass.tmpl&quot; " type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 Expected: is &quot;mainClass.tmpl&quot;
      got: &quot;platform/groovy/mainClass.tmpl&quot;
@@ -2534,15 +2534,15 @@ Expected: is &quot;mainClass.tmpl&quot;
 
       </testcase>
 
-      <system-out><![CDATA[inititating: 562
-closing: 214
-checking: 514
+      <system-out><![CDATA[inititating: 564
+closing: 283
+checking: 726
 ]]></system-out>
 
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="10" name="LogoGenerationTest" package="org.k1s.orn.templates" tests="3" time="1.892" timestamp="2012-04-21T17:30:42">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="10" name="LogoGenerationTest" package="org.k1s.orn.templates" tests="3" time="1.962" timestamp="2012-04-24T13:53:45">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -2726,11 +2726,11 @@ checking: 514
 
       </properties>
 
-      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testFindExternal" time="1.092" />
+      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testFindExternal" time="0.986" />
 
-      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testGenerateLogoNet" time="0.379" />
+      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testGenerateLogoNet" time="0.467" />
 
-      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testGenerateLogoNetWithRepeat" time="0.116" />
+      <testcase classname="org.k1s.orn.templates.LogoGenerationTest" name="testGenerateLogoNetWithRepeat" time="0.128" />
 
       <system-out><![CDATA[PRAGDEF: External()
 PRAGDEF: pd()
@@ -2743,17 +2743,17 @@ PRAGDEF: External()
 PRAGDEF: repeat(2)
 PRAGDEF: pd()
 PRAGDEF: fd(10)
-searching for orn.impl.PlaceImpl@a1e940b (id: null)
-searching for orn.impl.PlaceImpl@a1e940b (id: null) in Testpage
-checking orn.impl.TransitionImpl@176f5261 (id: null)
-checking orn.impl.PageImpl@d896a4c (id: null)
-checking orn.impl.PlaceImpl@a1e940b (id: null)
+searching for orn.impl.PlaceImpl@2415a94f (id: null)
+searching for orn.impl.PlaceImpl@2415a94f (id: null) in Testpage
+checking orn.impl.TransitionImpl@1e1ec86 (id: null)
+checking orn.impl.PageImpl@176f5261 (id: null)
+checking orn.impl.PlaceImpl@2415a94f (id: null)
 returning  page2
-checking orn.impl.TransitionImpl@38a1aa85 (id: null)
+checking orn.impl.TransitionImpl@d896a4c (id: null)
+checking org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@38a1aa85 (id: null)
 checking org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@7dc21ece (id: null)
-checking org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@5374a6e2 (id: null)
 retval: page2
-got page2 from orn.impl.PageImpl@d896a4c (id: null)
+got page2 from orn.impl.PageImpl@176f5261 (id: null)
 retval: page2
 found page2
 found page page2
@@ -2762,7 +2762,7 @@ found page page2
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="0" hostname="shrubbery" id="11" name="ODGVisitorTest" package="org.k1s.orn.templates" tests="3" time="1.572" timestamp="2012-04-21T17:30:45">
+  <testsuite errors="0" failures="0" hostname="shrubbery" id="11" name="ODGVisitorTest" package="org.k1s.orn.templates" tests="3" time="1.856" timestamp="2012-04-24T13:53:48">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -2946,16 +2946,16 @@ found page page2
 
       </properties>
 
-      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testFlatten" time="0.94" />
+      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testFlatten" time="1.144" />
 
-      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testParameterVisitor" time="0.01" />
+      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testParameterVisitor" time="0.014" />
 
-      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testTemplateVisitor" time="0.286" />
+      <testcase classname="org.k1s.orn.templates.ODGVisitorTest" name="testTemplateVisitor" time="0.372" />
 
       <system-out><![CDATA[PRAGDEF: Send()
 PRAGDEF: External()
 PRAGDEF: Principal()
-orn.impl.PageImpl@6ef2ea42 (id: null)
+orn.impl.PageImpl@70eb67e8 (id: null)
 |null, null, null|
 |null, null, null|
 |null, null, null|
@@ -2970,7 +2970,7 @@ def External(){
       <system-err />
 
   </testsuite>
-  <testsuite errors="0" failures="1" hostname="shrubbery" id="12" name="OntologyDrivenGeneratorTest" package="org.k1s.orn.templates" tests="2" time="1.744" timestamp="2012-04-21T17:30:47">
+  <testsuite errors="1" failures="0" hostname="shrubbery" id="12" name="OntologyDrivenGeneratorTest" package="org.k1s.orn.templates" tests="2" time="3.534" timestamp="2012-04-24T13:53:50">
       <properties>
           <property name="java.vendor" value="Sun Microsystems Inc." />
 
@@ -3154,54 +3154,67 @@ def External(){
 
       </properties>
 
-      <testcase classname="org.k1s.orn.templates.OntologyDrivenGeneratorTest" name="testGenerate" time="1.018">
-          <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:175)
-	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.testGenerate(OntologyDrivenGeneratorTest.groovy:23)
-</failure>
+      <testcase classname="org.k1s.orn.templates.OntologyDrivenGeneratorTest" name="testSimpleProtocol" time="2.976" />
+
+      <testcase classname="org.k1s.orn.templates.OntologyDrivenGeneratorTest" name="testWSNet" time="0.179">
+          <error message="Cannot create a resource for &apos;platform:/resource/OntologyReastrictedNets/model/test.pnml&apos;; a registered resource factory is needed" type="java.lang.RuntimeException">java.lang.RuntimeException: Cannot create a resource for &apos;platform:/resource/OntologyReastrictedNets/model/test.pnml&apos;; a registered resource factory is needed
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:394)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:229)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:52)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:40)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:129)
+	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.getWebSocetNet(OntologyDrivenGeneratorTest.groovy:85)
+	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.testWSNet(OntologyDrivenGeneratorTest.groovy:76)
+</error>
 
       </testcase>
 
-      <testcase classname="org.k1s.orn.templates.OntologyDrivenGeneratorTest" name="testSimpleProtocol" time="0.47" />
-
-      <system-out><![CDATA[PRAGDEF: Send()
-PRAGDEF: External()
+      <system-out><![CDATA[PRAGDEF: Principal()
 PRAGDEF: Principal()
-|ROOT, ROOT, null|
-created |ROOT, ROOT, null|
-with children []
-[]
-PRAGDEF: Principal()
-PRAGDEF: Principal()
-PRAGDEF: External(msg)
+PRAGDEF: External(msg, server)
 PRAGDEF: Send(msg)
-PRAGDEF: External(msg)
+PRAGDEF: External(portNo)
 PRAGDEF: Recieve(msg)
-orn.impl.PageImpl@2dc0435 (id: null)
-orn.impl.PageImpl@23de4dd8 (id: null)
+orn.impl.PageImpl@212b19c5 (id: null)
+orn.impl.PageImpl@38d0357a (id: null)
 |ROOT, ROOT, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
+|null, null, null|
 created |ROOT, ROOT, null|
-with children [|null, null, class Server {
+with children [|null, null, class Client {
 	%%yield%%
 }|, |null, null, class Server {
 	%%yield%%
 }|]
-[class Server {
-	def start(){
-	send(msg)
+[class Client {
+	def start(msg, server){
+	                DatagramSocket sock = new DatagramSocket()
+                DatagramPacket pack = new DatagramPacket(msg.bytes, msg.bytes.length, InetAddress.getByName(server.host), server.port)
+                sock.send pack
+
 }
 }, class Server {
-	def start(){
-	
+	def start(portNo){
+	                DatagramSocket sock = new DatagramSocket(portNo)
+                byte[] buff = new byte[2048]
+
+
+                DatagramPacket pack = new  DatagramPacket(buff, 2048)
+
+
+                sock.receive pack
+
+                println new String(pack.data)
+
 }
 }]
+hei
+platform:/resource/OntologyReastrictedNets/model/test.pnml
 ]]></system-out>
 
       <system-err />

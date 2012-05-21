@@ -4,8 +4,6 @@ Bundle-Name: %pluginName
 Bundle-SymbolicName: OntologyReastrictedNets;singleton:=true
 Bundle-Version: 1.0.0
 Bundle-ClassPath: .,
- lib/owlapi-bin.jar,
- lib/HermiT.jar,
  lib/pellet/aterm-java-1.6.jar,
  lib/pellet/pellet-cli.jar,
  lib/pellet/pellet-core.jar,
@@ -15,12 +13,12 @@ Bundle-ClassPath: .,
  lib/pellet/pellet-explanation.jar,
  lib/pellet/pellet-jena.jar,
  lib/pellet/pellet-modularity.jar,
- lib/pellet/pellet-owlapi.jar,
- lib/pellet/pellet-owlapiv3.jar,
  lib/pellet/pellet-pellint.jar,
  lib/pellet/pellet-query.jar,
  lib/pellet/pellet-rules.jar,
- lib/pellet/pellet-test.jar
+ lib/pellet/pellet-test.jar,
+ lib/owlapi-bin.jar,
+ lib/pellet/pellet-owlapiv3.jar
 Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6

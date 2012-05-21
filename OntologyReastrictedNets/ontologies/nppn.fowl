@@ -23,20 +23,29 @@
   SubClassOf( :External basic:Pragmatic )
   SubClassOf( :External ObjectAllValuesFrom( :belongsTo :TransitionConnectedToId ) ) 
 
-
+  
   SubClassOf( :Send basic:Pragmatic )
   SubClassOf( :Send ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
+  SubClassOf( :Send  basic:Implicit)
+  Declaration( NamedIndividual( :SendImplicitPattern ) )
+  DataPropertyAssertion( :pttrn :SendImplicitPattern "new PNPattern(adjacentPatterns: [new PNPattern(pragmatics:[\"Channel\"], backlink: true)])" )
   
-  
+   
   SubClassOf( :Recieve basic:Pragmatic )
   SubClassOf( :Recieve ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
   
+
+  
   SubClassOf( :OpenChannel basic:Pragmatic )
   SubClassOf( :OpenChannel ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
+  SubClassOf( :OpenChannel  basic:Implicit)
+  Declaration( NamedIndividual( :OpenChannelImplicitPattern ) )
+  DataPropertyAssertion( :pttrn :OpenChannelImplicitPattern "new PNPattern(adjacentPatterns: [new PNPattern(pragmatics:[\"Channel\"], backlink: false)])" )
+
   
   SubClassOf( :CloseChannel basic:Pragmatic )
   SubClassOf( :CloseChannel ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
-
+  
 
 
   DisjointClasses(cpn:Place cpn:Transition cpn:Arc cpn:Page basic:Pragmatic)

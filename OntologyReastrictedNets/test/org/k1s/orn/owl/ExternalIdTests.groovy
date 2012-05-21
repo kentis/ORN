@@ -10,9 +10,7 @@ import org.junit.Test;
 import org.k1s.orn.ORNUtils;
 import org.k1s.orn.ORNVerifier;
 import org.mindswap.pellet.PelletOptions;
-import org.semanticweb.HermiT.Reasoner;
-import org.semanticweb.owl.model.OWLClass;
-import org.semanticweb.owl.model.OWLIndividual;
+
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.OWLClassExpression;

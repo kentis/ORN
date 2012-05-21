@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.cpntools.accesscpn.model" modificationStamp="3" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.cpntypes.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.monitors.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.declaration.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.graphics.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.graphics"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.declaration.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.monitors.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.cpntypes.impl"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.declaration"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.monitors"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.graphics.util"/>
+    </package>
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model/src&lt;org.cpntools.accesscpn.model.cpntypes"/>
+    </package>
+</component>

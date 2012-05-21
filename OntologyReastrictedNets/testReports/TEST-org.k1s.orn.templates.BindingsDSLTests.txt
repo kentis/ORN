@@ -1,15 +1,15 @@
 Testsuite: org.k1s.orn.templates.BindingsDSLTests
-Tests run: 4, Failures: 1, Errors: 0, Time elapsed: 2.518 sec
+Tests run: 4, Failures: 1, Errors: 0, Time elapsed: 2.963 sec
 ------------- Standard Output ---------------
-inititating: 562
-closing: 214
-checking: 514
+inititating: 564
+closing: 283
+checking: 726
 ------------- ---------------- ---------------
 
-Testcase: testgroovy took 0.715 sec
-Testcase: testgroovyPlattformIsValid took 1.416 sec
-Testcase: testgroovyForBindings took 0.051 sec
-Testcase: testgroovyForBindingsContent took 0.053 sec
+Testcase: testgroovy took 0.793 sec
+Testcase: testgroovyPlattformIsValid took 1.706 sec
+Testcase: testgroovyForBindings took 0.071 sec
+Testcase: testgroovyForBindingsContent took 0.06 sec
 	FAILED
 
 Expected: is "mainClass.tmpl"

@@ -2,7 +2,7 @@ package org.k1s.orn.owl;
 
 import org.junit.Test;
 import org.k1s.orn.ORNUtils;
-import org.semanticweb.HermiT.Reasoner;
+
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.OWLOntology;
@@ -88,7 +88,8 @@ Ontology(<http://org.k1s/orn/ext/>
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new StringDocumentSource(simpleValidOnt));
 		ORNUtils.closeTheWorldForIndiviuals ontology
-		OWLReasoner reasoner = new Reasoner(ontology);
+		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 		
 		assertTrue(reasoner.isConsistent())
 		println "axioms"
@@ -104,7 +105,8 @@ Ontology(<http://org.k1s/orn/ext/>
 		OWLOntologyManager manager = OWLManager.createOWLOntologyManager();
 		OWLOntology ontology = manager.loadOntologyFromOntologyDocument(new StringDocumentSource(simpleInValidOnt));
 		ORNUtils.closeTheWorldForIndiviuals ontology
-		OWLReasoner reasoner = new Reasoner(ontology);
+		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 		
 		assertFalse(reasoner.isConsistent())
 	}

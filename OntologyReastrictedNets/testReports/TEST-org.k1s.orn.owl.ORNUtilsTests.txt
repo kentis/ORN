@@ -1,5 +1,5 @@
 Testsuite: org.k1s.orn.owl.ORNUtilsTests
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.884 sec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 2.057 sec
 ------------- Standard Output ---------------
 axioms
 Declaration(NamedIndividual(<http://org.k1s/orn/ext/theId>))
@@ -18,5 +18,5 @@ ObjectPropertyAssertion(<http://org.k1s/orn/ext/ids> <http://org.k1s/orn/ext/the
 -----------------------------------
 ------------- ---------------- ---------------
 
-Testcase: testcloseTheWorldForIndiviualsValid took 1.582 sec
-Testcase: testcloseTheWorldForIndiviualsInValid took 0.022 sec
+Testcase: testcloseTheWorldForIndiviualsValid took 1.709 sec
+Testcase: testcloseTheWorldForIndiviualsInValid took 0.021 sec

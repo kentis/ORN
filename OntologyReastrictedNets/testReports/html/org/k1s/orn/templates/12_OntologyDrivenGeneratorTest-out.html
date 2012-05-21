@@ -4,42 +4,51 @@
 <title>Standard Output from OntologyDrivenGeneratorTest</title>
 </head>
 <body>
-<pre>PRAGDEF: Send()
-PRAGDEF: External()
+<pre>PRAGDEF: Principal()
 PRAGDEF: Principal()
-|ROOT, ROOT, null|
-created |ROOT, ROOT, null|
-with children []
-[]
-PRAGDEF: Principal()
-PRAGDEF: Principal()
-PRAGDEF: External(msg)
+PRAGDEF: External(msg, server)
 PRAGDEF: Send(msg)
-PRAGDEF: External(msg)
+PRAGDEF: External(portNo)
 PRAGDEF: Recieve(msg)
-orn.impl.PageImpl@2dc0435 (id: null)
-orn.impl.PageImpl@23de4dd8 (id: null)
+orn.impl.PageImpl@212b19c5 (id: null)
+orn.impl.PageImpl@38d0357a (id: null)
 |ROOT, ROOT, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
+|null, null, null|
 created |ROOT, ROOT, null|
-with children [|null, null, class Server {
+with children [|null, null, class Client {
 	%%yield%%
 }|, |null, null, class Server {
 	%%yield%%
 }|]
-[class Server {
-	def start(){
-	send(msg)
+[class Client {
+	def start(msg, server){
+	                DatagramSocket sock = new DatagramSocket()
+                DatagramPacket pack = new DatagramPacket(msg.bytes, msg.bytes.length, InetAddress.getByName(server.host), server.port)
+                sock.send pack
+
 }
 }, class Server {
-	def start(){
-	
+	def start(portNo){
+	                DatagramSocket sock = new DatagramSocket(portNo)
+                byte[] buff = new byte[2048]
+
+
+                DatagramPacket pack = new  DatagramPacket(buff, 2048)
+
+
+                sock.receive pack
+
+                println new String(pack.data)
+
 }
 }]
+hei
+platform:/resource/OntologyReastrictedNets/model/test.pnml
 </pre>
 </body>
 </html>

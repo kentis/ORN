@@ -1,0 +1,7 @@
+package org.k1s.orn.owl;
+
+import static org.junit.Assert.*;
+
+class OWLTests {
+
+}

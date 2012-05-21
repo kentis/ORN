@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<component id="org.cpntools.accesscpn.model.exporter" modificationStamp="3" version="1.2">
+    <package visibility="1">
+        <fragment handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{LayoutAcylic.java[LayoutAcylic" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{LayoutRandom.java[LayoutRandom" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{DOMGenerator.java[DOMGenerator" modificationStamp="3" restrictions="0" visibility="0"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{JUNGHelper.java[JUNGHelper" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{CPNtoDot.java[CPNtoDot" modificationStamp="1" restrictions="0" visibility="0"/>
+        <type handle="=org.cpntools.accesscpn.model.exporter/src&lt;org.cpntools.accesscpn.model.exporter{Layout.java[Layout" modificationStamp="1" restrictions="0" visibility="0"/>
+    </package>
+</component>

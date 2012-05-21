@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="shrubbery" name="org.k1s.orn.owl.ManchesterImportTests" tests="2" time="1.895" timestamp="2012-04-21T17:31:01">
+<testsuite errors="0" failures="1" hostname="shrubbery" name="org.k1s.orn.owl.ManchesterImportTests" tests="2" time="2.08" timestamp="2012-04-24T13:54:08">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -93,8 +93,8 @@
     <property name="java.specification.version" value="1.6" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testRemoteIsParseable" time="1.339" />
-  <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testImports" time="0.268">
+  <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testRemoteIsParseable" time="1.492" />
+  <testcase classname="org.k1s.orn.owl.ManchesterImportTests" name="testImports" time="0.273">
     <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)

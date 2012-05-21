@@ -23,6 +23,7 @@ class Binding{
 	def pragmatic
 	def dependencies
 	def isContainer = false
+	def isMultiContainer = false
 	
 	def toFowl(){
 		StringBuilder fowl = new StringBuilder()

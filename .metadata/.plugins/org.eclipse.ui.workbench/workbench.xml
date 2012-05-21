@@ -1,0 +1,1016 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workbench progressCount="48" version="2.0">
+<workbenchAdvisor/>
+<window height="775" maximized="true" width="1270" x="1680" y="0">
+<fastViewData fastViewLocation="1024"/>
+<perspectiveBar>
+<itemSize x="160"/>
+</perspectiveBar>
+<coolbarLayout locked="0">
+<coolItem id="group.file" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.file" itemType="typeToolBarContribution" x="312" y="30"/>
+<coolItem id="additions" itemType="typeGroupMarker"/>
+<coolItem id="adt.actionSet.avdManager" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="adt.actionSet.wizards" itemType="typeToolBarContribution" x="96" y="30"/>
+<coolItem id="com.ge.research.sadl.Sadl" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.codehaus.groovy.eclipse.editor.GroovyEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ant.ui.internal.editor.AntEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.debug.ui.launchActionSet" itemType="typeToolBarContribution" x="120" y="30"/>
+<coolItem id="org.eclipse.emf.codegen.ecore.genmodel.presentation.GenModelEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.emf.ecore.presentation.EcoreEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.emf.ecoretools.diagram.part.EcoreDiagramEditorID" itemType="typePlaceholder" x="1038" y="30"/>
+<coolItem id="org.eclipse.gmf.ecore.part.EcoreDiagramEditorID" itemType="typePlaceholder" x="1011" y="30"/>
+<coolItem id="org.eclipse.jdt.ui.ClassFileEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
+<coolItem id="org.eclipse.jdt.ui.PropertiesFileEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.pde.ui.buildEditor" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.pde.ui.featureEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.pde.ui.manifestEditor" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="org.eclipse.pde.ui.siteEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="104" y="30"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="68" y="30"/>
+<coolItem id="org.eclipse.wst.xml.ui.internal.tabletree.XMLMultiPageEditorPart" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.amalgam.discovery.modeling.toolbars.sampleToolbar" itemType="typeToolBarContribution" x="40" y="30"/>
+<coolItem id="com.nwire.studio.tools.navigatorToolbar" itemType="typeToolBarContribution" x="234" y="30"/>
+<coolItem id="org.emftext.language.owl.resource.owl.ui.OwlEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.pnml.tools.epnk.diagram.part.PNMLCoreModelDiagramEditorID" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="group.nav" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="184" y="30"/>
+<coolItem id="group.editor" itemType="typeGroupMarker"/>
+<coolItem id="group.help" itemType="typeGroupMarker"/>
+<coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
+</coolbarLayout>
+<page aggregateWorkingSetId="Aggregate for window 1308304034701" focus="true" label="Workspace - Plug-in Development">
+<editors>
+<editorArea activeWorkbook="DefaultEditorWorkbook">
+<info part="DefaultEditorWorkbook">
+<folder appearance="1" expanded="2">
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+<part id="7"/>
+<part id="8"/>
+<part id="9"/>
+<part id="10"/>
+<part id="11"/>
+<part id="12"/>
+<part id="13"/>
+<part id="14"/>
+<part id="15"/>
+<part id="16"/>
+<part id="17"/>
+<part id="18"/>
+<part id="19"/>
+<part id="20"/>
+<part id="21"/>
+<part id="22"/>
+<part id="23"/>
+<part id="24"/>
+<part id="25"/>
+<part id="26"/>
+<part id="27"/>
+<part id="28"/>
+<part id="29"/>
+<part id="30"/>
+<part id="31"/>
+<part id="32"/>
+<part id="33"/>
+<part id="34"/>
+<part id="35"/>
+<part id="36"/>
+<part id="37"/>
+<part id="38"/>
+<part id="39"/>
+<part id="40"/>
+<part id="41"/>
+<part id="42"/>
+<part id="43"/>
+<part id="44"/>
+<part id="45"/>
+<part id="46"/>
+<part id="47"/>
+<part id="48"/>
+<part id="49"/>
+<part id="50"/>
+<part id="51"/>
+<part id="52"/>
+<part id="53"/>
+<part id="54"/>
+</presentation>
+</folder>
+</info>
+</editorArea>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FunctionalEditor.java" partName="FunctionalEditor.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalEditor.java" title="FunctionalEditor.java" tooltip="OWLEditors/src/org/k1s/owleditors/fowl/FunctionalEditor.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalEditor.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="414" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FunctionalConfiguration.java" partName="FunctionalConfiguration.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConfiguration.java" title="FunctionalConfiguration.java" tooltip="OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConfiguration.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConfiguration.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="11"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FunctionalScanner.java" partName="FunctionalScanner.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalScanner.java" title="FunctionalScanner.java" tooltip="OWLEditors/src/org/k1s/owleditors/fowl/FunctionalScanner.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalScanner.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="218" selectionOffset="3511" selectionTopPixel="2023"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FunctionalCompletionProcessor.java" partName="FunctionalCompletionProcessor.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalCompletionProcessor.java" title="FunctionalCompletionProcessor.java" tooltip="OWLEditors/src/org/k1s/owleditors/fowl/FunctionalCompletionProcessor.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalCompletionProcessor.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="458" selectionOffset="2386" selectionTopPixel="1617"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNUtils.groovy" partName="ORNUtils.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/ORNUtils.groovy" title="ORNUtils.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/ORNUtils.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/ORNUtils.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1422"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNImporter.groovy" partName="ORNImporter.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/ORNImporter.groovy" title="ORNImporter.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/ORNImporter.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/ORNImporter.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="111" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="OWLTests.groovy" partName="OWLTests.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/owl/OWLTests.groovy" title="OWLTests.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/owl/OWLTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/owl/OWLTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="164"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ManchesterSyntaxBuilder.groovy" partName="ManchesterSyntaxBuilder.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/owl/ManchesterSyntaxBuilder.groovy" title="ManchesterSyntaxBuilder.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/owl/ManchesterSyntaxBuilder.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/owl/ManchesterSyntaxBuilder.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ORNValidate.java" partName="ORNValidate.java" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNValidate.java" title="ORNValidate.java" tooltip="OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNValidate.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNValidate.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1637" selectionTopPixel="435"/>
+</editor>
+<editor id="org.eclipse.pde.ui.manifestEditor" name="plugin.xml" partName="OWLEditors" path="/home/kent/ws-ePNK/OWLEditors/plugin.xml" title="OWLEditors" tooltip="OWLEditors/plugin.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/plugin.xml"/>
+</editor>
+<editor id="org.eclipse.ant.ui.internal.editor.AntEditor" name="gbuild.xml" partName="gbuild.xml" path="/home/kent/ws-ePNK/OWLEditors/gbuild.xml" title="gbuild.xml" tooltip="OWLEditors/gbuild.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/gbuild.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="214" selectionOffset="514" selectionTopPixel="160"/>
+</editor>
+<editor id="org.eclipse.pde.ui.featureEditor" name="feature.xml" partName="OWLEditorsFeautures" path="/home/kent/ws-ePNK/OWLEditorsFeautures/feature.xml" title="OWLEditorsFeautures" tooltip="OWLEditorsFeautures/feature.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditorsFeautures/feature.xml"/>
+</editor>
+<editor id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" partName="build.xml" path="/home/kent/ws-ePNK/OWLEditors/build.xml" title="build.xml" tooltip="OWLEditors/build.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/build.xml"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="18287" selectionTopPixel="4078"/>
+</editor>
+<editor id="org.eclipse.pde.ui.buildEditor" name="build.properties" partName="build.properties" path="/home/kent/ws-ePNK/dk.dtu.imm.se.mbse-pn.nppn/build.properties" title="build.properties" tooltip="dk.dtu.imm.se.mbse-pn.nppn/build.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dk.dtu.imm.se.mbse-pn.nppn/build.properties"/>
+</editor>
+<editor id="org.eclipse.pde.ui.buildEditor" name="build.properties" partName="build.properties" path="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.engine/build.properties" title="build.properties" tooltip="org.cpntools.accesscpn.engine/build.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.cpntools.accesscpn.engine/build.properties"/>
+</editor>
+<editor id="org.eclipse.pde.ui.buildEditor" name="build.properties" partName="build.properties" path="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.engine.highlevel/build.properties" title="build.properties" tooltip="org.cpntools.accesscpn.engine.highlevel/build.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.cpntools.accesscpn.engine.highlevel/build.properties"/>
+</editor>
+<editor id="org.eclipse.pde.ui.buildEditor" name="build.properties" partName="build.properties" path="/home/kent/src/accessCPN/trunk/org.cpntools.accesscpn.model/build.properties" title="build.properties" tooltip="org.cpntools.accesscpn.model/build.properties" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/org.cpntools.accesscpn.model/build.properties"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="FunctionalConstants.java" partName="FunctionalConstants.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConstants.java" title="FunctionalConstants.java" tooltip="OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConstants.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/fowl/FunctionalConstants.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MCHConstants.java" partName="MCHConstants.java" path="/home/kent/ws-ePNK/OWLEditors/src/org/k1s/owleditors/mch/MCHConstants.java" title="MCHConstants.java" tooltip="OWLEditors/src/org/k1s/owleditors/mch/MCHConstants.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OWLEditors/src/org/k1s/owleditors/mch/MCHConstants.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="706" selectionTopPixel="0"/>
+</editor>
+<editor id="org.k1s.owleditors.fowl.FunctionalEditor" name="nppn.fowl" partName="nppn.fowl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/ontologies/nppn.fowl" title="nppn.fowl" tooltip="OntologyReastrictedNets/ontologies/nppn.fowl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/ontologies/nppn.fowl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="67" selectionOffset="461" selectionTopPixel="593"/>
+</editor>
+<editor id="org.k1s.owleditors.fowl.FunctionalEditor" name="groovy.fowl" partName="groovy.fowl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy.fowl" title="groovy.fowl" tooltip="OntologyReastrictedNets/plattforms/groovy.fowl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/plattforms/groovy.fowl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="941" selectionTopPixel="117"/>
+</editor>
+<editor id="org.k1s.owleditors.fowl.FunctionalEditor" name="basic.fowl" partName="basic.fowl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/ontologies/basic.fowl" title="basic.fowl" tooltip="OntologyReastrictedNets/ontologies/basic.fowl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/ontologies/basic.fowl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.k1s.owleditors.fowl.FunctionalEditor" name="cpn.fowl" partName="cpn.fowl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/ontologies/cpn.fowl" title="cpn.fowl" tooltip="OntologyReastrictedNets/ontologies/cpn.fowl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/ontologies/cpn.fowl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="26" selectionOffset="178" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="mainClass.tmpl" partName="mainClass.tmpl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/mainClass.tmpl" title="mainClass.tmpl" tooltip="OntologyReastrictedNets/plattforms/groovy/mainClass.tmpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/plattforms/groovy/mainClass.tmpl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="26" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="externalMethod.tmpl" partName="externalMethod.tmpl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/externalMethod.tmpl" title="externalMethod.tmpl" tooltip="OntologyReastrictedNets/plattforms/groovy/externalMethod.tmpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/plattforms/groovy/externalMethod.tmpl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="37" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ATTTests.groovy" partName="ATTTests.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/ATTTests.groovy" title="ATTTests.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/ATTTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/ATTTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4086" selectionTopPixel="2229"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNTestUtils.groovy" partName="ORNTestUtils.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/test/ORNTestUtils.groovy" title="ORNTestUtils.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/test/ORNTestUtils.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/test/ORNTestUtils.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1938" selectionTopPixel="943"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="LogoGenerationTest.groovy" partName="LogoGenerationTest.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/LogoGenerationTest.groovy" title="LogoGenerationTest.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/LogoGenerationTest.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/LogoGenerationTest.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="OntologyDrivenGenerator.groovy" partName="OntologyDrivenGenerator.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/OntologyDrivenGenerator.groovy" title="OntologyDrivenGenerator.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/OntologyDrivenGenerator.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/OntologyDrivenGenerator.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="636" selectionTopPixel="274"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="BindingsDSLTests.groovy" partName="BindingsDSLTests.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/BindingsDSLTests.groovy" title="BindingsDSLTests.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/BindingsDSLTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/BindingsDSLTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="42" selectionOffset="154" selectionTopPixel="258"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="AbstractTemplateTree.groovy" partName="AbstractTemplateTree.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/AbstractTemplateTree.groovy" title="AbstractTemplateTree.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/AbstractTemplateTree.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/AbstractTemplateTree.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1521" selectionTopPixel="1037"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="Bindings.groovy" partName="Bindings.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/Bindings.groovy" title="Bindings.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/Bindings.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/Bindings.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="8" selectionOffset="83" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="BindingsDSL.groovy" partName="BindingsDSL.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/BindingsDSL.groovy" title="BindingsDSL.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/BindingsDSL.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/BindingsDSL.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1426" selectionTopPixel="718"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNUtilsTests.groovy" partName="ORNUtilsTests.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/owl/ORNUtilsTests.groovy" title="ORNUtilsTests.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/owl/ORNUtilsTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/owl/ORNUtilsTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="677" selectionTopPixel="490"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ODGVisitor.groovy" partName="ODGVisitor.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ODGVisitor.groovy" title="ODGVisitor.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ODGVisitor.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ODGVisitor.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="14" selectionOffset="395" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PrefixVisitor.groovy" partName="PrefixVisitor.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/PrefixVisitor.groovy" title="PrefixVisitor.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/PrefixVisitor.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/PrefixVisitor.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="70" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="TemplateVisitor.groovy" partName="TemplateVisitor.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/TemplateVisitor.groovy" title="TemplateVisitor.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/TemplateVisitor.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/TemplateVisitor.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="41" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ODGVisitorTest.groovy" partName="ODGVisitorTest.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/ODGVisitorTest.groovy" title="ODGVisitorTest.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/ODGVisitorTest.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/ODGVisitorTest.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="659" selectionOffset="1756" selectionTopPixel="723"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ParameterVisitor.groovy" partName="ParameterVisitor.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ParameterVisitor.groovy" title="ParameterVisitor.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ParameterVisitor.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/ogdVisitors/ParameterVisitor.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="356" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="OntologyDrivenGeneratorTest.groovy" partName="OntologyDrivenGeneratorTest.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/OntologyDrivenGeneratorTest.groovy" title="OntologyDrivenGeneratorTest.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/OntologyDrivenGeneratorTest.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/OntologyDrivenGeneratorTest.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2127" selectionTopPixel="1200"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="sendMessage.tmpl" partName="sendMessage.tmpl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/sendMessage.tmpl" title="sendMessage.tmpl" tooltip="OntologyReastrictedNets/plattforms/groovy/sendMessage.tmpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/plattforms/groovy/sendMessage.tmpl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="57" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="GeneratorTests.groovy" partName="GeneratorTests.groovy" path="/home/kent/ws-ePNK/dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/GeneratorTests.groovy" title="GeneratorTests.groovy" tooltip="dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/GeneratorTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/GeneratorTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1514" selectionTopPixel="332"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ProtcolRunner.groovy" partName="ProtcolRunner.groovy" path="/home/kent/ws-ePNK/dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/ProtcolRunner.groovy" title="ProtcolRunner.groovy" tooltip="dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/ProtcolRunner.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/dk.dtu.imm.se.mbse-pn.nppn/test/org/k1s/nppn/generator/ProtcolRunner.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ORNImport.java" partName="ORNImport.java" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNImport.java" title="ORNImport.java" tooltip="OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNImport.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNImport.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="826" selectionTopPixel="146"/>
+</editor>
+<editor id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" partName="build.xml" path="/home/kent/ws-ePNK/OntologyReastrictedNets/build.xml" title="build.xml" tooltip="OntologyReastrictedNets/build.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/build.xml"/>
+<editorState selectionHorizontalPixel="64" selectionLength="0" selectionOffset="29098" selectionTopPixel="5508"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OntologyTest.java" partName="OntologyTest.java" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/OntologyTest.java" title="OntologyTest.java" tooltip="OntologyReastrictedNets/src/org/k1s/orn/OntologyTest.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/OntologyTest.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="463" selectionTopPixel="0"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNVerifierTest.groovy" partName="ORNVerifierTest.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/owl/ORNVerifierTest.groovy" title="ORNVerifierTest.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/owl/ORNVerifierTest.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/owl/ORNVerifierTest.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1055" selectionTopPixel="1054"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ExternalIdTests.groovy" partName="ExternalIdTests.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/owl/ExternalIdTests.groovy" title="ExternalIdTests.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/owl/ExternalIdTests.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/owl/ExternalIdTests.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="2" selectionOffset="977" selectionTopPixel="277"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ProtcolRunner.groovy" partName="ProtcolRunner.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/test/org/k1s/orn/templates/ProtcolRunner.groovy" title="ProtcolRunner.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/ProtcolRunner.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/ProtcolRunner.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PragStructureImpl.java" partName="PragStructureImpl.java" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/orn/impl/PragStructureImpl.java" title="PragStructureImpl.java" tooltip="OntologyReastrictedNets/src/orn/impl/PragStructureImpl.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/orn/impl/PragStructureImpl.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="1721"/>
+</editor>
+<editor id="org.eclipse.ui.DefaultTextEditor" name="recieveMessage.tmpl" partName="recieveMessage.tmpl" path="/home/kent/ws-ePNK/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl" title="recieveMessage.tmpl" tooltip="OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="265" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.ClassFileEditor" name="URLClassLoader.class" partName="URLClassLoader.class" title="URLClassLoader.class" tooltip="java.net.URLClassLoader" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;java.net(URLClassLoader.class"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="7849" selectionTopPixel="70"/>
+</editor>
+<editor id="org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML" name="test.pnml" partName="test.pnml" path="/home/kent/ws-ePNK/OntologyReastrictedNets/model/test.pnml" title="test.pnml" tooltip="OntologyReastrictedNets/model/test.pnml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/model/test.pnml"/>
+</editor>
+<editor id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PNPatternMatcher.groovy" partName="PNPatternMatcher.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy" title="PNPatternMatcher.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="61" selectionTopPixel="0"/>
+</editor>
+<editor activePart="true" focus="true" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PNPattern.groovy" partName="PNPattern.groovy" path="/home/kent/ws-ePNK/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy" title="PNPattern.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="364" selectionTopPixel="129"/>
+</editor>
+</editors>
+<views>
+<view id="org.eclipse.jdt.junit.ResultView" partName="JUnit">
+<viewState failuresOnly="false" layout="1" orientation="2" ratio="500" scroll="false" time="true"/>
+</view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
+<view id="org.eclipse.pde.runtime.LogView" partName="Error Log">
+<viewState activate="true" allSessions="true" column2="502" column3="150" column4="777" error="true" groupBy="0" info="true" limit="50" ok="true" orderType="2" orderValue="-1" show_filter_text="true" useLimit="true" warning="true"/>
+</view>
+<view id="org.eclipse.pde.ui.PluginsView" partName="Plug-ins">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.completionField" categoryGroup="none" markerContentGenerator="org.eclipse.ui.ide.tasksGenerator" partName="Tasks">
+<columnWidths org.eclipse.ui.ide.completionField="40" org.eclipse.ui.ide.descriptionField="353" org.eclipse.ui.ide.locationField="73" org.eclipse.ui.ide.markerType="491" org.eclipse.ui.ide.pathField="143" org.eclipse.ui.ide.priorityField="19" org.eclipse.ui.ide.resourceField="108"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.completionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.priorityField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.descriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.ProblemView" partName="Problems">
+<viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
+<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+</expanded>
+<columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
+<visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.gmf.codegen.ui.hide_generated" isEnabled="false"/>
+<child filterId="org.eclipse.emf.mint.ui.filters.GeneratedFilter" isEnabled="false"/>
+<child filterId="org.eclipse.emf.mint.ui.filters.GeneratedNotFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.mylyn.java.ui.MembersFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.emf.mint.ui.filters.GeneratedNoneFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
+</viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
+</view>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks" partName="Task List">
+<viewState linkWithEditor="true" presentation="org.eclipse.mylyn.tasks.ui.categorized">
+<sorter groupBy="CATEGORY_QUERY">
+<sorter>
+<sort0 sortDirection="1" sortKey="PRIORITY"/>
+<sort1 sortDirection="1" sortKey="RANK"/>
+<sort2 sortDirection="1" sortKey="DATE_CREATED"/>
+<sort3 sortDirection="1" sortKey="NONE"/>
+<sort4 sortDirection="1" sortKey="NONE"/>
+<sort5 sortDirection="1" sortKey="NONE"/>
+<sort6 sortDirection="1" sortKey="NONE"/>
+<sort7 sortDirection="1" sortKey="NONE"/>
+</sorter>
+</sorter>
+<filteredTreeFindHistory/>
+</viewState>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+</views>
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.pde.ui.PDEPerspective">
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="fr.lip6.move.coloane.actionSets"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.common.service.client.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.diagram.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.conversion"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.junit.JUnitActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.jdt.ui.PackageExplorer"/>
+<show_view_action id="org.eclipse.jdt.ui.TypeHierarchy"/>
+<show_view_action id="org.eclipse.jdt.ui.SourceView"/>
+<show_view_action id="org.eclipse.jdt.ui.JavadocView"/>
+<show_view_action id="org.eclipse.search.ui.views.SearchView"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.ResourceNavigator"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ProgressView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.texteditor.TemplatesView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.JavaProjectWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewEnumCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewAnnotationCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSnippetFileCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewJavaWorkingSetWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.editors.wizards.UntitledTextFileWizard"/>
+<new_wizard_action id="com.android.ide.eclipse.adt.project.NewProjectWizard"/>
+<new_wizard_action id="com.android.ide.eclipse.editors.wizards.NewXmlFileWizard"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyClassWizard"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyProjectWizard"/>
+<new_wizard_action id="org.codehaus.groovy.eclipse.ui.groovyJUnitWizard"/>
+<new_wizard_action id="org.eclipse.jdt.junit.wizards.NewTestCaseCreationWizard"/>
+<new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="com.android.ide.eclipse.hierarchyviewer.PixelPerfectPespective"/>
+<perspective_action id="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.jdt.ui.JavadocView"/>
+<view id="org.eclipse.jdt.ui.SourceView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.pde.ui.PluginsView"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.ui.internal.ViewStack@7910187c">&#x0A;<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="left" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@7910187c">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@64964f8e" ratio="0.7495049" ratioLeft="757" ratioRight="253" relationship="2" relative="left">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.3917275" ratioLeft="483" ratioRight="750" relationship="2" relative="left"/>
+<info folder="true" part="bottom" ratio="0.7682503" ratioLeft="663" ratioRight="200" relationship="4" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
+<page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
+<page content="org.eclipse.pde.ui.PluginsView" label="Plug-ins"/>
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+<part id="4"/>
+<part id="5"/>
+<part id="6"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6a9a4f8e" ratio="0.6584094" ratioLeft="505" ratioRight="262" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="right" ratio="0.49885583" ratioLeft="218" ratioRight="219" relationship="4" relative="org.eclipse.ui.internal.ViewStack@6a9a4f8e">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="LabelNotFound"/>
+<page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.debug.internal.ui.DebugPerspectiveFactory" id="org.eclipse.debug.ui.DebugPerspective" label="Debug"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="fr.lip6.move.coloane.actionSets"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.common.service.client.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.diagram.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.NavigateActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.debug.ui.JDTDebugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<show_view_action id="org.eclipse.debug.ui.DebugView"/>
+<show_view_action id="org.eclipse.debug.ui.VariableView"/>
+<show_view_action id="org.eclipse.debug.ui.BreakpointView"/>
+<show_view_action id="org.eclipse.debug.ui.ExpressionView"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.ui.console.ConsoleView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<show_view_action id="com.android.ide.eclipse.ddms.views.DeviceView"/>
+<show_view_action id="org.eclipse.ant.ui.views.AntView"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<show_view_action id="org.eclipse.jdt.debug.ui.DisplayView"/>
+<perspective_action id="com.android.ide.eclipse.ddms.Perspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaBrowsingPerspective"/>
+<perspective_action id="org.eclipse.wst.xml.ui.perspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.debug.ui.DebugView"/>
+<view id="org.eclipse.debug.ui.VariableView"/>
+<view id="org.eclipse.debug.ui.BreakpointView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="com.android.ide.eclipse.ddms.views.LogCatView"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<fastViewBars/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="927" ratioRight="309" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.65925926" ratioLeft="445" ratioRight="230" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
+<page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@6145b4c4" ratio="0.5" ratioLeft="618" ratioRight="618" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">&#x0A;<folder activePageID="org.eclipse.jdt.junit.ResultView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.35238096" ratioLeft="222" ratioRight="408" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.75" ratioLeft="927" ratioRight="309" relationship="2" relative="org.eclipse.ui.editorss">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.3870581" ratioLeft="646" ratioRight="1023" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+<perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
+<descriptor class="org.eclipse.pde.internal.ui.PDEPerspective" id="org.eclipse.pde.ui.PDEPerspective" label="Plug-in Development"/>
+<alwaysOnActionSet id="adt.actionSet.wizards"/>
+<alwaysOnActionSet id="adt.actionSet.refactorings"/>
+<alwaysOnActionSet id="adt.actionSet.avdManager"/>
+<alwaysOnActionSet id="fr.lip6.move.coloane.actionSets"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.ui.groovyElementCreation"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.common.service.client.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.gmf.examples.runtime.diagram.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.context.ui.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.doc.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.mylyn.tasks.ui.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
+<alwaysOnActionSet id="org.eclipse.search.searchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.team.svn.ui.menu.help"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.annotationNavigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.navigation"/>
+<alwaysOnActionSet id="org.eclipse.ui.edit.text.actionSet.convertLineDelimitersTo"/>
+<alwaysOnActionSet id="org.eclipse.ui.externaltools.ExternalToolsSet"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.keyBindings"/>
+<alwaysOnActionSet id="org.eclipse.ui.actionSet.openFiles"/>
+<alwaysOnActionSet id="org.codehaus.groovy.eclipse.conversion"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.breakpointActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaElementCreationActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.launchActionSet"/>
+<alwaysOnActionSet id="org.eclipse.debug.ui.debugActionSet"/>
+<alwaysOnActionSet id="org.eclipse.jdt.ui.JavaActionSet"/>
+<show_view_action id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<show_view_action id="org.eclipse.jdt.ui.PackagesView"/>
+<show_view_action id="org.eclipse.pde.ui.PluginsView"/>
+<show_view_action id="org.eclipse.ui.navigator.ProjectExplorer"/>
+<show_view_action id="org.eclipse.ui.views.ProblemView"/>
+<show_view_action id="org.eclipse.ui.views.TaskList"/>
+<show_view_action id="org.eclipse.ui.views.ContentOutline"/>
+<show_view_action id="org.eclipse.pde.runtime.LogView"/>
+<new_wizard_action id="org.eclipse.mylyn.tasks.ui.wizards.new.repository.task"/>
+<new_wizard_action id="org.eclipse.pde.ds.ui.wizard"/>
+<new_wizard_action id="org.eclipse.pde.ui.NewProductConfigurationWizard"/>
+<new_wizard_action id="org.eclipse.pde.ui.NewProfileWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewPackageCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewClassCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewInterfaceCreationWizard"/>
+<new_wizard_action id="org.eclipse.jdt.ui.wizards.NewSourceFolderCreationWizard"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.file"/>
+<new_wizard_action id="org.eclipse.ui.wizards.new.folder"/>
+<perspective_action id="org.eclipse.ui.resourcePerspective"/>
+<perspective_action id="org.eclipse.jdt.ui.JavaPerspective"/>
+<perspective_action id="org.eclipse.debug.ui.DebugPerspective"/>
+<hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
+<hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
+<view id="org.eclipse.ui.views.TaskList"/>
+<view id="org.eclipse.ui.views.ProblemView"/>
+<view id="org.eclipse.ui.console.ConsoleView"/>
+<view id="org.eclipse.pde.runtime.LogView"/>
+<view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.mylyn.tasks.ui.views.tasks"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
+<view id="org.eclipse.jdt.junit.ResultView"/>
+<fastViewBars/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@44c8f40a">
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
+<page content="org.eclipse.jdt.junit.ResultView" label="JUnit"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="topLeft" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="org.eclipse.ui.internal.ViewStack@44c8f40a">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.pde.ui.PluginsView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
+<page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+</folder>
+</info>
+<info folder="true" part="stickyFolderRight" ratio="0.75" ratioLeft="1254" ratioRight="418" relationship="2" relative="topLeft">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
+<page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
+</folder>
+</info>
+<info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="418" ratioRight="1254" relationship="2" relative="topLeft"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@3243a129" ratio="0.875" ratioLeft="742" ratioRight="106" relationship="2" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.mylyn.tasks.ui.views.tasks" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.mylyn.tasks.ui.views.tasks" label="Task List"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
+</folder>
+</info>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@4e35e587" ratio="0.6752809" ratioLeft="601" ratioRight="289" relationship="4" relative="org.eclipse.ui.editorss">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
+<page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.pde.runtime.LogView" label="Error Log"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+<part id="2"/>
+<part id="3"/>
+</presentation>
+</folder>
+</info>
+</mainWindow>
+</layout>
+</perspective>
+</perspectives>
+<workingSets/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/OntologyReastrictedNets/test/org/k1s/orn/templates/OntologyDrivenGeneratorTest.groovy"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;java.net(URLClassLoader.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;sun.misc(BASE64Decoder.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;java.net(SocketInputStream.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;sun.nio.cs(StreamDecoder.class"/>
+<editor factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;java.io(BufferedReader.class"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML" path="/OntologyReastrictedNets/model/test.pnml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy"/>
+</editors>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="SocketInputStream.class" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="SocketInputStream.class" index="3">
+<position info="not_deleted" x="3954" y="0"/>
+</item>
+<item historyLabel="StreamDecoder.class" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="BufferedReader.class" index="5">
+<position info="not_deleted" x="10248" y="0"/>
+</item>
+<item historyLabel="OntologyDrivenGeneratorTest.groovy" index="0">
+<position info="not_deleted" x="2066" y="0"/>
+</item>
+<item historyLabel="OntologyDrivenGeneratorTest.groovy" index="0">
+<position info="not_deleted" x="2080" y="0"/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position info="not_deleted" x="7721" y="0"/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position info="not_deleted" x="7849" y="0"/>
+</item>
+<item historyLabel="BASE64Decoder.class" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position info="not_deleted" x="7721" y="0"/>
+</item>
+<item historyLabel="URLClassLoader.class" index="1">
+<position info="not_deleted" x="7849" y="0"/>
+</item>
+<item historyLabel="test.pnml" index="6"/>
+<item historyLabel="OntologyDrivenGeneratorTest.groovy" index="0">
+<position info="not_deleted" x="2080" y="0"/>
+</item>
+<item historyLabel="PNPatternMatcher.groovy" index="7">
+<position info="not_deleted" x="61" y="0"/>
+</item>
+<item historyLabel="PNPattern.groovy" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PNPatternMatcher.groovy" index="7">
+<position info="not_deleted" x="61" y="0"/>
+</item>
+<item historyLabel="PNPattern.groovy" index="8">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+<item historyLabel="PNPatternMatcher.groovy" index="7">
+<position info="not_deleted" x="61" y="0"/>
+</item>
+<item active="true" historyLabel="PNPattern.groovy" index="8">
+<position info="not_deleted" x="101" y="0"/>
+</item>
+</navigationHistory>
+<input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
+</page>
+<workbenchWindowAdvisor/>
+<actionBarAdvisor/>
+<trimLayout>
+<trimArea IMemento.internal.id="128">
+<trimItem IMemento.internal.id="org.eclipse.mylyn.tasks.ui.trim.container"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
+</trimArea>
+<trimArea IMemento.internal.id="1024">
+<trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
+<trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+</trimArea>
+</trimLayout>
+</window>
+<mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PNPattern.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy">
+<persistable path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPattern.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="PNPatternMatcher.groovy" tooltip="OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy">
+<persistable path="/OntologyReastrictedNets/src/org/k1s/orn/templates/PNPatternMatcher.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.pnml.tools.epnk.pnmlcoremodel.presentation.PnmlcoremodelEditorPNML" name="test.pnml" tooltip="OntologyReastrictedNets/model/test.pnml">
+<persistable path="/OntologyReastrictedNets/model/test.pnml"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Reference.class" tooltip="java.lang.ref.Reference">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=JenaBuilder/\/usr\/java\/jdk1.6.0_21\/jre\/lib\/rt.jar&lt;java.lang.ref(Reference.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ORNws.pnml" tooltip="OntologyReastrictedNets/model/ORNws.pnml">
+<persistable path="/OntologyReastrictedNets/model/ORNws.pnml"/>
+</file>
+<file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="ResourceSet.class" tooltip="org.eclipse.emf.ecore.resource.ResourceSet">
+<persistable org.eclipse.jdt.ui.ClassFileIdentifier="=OntologyReastrictedNets/\/home\/kent\/usr\/eclipse\/plugins\/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar&lt;org.eclipse.emf.ecore.resource(ResourceSet.class"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="recieveMessage.tmpl" tooltip="OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl">
+<persistable path="/OntologyReastrictedNets/plattforms/groovy/recieveMessage.tmpl"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PragStructureImpl.java" tooltip="OntologyReastrictedNets/src/orn/impl/PragStructureImpl.java">
+<persistable path="/OntologyReastrictedNets/src/orn/impl/PragStructureImpl.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ProtcolRunner.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/templates/ProtcolRunner.groovy">
+<persistable path="/OntologyReastrictedNets/test/org/k1s/orn/templates/ProtcolRunner.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ExternalIdTests.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/owl/ExternalIdTests.groovy">
+<persistable path="/OntologyReastrictedNets/test/org/k1s/orn/owl/ExternalIdTests.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.codehaus.groovy.eclipse.editor.GroovyEditor" name="ORNVerifierTest.groovy" tooltip="OntologyReastrictedNets/test/org/k1s/orn/owl/ORNVerifierTest.groovy">
+<persistable path="/OntologyReastrictedNets/test/org/k1s/orn/owl/ORNVerifierTest.groovy"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OntologyTest.java" tooltip="OntologyReastrictedNets/src/org/k1s/orn/OntologyTest.java">
+<persistable path="/OntologyReastrictedNets/src/org/k1s/orn/OntologyTest.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ant.ui.internal.editor.AntEditor" name="build.xml" tooltip="OntologyReastrictedNets/build.xml">
+<persistable path="/OntologyReastrictedNets/build.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ORNImport.java" tooltip="OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNImport.java">
+<persistable path="/OntologyReastrictedNets/src/ontologyreastrictednets/popup/actions/ORNImport.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ArcTest.java" tooltip="dk.dtu.imm.se.mbse-pn.nppn.tests/src/nppnnets/tests/ArcTest.java">
+<persistable path="/dk.dtu.imm.se.mbse-pn.nppn.tests/src/nppnnets/tests/ArcTest.java"/>
+</file>
+</mruList>
+</workbench>

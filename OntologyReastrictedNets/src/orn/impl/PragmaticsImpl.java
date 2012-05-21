@@ -199,7 +199,7 @@ public class PragmaticsImpl extends StructuredLabelImpl implements Pragmatics {
 			structure.setName(pragDef.subSequence(0, pragDef.indexOf('('))
 					.toString());
 			String d = pragDef.substring(pragDef.indexOf('(') + 1,
-					pragDef.indexOf(')'));
+					pragDef.lastIndexOf(')'));
 			// println "d: ${d.bytes}"
 			// if(d.length() == 0) structure.setArguments(new HashMap());
 			// else structure.setArguments(new

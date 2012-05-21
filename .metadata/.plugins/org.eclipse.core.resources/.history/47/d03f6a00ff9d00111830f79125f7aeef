@@ -1,0 +1,40 @@
+package org.k1s.orn.test
+
+import javax.swing.JFrame;
+
+import edu.uci.ics.jung.algorithms.layout.TreeLayout;
+import edu.uci.ics.jung.graph.DelegateForest;
+import edu.uci.ics.jung.graph.Graph;
+import edu.uci.ics.jung.visualization.VisualizationViewer;
+import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
+
+class ATTVisualizer {
+	
+	def show(att){
+		JFrame jf = new JFrame();
+		Graph g = getGraph(att);
+		VisualizationViewer vv = new VisualizationViewer(new TreeLayout<String, Integer>(g, 100, 100));
+		vv.getRenderContext().setVertexLabelTransformer(new ToStringLabeller())
+		jf.getContentPane().add(vv);
+		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		jf.pack();
+		jf.setVisible(true);
+	}
+	
+	
+	def getGraph(att){
+		def graph = new DelegateForest<String,Integer>();
+		graph.addVertex(att.toString())
+		addChildren(att.children, graph, att.toString())
+		
+		return graph
+	}
+	int a = 0
+	def addChildren(children, graph, parent){
+		children.each { att ->
+			graph.addEdge(a++, parent, att.toString());
+			if(att != null)
+			addChildren(att.children, graph, att.toString())
+		}
+	}
+}

@@ -1,0 +1,11 @@
+package org.k1s.petriNetTranslations.cpnTranslations
+
+class CPN2PNMLTranslator implements org.k1s.petriNetTranslations.Translator {
+
+	def translate(source){
+		
+	}
+	
+	
+	
+}

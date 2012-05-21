@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy package &apos;org.k1s.jenaBuilder&apos; to &apos;JenaBuilder/test&apos;&#x0A;- Original project: &apos;JenaBuilder&apos;&#x0A;- Destination element: &apos;JenaBuilder/test&apos;&#x0A;- Original element: &apos;JenaBuilder/src/org.k1s.jenaBuilder&apos;" description="Copy package" destination="/test" element1="/src&lt;org.k1s.jenaBuilder" flags="589830" fragments="1" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyPackages" stamp="1330106376150" version="1.0"/>
+</session>

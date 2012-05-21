@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<launchConfiguration type="org.eclipse.ant.AntLaunchConfigurationType">
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS"/>
+<listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_TYPES"/>
+<stringAttribute key="org.eclipse.jdt.launching.CLASSPATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="org.cpntools.accesscpn.cosimulation"/>
+<stringAttribute key="org.eclipse.jdt.launching.SOURCE_PATH_PROVIDER" value="org.eclipse.ant.ui.AntClasspathProvider"/>
+<mapAttribute key="org.eclipse.ui.externaltools.ATTR_ANT_PROPERTIES">
+<mapEntry key="CDC-1.0/Foundation-1.0" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="CDC-1.1/Foundation-1.1" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="J2SE-1.2" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="J2SE-1.3" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="J2SE-1.4" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="J2SE-1.5" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="JRE-1.1" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="JavaSE-1.6" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="JavaSE-1.7" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="OSGi/Minimum-1.0" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="OSGi/Minimum-1.1" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="OSGi/Minimum-1.2" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="basearch" value="x86_64"/>
+<mapEntry key="basenl" value="en_US"/>
+<mapEntry key="baseos" value="linux"/>
+<mapEntry key="basews" value="gtk"/>
+<mapEntry key="bootclasspath" value="/usr/java/jdk1.6.0_21/jre/lib/resources.jar;/usr/java/jdk1.6.0_21/jre/lib/rt.jar;/usr/java/jdk1.6.0_21/jre/lib/jsse.jar;/usr/java/jdk1.6.0_21/jre/lib/jce.jar;/usr/java/jdk1.6.0_21/jre/lib/charsets.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/localedata.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/dnsns.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunjce_provider.jar;/usr/java/jdk1.6.0_21/jre/lib/ext/sunpkcs11.jar"/>
+<mapEntry key="eclipse.running" value="true"/>
+<mapEntry key="javacDebugInfo" value="on"/>
+<mapEntry key="javacFailOnError" value="false"/>
+<mapEntry key="javacSource" value="1.6"/>
+<mapEntry key="javacTarget" value="1.6"/>
+<mapEntry key="javacVerbose" value="false"/>
+</mapAttribute>
+<stringAttribute key="org.eclipse.ui.externaltools.ATTR_LOCATION" value="${workspace_loc:/org.cpntools.accesscpn.cosimulation/build.xml}"/>
+<stringAttribute key="process_factory_id" value="org.eclipse.ant.ui.remoteAntProcessFactory"/>
+</launchConfiguration>

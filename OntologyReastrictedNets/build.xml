@@ -337,6 +337,13 @@
 			<pathelement path="${build.result.folder}/../OntologyReastrictedNets_1.0.0/lib/pellet/pellet-test.jar"/>
 		</path>
 		<!-- compile the source code -->
+		<javac srcdir="src" destdir="${build.result.folder}/@dot" failonerror="${javacFailOnError}" verbose="${javacVerbose}" debug="${javacDebugInfo}" includeAntRuntime="no" bootclasspath="${bundleBootClasspath}" source="${bundleJavacSource}" target="${bundleJavacTarget}"               > 
+                         <compilerarg line="${compilerArg}" compiler="${build.compiler}"/>
+	<compilerarg value="@${basedir}/javaCompiler...args" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/>
+			<compilerarg line="-log &apos;${build.result.folder}/@dot${logExtension}&apos;" compiler="org.eclipse.jdt.core.JDTCompilerAdapter"			/> 
+
+		</javac>
+
 		<groovyc destdir="${build.result.folder}/@dot" >		
 		<!-- <javac destdir="${build.result.folder}/@dot" failonerror="${javacFailOnError}" verbose="${javacVerbose}" debug="${javacDebugInfo}" includeAntRuntime="no" bootclasspath="${bundleBootClasspath}" source="${bundleJavacSource}" target="${bundleJavacTarget}"		> -->
 			<!-- <compilerarg line="${compilerArg}" compiler="${build.compiler}"/> -->
@@ -576,5 +583,16 @@
 	<target name="apitools.generation" if="generateAPIDescription">
 		<apitooling.apigeneration  projectName="${projectName}" project="${projectLocation}" binary="${binary.folders}" target="${target.folder}" extramanifests="${extraManifests}"		/>
 	</target>
+
+
+
+
+
+
+
+
+
+
+
 
 </project>

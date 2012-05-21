@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;ProtcolRunner.groovy&apos; to &apos;OntologyReastrictedNets/test/org.k1s.orn.templates&apos;&#x0A;- Original project: &apos;dk.dtu.imm.se.mbse-pn.nppn&apos;&#x0A;- Destination element: &apos;OntologyReastrictedNets/test/org.k1s.orn.templates&apos;&#x0A;- Original element: &apos;org.k1s.nppn.generator.ProtcolRunner.groovy&apos;" description="Copy compilation unit" destination="=OntologyReastrictedNets/test&lt;org.k1s.orn.templates" element1="/test&lt;org.k1s.nppn.generator{ProtcolRunner.groovy" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1334931890460" units="1" version="1.0"/>
+</session>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map>
+	<bundle bundleID="1138" localization="plugin" name="%pluginName" project="OntologyReastrictedNets.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1139" class="dk.dtu.imm.se.mbse_pn.tutorial.Activator" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.tutorial" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1140" class="orn.provider.ORNEditPlugin$Implementation" localization="plugin" name="%pluginName" project="OntologyReastrictedNets.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1141" localization="OSGI-INF/l10n/bundle" name="org.cpntools.accesscpn.model.exporter" project="org.cpntools.accesscpn.model.exporter">
+		<library name="lib/collections-generic-4.01.jar"/>
+		<library name="lib/colt-1.2.0.jar"/>
+		<library name="lib/jung-algorithms-2.0.1.jar"/>
+		<library name="lib/jung-api-2.0.1.jar"/>
+		<library name="lib/jung-graph-impl-2.0.1.jar"/>
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1142" localization="OSGI-INF/l10n/bundle" name="org.cpntools.accesscpn.cosimulation" project="org.cpntools.accesscpn.cosimulation"/>
+	<bundle bundleID="1143" localization="plugin" name="%pluginName" project="OntologyReastrictedNets" provider="%providerName">
+		<library name="."/>
+		<library name="lib/pellet/aterm-java-1.6.jar"/>
+		<library name="lib/pellet/pellet-cli.jar"/>
+		<library name="lib/pellet/pellet-core.jar"/>
+		<library name="lib/pellet/pellet-datatypes.jar"/>
+		<library name="lib/pellet/pellet-dig.jar"/>
+		<library name="lib/pellet/pellet-el.jar"/>
+		<library name="lib/pellet/pellet-explanation.jar"/>
+		<library name="lib/pellet/pellet-jena.jar"/>
+		<library name="lib/pellet/pellet-modularity.jar"/>
+		<library name="lib/pellet/pellet-pellint.jar"/>
+		<library name="lib/pellet/pellet-query.jar"/>
+		<library name="lib/pellet/pellet-rules.jar"/>
+		<library name="lib/pellet/pellet-test.jar"/>
+		<library name="lib/owlapi-bin.jar"/>
+		<library name="lib/pellet/pellet-owlapiv3.jar"/>
+	</bundle>
+	<bundle bundleID="1144" class="inhibitornets.provider.InhibitorNetsEditPlugin$Implementation" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.tutorial.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1145" class="nppnnets.provider.NPPNNetsEditPlugin$Implementation" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.nppn.edit" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1146" localization="plugin" name="%pluginName" project="org.cpntools.accesscpn.model.tests" provider="%providerName">
+		<library name="."/>
+		<library name="lib/javabdd-1.0b2.jar"/>
+		<library name="lib/EfficientStorage.jar"/>
+		<library name="lib/trove-3.0.1.jar"/>
+	</bundle>
+	<bundle bundleID="1147" localization="plugin" name="%pluginName" project="org.cpntools.accesscpn.model" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1148" localization="plugin" name="%pluginName" project="org.cpntools.accesscpn.engine.highlevel" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1149" localization="OSGI-INF/l10n/bundle" name="MCiE" project="MCiE"/>
+	<bundle bundleID="1150" localization="OSGI-INF/l10n/bundle" name="Engine Plug-in" project="org.cpntools.accesscpn.engine" provider="CPN Group"/>
+	<bundle bundleID="1151" class="nppnnets.presentation.NPPNNetsEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.nppn.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1152" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.nppn.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1153" class="org.k1s.owleditors.Activator" localization="OSGI-INF/l10n/bundle" name="OWLEditors" project="OWLEditors">
+		<library name="lib/owlapi-bin.jar"/>
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1154" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.tutorial.tests" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1155" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.nppn" provider="%providerName">
+		<library name="."/>
+		<library name="lib/Busl.jar"/>
+		<library name="lib/jparsec-2.0.jar"/>
+		<library name="lib/jtopas-jt.jar"/>
+		<library name="lib/jtopas.jar"/>
+	</bundle>
+	<bundle bundleID="1156" class="orn.presentation.ORNEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="OntologyReastrictedNets.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1157" class="inhibitornets.presentation.InhibitorNetsEditorPlugin$Implementation" localization="plugin" name="%pluginName" project="dk.dtu.imm.se.mbse-pn.tutorial.editor" provider="%providerName">
+		<library name="."/>
+	</bundle>
+	<bundle bundleID="1158" localization="OSGI-INF/l10n/bundle" name="CPN Model Importer Plug-in" project="org.cpntools.accesscpn.model.importer" provider="CPN Group"/>
+	<bundle bundleID="1159" localization="OSGI-INF/l10n/bundle" name="org.cpntools.accesscpn.engine.proxy" project="org.cpntools.accesscpn.engine.proxy"/>
+</map>

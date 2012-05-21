@@ -1,0 +1,22 @@
+uri "http://k1s.org/BasicSecurityProtocol" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $" .
+
+import "file://protocol.sadl" as protocol.
+
+Algorithm is a class, described by ref with values of Reference .
+
+AES-192 is an Algorithm.
+AES-256 is an Algorithm.
+AES-512 is an Algorithm.
+
+Encrypt is a type of Oper, described by algoritm with values of type Algorithm .
+Decrypt is a type of Oper, described by algorithm with values of type Algorithm .
+
+
+
+
+RSA is a Encrypt.
+
+
+Test: RSA is an Oper.
+

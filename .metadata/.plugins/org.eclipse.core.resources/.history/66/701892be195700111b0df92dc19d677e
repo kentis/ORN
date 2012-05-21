@@ -1,0 +1,14 @@
+package org.k1s.orn;
+
+import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
+
+public class SadlTest {
+
+	public void dill(){
+		com.ge.research.sadl.SadlRuntimeModule a;
+	}
+	
+	public boolean validate(PetriNet pn){
+		
+	}
+}

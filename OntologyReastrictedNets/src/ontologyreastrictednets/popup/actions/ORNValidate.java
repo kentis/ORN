@@ -21,6 +21,7 @@ import org.eclipse.ui.IWorkbenchWindow;
 import org.eclipse.ui.handlers.HandlerUtil;
 
 import org.k1s.orn.ORNVerifier;
+import org.pnml.tools.epnk.pnmlcoremodel.PageLabelProxy;
 import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
 
 import orn.Ontology;
@@ -46,7 +47,13 @@ public class ORNValidate extends AbstractHandler {
 //	    String fileName = dlg.open();
 	    
 	    PetriNet pn = (PetriNet) ((TreeSelection)window.getSelectionService().getSelection()).getFirstElement();
-	    String fileName = ((Ontology)pn.getPage().get(0).getPageLabelProxy().get(0).getLabel()).getStructure().getName();
+	    String fileName = null;
+	    for(Object label : pn.getPage().get(0).getPageLabelProxy()){
+	    	if(((PageLabelProxy)label).getLabel() instanceof Ontology){
+	    		fileName = ((Ontology)((PageLabelProxy)label).getLabel()).getStructure().getName();
+	    	}
+	    }
+	    
 	    
 	    ORNVerifier verifier = new ORNVerifier();
 	     

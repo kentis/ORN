@@ -1,0 +1,2604 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:builderState="http://www.eclipse.org/xtext/builderstate/1.0">
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGDataTypes.FiniteEnumerations.ecore">
+    <exportedObjects name="finiteenumerations" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="FiniteEnumeration" fragment="//FiniteEnumeration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="elements" fragment="//FiniteEnumeration/elements">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="FEConstant" fragment="//FEConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar!/model/PNMLDataTypes.ecore">
+    <exportedObjects name="pnmldatatypes" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="PositiveInteger" fragment="//PositiveInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NonNegativeInteger" fragment="//NonNegativeInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.eclipse.emf.ecore.change_2.5.1.v20100907-1643.jar!/model/Change.ecore">
+    <exportedObjects name="change" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="ChangeDescription" fragment="//ChangeDescription">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="apply" fragment="//ChangeDescription/apply">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="applyAndReverse" fragment="//ChangeDescription/applyAndReverse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="objectChanges" fragment="//ChangeDescription/objectChanges">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="objectsToDetach" fragment="//ChangeDescription/objectsToDetach">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="objectsToAttach" fragment="//ChangeDescription/objectsToAttach">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="resourceChanges" fragment="//ChangeDescription/resourceChanges">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EObjectToChangesMapEntry" fragment="//EObjectToChangesMapEntry">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="key" fragment="//EObjectToChangesMapEntry/key">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//EObjectToChangesMapEntry/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="FeatureChange" fragment="//FeatureChange">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="apply" fragment="//FeatureChange/apply">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="originalObject" fragment="//FeatureChange/apply/originalObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="applyAndReverse" fragment="//FeatureChange/applyAndReverse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="originalObject" fragment="//FeatureChange/applyAndReverse/originalObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="featureName" fragment="//FeatureChange/featureName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="dataValue" fragment="//FeatureChange/dataValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="set" fragment="//FeatureChange/set">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//FeatureChange/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//FeatureChange/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="referenceValue" fragment="//FeatureChange/referenceValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="listChanges" fragment="//FeatureChange/listChanges">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ListChange" fragment="//ListChange">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="apply" fragment="//ListChange/apply">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="originalList" fragment="//ListChange/apply/originalList">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="applyAndReverse" fragment="//ListChange/applyAndReverse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="originalList" fragment="//ListChange/applyAndReverse/originalList">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="kind" fragment="//ListChange/kind">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="dataValues" fragment="//ListChange/dataValues">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="index" fragment="//ListChange/index">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="moveToIndex" fragment="//ListChange/moveToIndex">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="values" fragment="//ListChange/values">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="referenceValues" fragment="//ListChange/referenceValues">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//ListChange/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="featureMapEntryValues" fragment="//ListChange/featureMapEntryValues">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ChangeKind" fragment="//ChangeKind">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </exportedObjects>
+    <exportedObjects name="ADD" fragment="//ChangeKind/ADD">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="REMOVE" fragment="//ChangeKind/REMOVE">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="MOVE" fragment="//ChangeKind/MOVE">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="ResourceChange" fragment="//ResourceChange">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="apply" fragment="//ResourceChange/apply">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="applyAndReverse" fragment="//ResourceChange/applyAndReverse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="resourceURI" fragment="//ResourceChange/resourceURI">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="resource" fragment="//ResourceChange/resource">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//ResourceChange/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="listChanges" fragment="//ResourceChange/listChanges">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="FeatureMapEntry" fragment="//FeatureMapEntry">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="featureName" fragment="//FeatureMapEntry/featureName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="dataValue" fragment="//FeatureMapEntry/dataValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//FeatureMapEntry/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//FeatureMapEntry/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="referenceValue" fragment="//FeatureMapEntry/referenceValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGArbitraryDeclarations.ecore">
+    <exportedObjects name="arbitrarydeclarations" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="ArbitrarySort" fragment="//ArbitrarySort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ArbitraryOperator" fragment="//ArbitraryOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="input" fragment="//ArbitraryOperator/input">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="output" fragment="//ArbitraryOperator/output">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Unparsed" fragment="//Unparsed">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="contents" fragment="//Unparsed/contents">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl">
+    <exportedObjects name="PetriNet" fragment="//@elements.0/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="page" fragment="//@elements.0/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="HighLevelPetriNet" fragment="//@elements.1/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="ColoredPetriNet" fragment="//@elements.2/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Page" fragment="//@elements.3/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="nodes" fragment="//@elements.3/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="arc" fragment="//@elements.3/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Node" fragment="//@elements.4/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//@elements.4/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Place" fragment="//@elements.5/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="initialMarking" fragment="//@elements.5/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="colorType" fragment="//@elements.5/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Socket" fragment="//@elements.6/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="port" fragment="//@elements.6/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="direction" fragment="//@elements.6/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="SocketDirection" fragment="//@elements.7/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="In" fragment="//@elements.7/@mustBeOneOf/@instanceList/@names.0">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Out" fragment="//@elements.7/@mustBeOneOf/@instanceList/@names.1">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="InOut" fragment="//@elements.7/@mustBeOneOf/@instanceList/@names.2">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Port" fragment="//@elements.8/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="socket" fragment="//@elements.8/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="PortSocketRelatinoship" fragment="//@elements.9">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <exportedObjects name="SocketPortRelatinoship" fragment="//@elements.10">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <exportedObjects name="Transition" fragment="//@elements.11/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="NormalTransition" fragment="//@elements.12/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="guard" fragment="//@elements.12/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="timing" fragment="//@elements.12/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="codeSegment" fragment="//@elements.12/@describedBy.2/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="SubstiutionTransition" fragment="//@elements.13/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="page" fragment="//@elements.13/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Arc" fragment="//@elements.14/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="inscription" fragment="//@elements.14/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="source" fragment="//@elements.14/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="dest" fragment="//@elements.14/@describedBy.2/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <importedNames>s</importedNames>
+    <importedNames>p</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.0/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.3/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.1/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.2/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.3/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.3/@describedBy.1/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.14/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.5/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@describedBy.1/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.7/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.5/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.5/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@givens/@elements.0/@left/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/0" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@givens/@elements.0/@left/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@givens/@elements.0/@right/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/1" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@givens/@elements.0/@right/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@givens/@elements.0/@right/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/2" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@thens/@elements.0/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@thens/@elements.0/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/3" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9/@thens/@elements.0/@right/@value/@instName" targetEObjectUri="sadl.linking.service#/4" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@givens/@elements.0/@left/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/5" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@givens/@elements.0/@left/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@givens/@elements.0/@right/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/6" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@givens/@elements.0/@right/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.8/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@givens/@elements.0/@right/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/7" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@thens/@elements.0/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.6/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@thens/@elements.0/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/8" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10/@thens/@elements.0/@right/@value/@instName" targetEObjectUri="sadl.linking.service#/9" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.11/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.12/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.11/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.13/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.3/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.13/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.11/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.14/@describedBy.1/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.14/@describedBy.2/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/cpn.sadl#//@elements.4/@className"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGDataTypes.CyclicEnumerations.ecore">
+    <exportedObjects name="cyclicenumerations" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="CyclicEnumeration" fragment="//CyclicEnumeration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="CyclicEnumOperator" fragment="//CyclicEnumOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Successor" fragment="//Successor">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Predecessor" fragment="//Predecessor">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl">
+    <exportedObjects name="Principal" fragment="//@elements.0/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//@elements.0/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Channel" fragment="//@elements.1/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="property" fragment="//@elements.1/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="endpoints" fragment="//@elements.1/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="ChannelProperty" fragment="//@elements.2/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="GuaranteedDelivery" fragment="//@elements.2/@mustBeOneOf/@instanceList/@names.0">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="PreservesOrder" fragment="//@elements.2/@mustBeOneOf/@instanceList/@names.1">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Stream" fragment="//@elements.3/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Datagram" fragment="//@elements.4/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="SEND" fragment="//@elements.5/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="RECIEVE" fragment="//@elements.6/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="stream" fragment="//@elements.7">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <exportedObjects name="datagram" fragment="//@elements.8">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <importedNames>Operation</importedNames>
+    <importedNames>c</importedNames>
+    <importedNames>basic:Pragmatic</importedNames>
+    <importedNames>basic:Property</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.0/@classIdentifier" targetEObjectUri="sadl.linking.service#/10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.2/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@describedBy.1/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@classIdentifier" targetEObjectUri="sadl.linking.service#/11"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.2/@classIdentifier" targetEObjectUri="sadl.linking.service#/12"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.3/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.4/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.5/@classIdentifier" targetEObjectUri="sadl.linking.service#/13"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.6/@classIdentifier" targetEObjectUri="sadl.linking.service#/14"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@givens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/15" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@givens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.0/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.0/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/16" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.0/@right/@value/@instName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.2/@mustBeOneOf/@instanceList/@names.0" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.1/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.1/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/17" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@ifs/@elements.1/@right/@value/@instName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.2/@mustBeOneOf/@instanceList/@names.1" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@thens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/18" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7/@thens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.3/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.7"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8/@givens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/19" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8/@givens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.1/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8/@thens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/20" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8/@thens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.4/@className" containerEObjectURI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking.sadl#//@elements.8"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar!/model/PNMLPageDiagramInfo.ecore">
+    <exportedObjects name="diagraminfo" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="DiagramInfo" fragment="//DiagramInfo">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="pageLabelProxy" fragment="//DiagramInfo/pageLabelProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="diagram" fragment="//DiagramInfo/diagram">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="labelProxy" fragment="//DiagramInfo/labelProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/fdsfsdfsdfsdfds.sadl"/>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl">
+    <exportedObjects name="Pragmatic" fragment="//@elements.0/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Property" fragment="//@elements.1/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Export" fragment="//@elements.2/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="inputParameter" fragment="//@elements.2/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Import" fragment="//@elements.3/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Operation" fragment="//@elements.4/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <importedNames>Principal</importedNames>
+    <importedNames>subclass</importedNames>
+    <importedNames>z</importedNames>
+    <importedNames>x</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.2/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.3/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.4/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.5/@expr/@expr/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/21"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.5/@expr/@expr/@right/@expr/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.6/@expr/@expr/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/22"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.6/@expr/@expr/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="sadl.linking.service#/23"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.6/@expr/@expr/@right/@gp/@subj" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.7/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.7/@expr/@expr/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="sadl.linking.service#/24"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic.sadl#//@elements.7/@expr/@expr/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/25"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl">
+    <importedNames>nww:Channel</importedNames>
+    <importedNames>subclass</importedNames>
+    <importedNames>basic:Pragmatic</importedNames>
+    <importedNames>z</importedNames>
+    <importedNames>nww:Principal</importedNames>
+    <importedNames>x</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.0/@expr/@expr/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/26"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.0/@expr/@expr/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="sadl.linking.service#/27"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.0/@expr/@expr/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/28"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.1/@expr/@expr/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/29"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.1/@expr/@expr/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="sadl.linking.service#/30"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.1/@expr/@expr/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/31"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.2/@expr/@expr/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/32"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.2/@expr/@expr/@right/@gp/@ofPhr.0/@propertyName" targetEObjectUri="sadl.linking.service#/33"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/basic_networking_instance.sadl#//@elements.2/@expr/@expr/@right/@gp/@subj" targetEObjectUri="sadl.linking.service#/34"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar!/model/Serialisation.ecore">
+    <exportedObjects name="serialisation" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="AssocClass" fragment="//AssocClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="source" fragment="//AssocClass/source">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="target" fragment="//AssocClass/target">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//AssocClass/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar!/model/PNMLStructuredPNTypeModel.ecore">
+    <exportedObjects name="structuredpntypemodel" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="StructuredPetriNetType" fragment="//StructuredPetriNetType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getLinker" fragment="//StructuredPetriNetType/getLinker">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="StructuredLabel" fragment="//StructuredLabel">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getStructuralFeature" fragment="//StructuredLabel/getStructuralFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="parse" fragment="//StructuredLabel/parse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="input" fragment="//StructuredLabel/parse/input">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//StructuredLabel/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Linker" fragment="//Linker">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getglobalLinks" fragment="//Linker/getglobalLinks">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="petrinet" fragment="//Linker/getglobalLinks/petrinet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="SymbolUseMapping" fragment="//SymbolUseMapping">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getSymbolUses" fragment="//SymbolUseMapping/getSymbolUses">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getSymbolDef" fragment="//SymbolUseMapping/getSymbolDef">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="symbolUse" fragment="//SymbolUseMapping/getSymbolDef/symbolUse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="SymbolDef" fragment="//SymbolDef">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//SymbolDef/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="SymbolUse" fragment="//SymbolUse">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getRefFeature" fragment="//SymbolUse/getRefFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//SymbolUse/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpng.pntd_0.9.2.201106162130.jar!/model/HLPNGSerialisation.ecore">
+    <exportedObjects name="hlpngserialisation" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="SortAssoc" fragment="//SortAssoc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="DeclAssoc" fragment="//DeclAssoc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="TermAssoc" fragment="//TermAssoc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="VariableDeclAssoc" fragment="//VariableDeclAssoc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGDataTypes.Partitions.ecore">
+    <exportedObjects name="partitions" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Partition" fragment="//Partition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="def" fragment="//Partition/def">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="partitionElements" fragment="//Partition/partitionElements">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="PartitionElement" fragment="//PartitionElement">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="partitionelementconstant" fragment="//PartitionElement/partitionelementconstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="PartitionOperator" fragment="//PartitionOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="PartitionElementOf" fragment="//PartitionElementOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="refpartition" fragment="//PartitionElementOf/refpartition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="LessThan" fragment="//LessThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThan" fragment="//GreaterThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/ontologies/BasicNetworkingInCpn.sadl">
+    <exportedObjects name="bla" fragment="//@elements.0/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <importedNames>Pragmatic</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/OntologyReastrictedNets/ontologies/BasicNetworkingInCpn.sadl#//@elements.0/@typeDecl/@type/@classIdentifier" targetEObjectUri="sadl.linking.service#/35"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/ontology/BasicSecurityProtocols.sadl">
+    <exportedObjects name="CryptoAlgorithm" fragment="//@elements.0/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="reference" fragment="//@elements.0/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="fullfills" fragment="//@elements.0/@describedBy.1/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="approved_by" fragment="//@elements.0/@describedBy.2/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="updated" fragment="//@elements.0/@describedBy.3/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="keysize" fragment="//@elements.0/@describedBy.4/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="AES" fragment="//@elements.1/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="RINJDAL-256" fragment="//@elements.2/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="RINJDAL-512" fragment="//@elements.3/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="RSA-1024" fragment="//@elements.4/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Encrypt" fragment="//@elements.5/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="algoritm" fragment="//@elements.5/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Decrypt" fragment="//@elements.6/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="algorithm" fragment="//@elements.6/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <importedNames>Oper</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.1/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.1/@addlInfoItems.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.2/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.1/@addlInfoItems.1/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.0/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.1/@addlInfoItems.2/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.4/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.2/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.2/@addlInfoItems.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.4/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.3/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.3/@addlInfoItems.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.4/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.4/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.5/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.5/@classIdentifier" targetEObjectUri="sadl.linking.service#/0"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.6/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.6/@classIdentifier" targetEObjectUri="sadl.linking.service#/1"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.7/@expr/@expr/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.2/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.7/@expr/@expr/@left/@gp/@subj" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.1/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.8/@expr/@expr/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.2/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.8/@expr/@expr/@left/@gp/@subj" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.2/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.9/@expr/@expr/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.0/@describedBy.2/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.9/@expr/@expr/@left/@gp/@subj" targetEObjectUri="platform:/resource/ontology/BasicSecurityProtocols.sadl#//@elements.3/@typeDecl/@instName"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/ontology/protocol.sadl">
+    <exportedObjects name="Pragmatic" fragment="//@elements.0/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Property" fragment="//@elements.1/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Entity" fragment="//@elements.2/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Oper" fragment="//@elements.3/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Channel" fragment="//@elements.4/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="property" fragment="//@elements.4/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Print" fragment="//@elements.5/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="property" fragment="//@elements.5/@describedBy.0/@propertyName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="ChannelProperty" fragment="//@elements.6/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="GuaranteedDelivery" fragment="//@elements.6/@mustBeOneOf/@instanceList/@names.0">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="preservesOrder" fragment="//@elements.6/@mustBeOneOf/@instanceList/@names.1">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Stream" fragment="//@elements.7/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="Datagram" fragment="//@elements.8/@className">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="stream" fragment="//@elements.9">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <exportedObjects name="datagram" fragment="//@elements.10">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//Rule"/>
+    </exportedObjects>
+    <exportedObjects name="TCP" fragment="//@elements.11/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <exportedObjects name="UDP" fragment="//@elements.14/@typeDecl/@instName">
+      <eClass href="http://www.ge.com/research/sadl/Sadl#//ResourceName"/>
+    </exportedObjects>
+    <importedNames>c</importedNames>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.2/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.3/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.5/@describedBy.0/@range/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.5/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.3/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.6/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.1/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.7/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.8/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@givens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/2" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@givens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.0/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.0/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/3" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.0/@right/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.6/@mustBeOneOf/@instanceList/@names.0" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.1/@left/@gp/@ofPhr.0/@propertyName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@describedBy.0/@propertyName" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.1/@left/@gp/@subj" targetEObjectUri="sadl.linking.service#/4" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@ifs/@elements.1/@right/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.6/@mustBeOneOf/@instanceList/@names.1" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@thens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/5" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.9/@thens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.7/@className" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.9"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.10/@givens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/6" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.10/@givens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.10/@thens/@elements.0/@left/@value/@instName" targetEObjectUri="sadl.linking.service#/7" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.10/@thens/@elements.0/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.8/@className" containerEObjectURI="platform:/resource/ontology/protocol.sadl#//@elements.10"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.12/@subj" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.12/@addlInfoItems.0/@propertyName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@describedBy.0/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.12/@addlInfoItems.0/@objectValue/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.6/@mustBeOneOf/@instanceList/@names.0"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.13/@subj" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.13/@addlInfoItems.0/@propertyName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@describedBy.0/@propertyName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.13/@addlInfoItems.0/@objectValue/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.6/@mustBeOneOf/@instanceList/@names.1"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.14/@typeDecl/@type/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.15/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.15/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.16/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.16/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.17/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.11/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.17/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.7/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.18/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.14/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.18/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.0/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.19/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.14/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.19/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.4/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.20/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.14/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.20/@expr/@expr/@right/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.8/@className"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.21/@expr/@expr/@left/@value/@instName" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.14/@typeDecl/@instName"/>
+    <referenceDescriptions sourceEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.21/@expr/@expr/@right/@expr/@gp/@pivot/@classIdentifier" targetEObjectUri="platform:/resource/ontology/protocol.sadl#//@elements.7/@className"/>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar!/model/XMLType.ecore">
+    <exportedObjects name="type" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="AnySimpleType" fragment="//AnySimpleType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="AnyType" fragment="//AnyType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="mixed" fragment="//AnyType/mixed">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="any" fragment="//AnyType/any">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="anyAttribute" fragment="//AnyType/anyAttribute">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="AnyURI" fragment="//AnyURI">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Base64Binary" fragment="//Base64Binary">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Boolean" fragment="//Boolean">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="BooleanObject" fragment="//BooleanObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Byte" fragment="//Byte">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ByteObject" fragment="//ByteObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Date" fragment="//Date">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="DateTime" fragment="//DateTime">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Decimal" fragment="//Decimal">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Double" fragment="//Double">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="DoubleObject" fragment="//DoubleObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Duration" fragment="//Duration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ENTITIES" fragment="//ENTITIES">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ENTITIESBase" fragment="//ENTITIESBase">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ENTITY" fragment="//ENTITY">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Float" fragment="//Float">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FloatObject" fragment="//FloatObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GDay" fragment="//GDay">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GMonth" fragment="//GMonth">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GMonthDay" fragment="//GMonthDay">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GYear" fragment="//GYear">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GYearMonth" fragment="//GYearMonth">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="HexBinary" fragment="//HexBinary">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ID" fragment="//ID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="IDREF" fragment="//IDREF">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="IDREFS" fragment="//IDREFS">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="IDREFSBase" fragment="//IDREFSBase">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Int" fragment="//Int">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Integer" fragment="//Integer">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="IntObject" fragment="//IntObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Language" fragment="//Language">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Long" fragment="//Long">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="LongObject" fragment="//LongObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Name" fragment="//Name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NCName" fragment="//NCName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NegativeInteger" fragment="//NegativeInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NMTOKEN" fragment="//NMTOKEN">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NMTOKENS" fragment="//NMTOKENS">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NMTOKENSBase" fragment="//NMTOKENSBase">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NonNegativeInteger" fragment="//NonNegativeInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NonPositiveInteger" fragment="//NonPositiveInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NormalizedString" fragment="//NormalizedString">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="NOTATION" fragment="//NOTATION">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="PositiveInteger" fragment="//PositiveInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ProcessingInstruction" fragment="//ProcessingInstruction">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="data" fragment="//ProcessingInstruction/data">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="target" fragment="//ProcessingInstruction/target">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="QName" fragment="//QName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Short" fragment="//Short">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ShortObject" fragment="//ShortObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="SimpleAnyType" fragment="//SimpleAnyType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="rawValue" fragment="//SimpleAnyType/rawValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//SimpleAnyType/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="instanceType" fragment="//SimpleAnyType/instanceType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="String" fragment="//String">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Time" fragment="//Time">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Token" fragment="//Token">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedByte" fragment="//UnsignedByte">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedByteObject" fragment="//UnsignedByteObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedInt" fragment="//UnsignedInt">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedIntObject" fragment="//UnsignedIntObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedLong" fragment="//UnsignedLong">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedShort" fragment="//UnsignedShort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="UnsignedShortObject" fragment="//UnsignedShortObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="XMLTypeDocumentRoot" fragment="//XMLTypeDocumentRoot">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="mixed" fragment="//XMLTypeDocumentRoot/mixed">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="xMLNSPrefixMap" fragment="//XMLTypeDocumentRoot/xMLNSPrefixMap">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="xSISchemaLocation" fragment="//XMLTypeDocumentRoot/xSISchemaLocation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="cDATA" fragment="//XMLTypeDocumentRoot/cDATA">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="comment" fragment="//XMLTypeDocumentRoot/comment">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="processingInstruction" fragment="//XMLTypeDocumentRoot/processingInstruction">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//XMLTypeDocumentRoot/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGLists.ecore">
+    <exportedObjects name="lists" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="List" fragment="//List">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="basis" fragment="//List/basis">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EmptyList" fragment="//EmptyList">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="refsort" fragment="//EmptyList/refsort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="MakeList" fragment="//MakeList">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="refsort" fragment="//MakeList/refsort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Concatenation" fragment="//Concatenation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Length" fragment="//Length">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="MemberAtIndex" fragment="//MemberAtIndex">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="index" fragment="//MemberAtIndex/index">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Append" fragment="//Append">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Sublist" fragment="//Sublist">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="start" fragment="//Sublist/start">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="length" fragment="//Sublist/length">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="ListOperator" fragment="//ListOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpng.pntd_0.9.2.201106162130.jar!/model/HLPNGDefinition.ecore">
+    <exportedObjects name="hlpngdefinition" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Place" fragment="//Place">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="type" fragment="//Place/type">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="hlinitialMarking" fragment="//Place/hlinitialMarking">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Transition" fragment="//Transition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="condition" fragment="//Transition/condition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Arc" fragment="//Arc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="hlinscription" fragment="//Arc/hlinscription">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Page" fragment="//Page">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="declaration" fragment="//Page/declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Type" fragment="//Type">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//Type/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="HLMarking" fragment="//HLMarking">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//HLMarking/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Condition" fragment="//Condition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//Condition/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="HLAnnotation" fragment="//HLAnnotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//HLAnnotation/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Declaration" fragment="//Declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//Declaration/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="HLPNG" fragment="//HLPNG">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="kind" fragment="//HLPNG/kind">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="HLPNGKind" fragment="//HLPNGKind">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </exportedObjects>
+    <exportedObjects name="FULL" fragment="//HLPNGKind/FULL">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="SN" fragment="//HLPNGKind/SN">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="PTN" fragment="//HLPNGKind/PTN">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk_0.9.2.201106162130.jar!/model/PNMLCoreModel.ecore">
+    <exportedObjects name="pnmlcoremodel" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="PetriNetDoc" fragment="//PetriNetDoc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="net" fragment="//PetriNetDoc/net">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="PetriNet" fragment="//PetriNet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="type" fragment="//PetriNet/type">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//PetriNet/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="page" fragment="//PetriNet/page">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="toolspecific" fragment="//PetriNet/toolspecific">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="unknown" fragment="//PetriNet/unknown">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Page" fragment="//Page">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="object" fragment="//Page/object">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="pageLabelProxy" fragment="//Page/pageLabelProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="labelproxy" fragment="//Page/labelproxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Object" fragment="//Object">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//Object/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="toolspecific" fragment="//Object/toolspecific">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="graphics" fragment="//Object/graphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="unknown" fragment="//Object/unknown">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="LabelProxy" fragment="//LabelProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="label" fragment="//LabelProxy/label">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//LabelProxy/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="object" fragment="//LabelProxy/object">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Graphics" fragment="//Graphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Node" fragment="//Node">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="out" fragment="//Node/out">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="in" fragment="//Node/in">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Arc" fragment="//Arc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="source" fragment="//Arc/source">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="target" fragment="//Arc/target">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="PlaceNode" fragment="//PlaceNode">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="TransitionNode" fragment="//TransitionNode">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Place" fragment="//Place">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="RefPlace" fragment="//RefPlace">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ref" fragment="//RefPlace/ref">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="RefTransition" fragment="//RefTransition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ref" fragment="//RefTransition/ref">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Transition" fragment="//Transition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Name" fragment="//Name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//Name/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Label" fragment="//Label">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="toolspecific" fragment="//Label/toolspecific">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="graphics" fragment="//Label/graphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="unknown" fragment="//Label/unknown">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ArcGraphics" fragment="//ArcGraphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="line" fragment="//ArcGraphics/line">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="position" fragment="//ArcGraphics/position">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="NodeGraphics" fragment="//NodeGraphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="position" fragment="//NodeGraphics/position">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="dimension" fragment="//NodeGraphics/dimension">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="line" fragment="//NodeGraphics/line">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="fill" fragment="//NodeGraphics/fill">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="AnnotationGraphics" fragment="//AnnotationGraphics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="fill" fragment="//AnnotationGraphics/fill">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="line" fragment="//AnnotationGraphics/line">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="offset" fragment="//AnnotationGraphics/offset">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="font" fragment="//AnnotationGraphics/font">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Line" fragment="//Line">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="shape" fragment="//Line/shape">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="color" fragment="//Line/color">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="width" fragment="//Line/width">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="style" fragment="//Line/style">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="LineShape" fragment="//LineShape">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Color" fragment="//Color">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="LineStyle" fragment="//LineStyle">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Coordinate" fragment="//Coordinate">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="x" fragment="//Coordinate/x">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="y" fragment="//Coordinate/y">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Fill" fragment="//Fill">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="color" fragment="//Fill/color">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="image" fragment="//Fill/image">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="gradientColor" fragment="//Fill/gradientColor">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="gradientrotation" fragment="//Fill/gradientrotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="URI" fragment="//URI">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="GradientRotation" fragment="//GradientRotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="Font" fragment="//Font">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="family" fragment="//Font/family">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="style" fragment="//Font/style">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="weight" fragment="//Font/weight">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="size" fragment="//Font/size">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="decoration" fragment="//Font/decoration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="align" fragment="//Font/align">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="rotation" fragment="//Font/rotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="FontFamily" fragment="//FontFamily">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FontStyle" fragment="//FontStyle">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FontWeight" fragment="//FontWeight">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FontDecoration" fragment="//FontDecoration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FontSize" fragment="//FontSize">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="FontAlign" fragment="//FontAlign">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="PetriNetType" fragment="//PetriNetType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="EmptyType" fragment="//EmptyType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ToolInfoText" fragment="//ToolInfoText">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="info" fragment="//ToolInfoText/info">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="ToolInfo" fragment="//ToolInfo">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="tool" fragment="//ToolInfo/tool">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="version" fragment="//ToolInfo/version">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="ID" fragment="//ID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="id" fragment="//ID/id">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="PageLabelProxy" fragment="//PageLabelProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//PageLabelProxy/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="label" fragment="//PageLabelProxy/label">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Attribute" fragment="//Attribute">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGStrings.ecore">
+    <exportedObjects name="strings" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="String" fragment="//String">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="StringOperator" fragment="//StringOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="StringConstant" fragment="//StringConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//StringConstant/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Substring" fragment="//Substring">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="start" fragment="//Substring/start">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="length" fragment="//Substring/length">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Concatenation" fragment="//Concatenation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Append" fragment="//Append">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Length" fragment="//Length">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThan" fragment="//GreaterThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThanOrEqual" fragment="//GreaterThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThan" fragment="//LessThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThanOrEqual" fragment="//LessThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar!/model/XMLNamespace.ecore">
+    <exportedObjects name="namespace" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="LangType" fragment="//LangType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="LangTypeNull" fragment="//LangTypeNull">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="SpaceType" fragment="//SpaceType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnum"/>
+    </exportedObjects>
+    <exportedObjects name="default" fragment="//SpaceType/default">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="preserve" fragment="//SpaceType/preserve">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EEnumLiteral"/>
+    </exportedObjects>
+    <exportedObjects name="SpaceTypeObject" fragment="//SpaceTypeObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="XMLNamespaceDocumentRoot" fragment="//XMLNamespaceDocumentRoot">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="mixed" fragment="//XMLNamespaceDocumentRoot/mixed">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="xMLNSPrefixMap" fragment="//XMLNamespaceDocumentRoot/xMLNSPrefixMap">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="xSISchemaLocation" fragment="//XMLNamespaceDocumentRoot/xSISchemaLocation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="base" fragment="//XMLNamespaceDocumentRoot/base">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="id" fragment="//XMLNamespaceDocumentRoot/id">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="lang" fragment="//XMLNamespaceDocumentRoot/lang">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="space" fragment="//XMLNamespaceDocumentRoot/space">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.eclipse.emf.ecore_2.6.1.v20100914-1218.jar!/model/Ecore.ecore">
+    <exportedObjects name="ecore" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="EAttribute" fragment="//EAttribute">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="iD" fragment="//EAttribute/iD">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eAttributeType" fragment="//EAttribute/eAttributeType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EAnnotation" fragment="//EAnnotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="source" fragment="//EAnnotation/source">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="details" fragment="//EAnnotation/details">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eModelElement" fragment="//EAnnotation/eModelElement">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="contents" fragment="//EAnnotation/contents">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="references" fragment="//EAnnotation/references">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EClass" fragment="//EClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="isSuperTypeOf" fragment="//EClass/isSuperTypeOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="someClass" fragment="//EClass/isSuperTypeOf/someClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getFeatureCount" fragment="//EClass/getFeatureCount">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getEStructuralFeature" fragment="//EClass/getEStructuralFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="featureID" fragment="//EClass/getEStructuralFeature/featureID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getFeatureID" fragment="//EClass/getFeatureID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EClass/getFeatureID/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getEStructuralFeature" fragment="//EClass/getEStructuralFeature.1">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="featureName" fragment="//EClass/getEStructuralFeature.1/featureName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getOperationCount" fragment="//EClass/getOperationCount">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getEOperation" fragment="//EClass/getEOperation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="operationID" fragment="//EClass/getEOperation/operationID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getOperationID" fragment="//EClass/getOperationID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="operation" fragment="//EClass/getOperationID/operation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getOverride" fragment="//EClass/getOverride">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="operation" fragment="//EClass/getOverride/operation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="abstract" fragment="//EClass/abstract">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="interface" fragment="//EClass/interface">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eSuperTypes" fragment="//EClass/eSuperTypes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eOperations" fragment="//EClass/eOperations">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllAttributes" fragment="//EClass/eAllAttributes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllReferences" fragment="//EClass/eAllReferences">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eReferences" fragment="//EClass/eReferences">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAttributes" fragment="//EClass/eAttributes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllContainments" fragment="//EClass/eAllContainments">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllOperations" fragment="//EClass/eAllOperations">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllStructuralFeatures" fragment="//EClass/eAllStructuralFeatures">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllSuperTypes" fragment="//EClass/eAllSuperTypes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eIDAttribute" fragment="//EClass/eIDAttribute">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eStructuralFeatures" fragment="//EClass/eStructuralFeatures">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eGenericSuperTypes" fragment="//EClass/eGenericSuperTypes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eAllGenericSuperTypes" fragment="//EClass/eAllGenericSuperTypes">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EClassifier" fragment="//EClassifier">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="isInstance" fragment="//EClassifier/isInstance">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="object" fragment="//EClassifier/isInstance/object">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getClassifierID" fragment="//EClassifier/getClassifierID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="instanceClassName" fragment="//EClassifier/instanceClassName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="instanceClass" fragment="//EClassifier/instanceClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="defaultValue" fragment="//EClassifier/defaultValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="instanceTypeName" fragment="//EClassifier/instanceTypeName">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="ePackage" fragment="//EClassifier/ePackage">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eTypeParameters" fragment="//EClassifier/eTypeParameters">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EDataType" fragment="//EDataType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="serializable" fragment="//EDataType/serializable">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="EEnum" fragment="//EEnum">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getEEnumLiteral" fragment="//EEnum/getEEnumLiteral">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//EEnum/getEEnumLiteral/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getEEnumLiteral" fragment="//EEnum/getEEnumLiteral.1">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//EEnum/getEEnumLiteral.1/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="getEEnumLiteralByLiteral" fragment="//EEnum/getEEnumLiteralByLiteral">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="literal" fragment="//EEnum/getEEnumLiteralByLiteral/literal">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eLiterals" fragment="//EEnum/eLiterals">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EEnumLiteral" fragment="//EEnumLiteral">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//EEnumLiteral/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="instance" fragment="//EEnumLiteral/instance">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="literal" fragment="//EEnumLiteral/literal">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eEnum" fragment="//EEnumLiteral/eEnum">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EFactory" fragment="//EFactory">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="create" fragment="//EFactory/create">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eClass" fragment="//EFactory/create/eClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="createFromString" fragment="//EFactory/createFromString">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eDataType" fragment="//EFactory/createFromString/eDataType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="literalValue" fragment="//EFactory/createFromString/literalValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="convertToString" fragment="//EFactory/convertToString">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eDataType" fragment="//EFactory/convertToString/eDataType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="instanceValue" fragment="//EFactory/convertToString/instanceValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="ePackage" fragment="//EFactory/ePackage">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EModelElement" fragment="//EModelElement">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getEAnnotation" fragment="//EModelElement/getEAnnotation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="source" fragment="//EModelElement/getEAnnotation/source">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eAnnotations" fragment="//EModelElement/eAnnotations">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ENamedElement" fragment="//ENamedElement">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//ENamedElement/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="EObject" fragment="//EObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="eClass" fragment="//EObject/eClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eIsProxy" fragment="//EObject/eIsProxy">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eResource" fragment="//EObject/eResource">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eContainer" fragment="//EObject/eContainer">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eContainingFeature" fragment="//EObject/eContainingFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eContainmentFeature" fragment="//EObject/eContainmentFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eContents" fragment="//EObject/eContents">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eAllContents" fragment="//EObject/eAllContents">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eCrossReferences" fragment="//EObject/eCrossReferences">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="eGet" fragment="//EObject/eGet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EObject/eGet/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eGet" fragment="//EObject/eGet.1">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EObject/eGet.1/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="resolve" fragment="//EObject/eGet.1/resolve">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eSet" fragment="//EObject/eSet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EObject/eSet/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="newValue" fragment="//EObject/eSet/newValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eIsSet" fragment="//EObject/eIsSet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EObject/eIsSet/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eUnset" fragment="//EObject/eUnset">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="feature" fragment="//EObject/eUnset/feature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eInvoke" fragment="//EObject/eInvoke">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="operation" fragment="//EObject/eInvoke/operation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="arguments" fragment="//EObject/eInvoke/arguments">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="EOperation" fragment="//EOperation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getOperationID" fragment="//EOperation/getOperationID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="isOverrideOf" fragment="//EOperation/isOverrideOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="someOperation" fragment="//EOperation/isOverrideOf/someOperation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="eContainingClass" fragment="//EOperation/eContainingClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eTypeParameters" fragment="//EOperation/eTypeParameters">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eParameters" fragment="//EOperation/eParameters">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eExceptions" fragment="//EOperation/eExceptions">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eGenericExceptions" fragment="//EOperation/eGenericExceptions">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EPackage" fragment="//EPackage">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getEClassifier" fragment="//EPackage/getEClassifier">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//EPackage/getEClassifier/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="nsURI" fragment="//EPackage/nsURI">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="nsPrefix" fragment="//EPackage/nsPrefix">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eFactoryInstance" fragment="//EPackage/eFactoryInstance">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eClassifiers" fragment="//EPackage/eClassifiers">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eSubpackages" fragment="//EPackage/eSubpackages">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eSuperPackage" fragment="//EPackage/eSuperPackage">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EParameter" fragment="//EParameter">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="eOperation" fragment="//EParameter/eOperation">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EReference" fragment="//EReference">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="containment" fragment="//EReference/containment">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="container" fragment="//EReference/container">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="resolveProxies" fragment="//EReference/resolveProxies">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eOpposite" fragment="//EReference/eOpposite">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eReferenceType" fragment="//EReference/eReferenceType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eKeys" fragment="//EReference/eKeys">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EStructuralFeature" fragment="//EStructuralFeature">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getFeatureID" fragment="//EStructuralFeature/getFeatureID">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getContainerClass" fragment="//EStructuralFeature/getContainerClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="changeable" fragment="//EStructuralFeature/changeable">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="volatile" fragment="//EStructuralFeature/volatile">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="transient" fragment="//EStructuralFeature/transient">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="defaultValueLiteral" fragment="//EStructuralFeature/defaultValueLiteral">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="defaultValue" fragment="//EStructuralFeature/defaultValue">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="unsettable" fragment="//EStructuralFeature/unsettable">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="derived" fragment="//EStructuralFeature/derived">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eContainingClass" fragment="//EStructuralFeature/eContainingClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ETypedElement" fragment="//ETypedElement">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ordered" fragment="//ETypedElement/ordered">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="unique" fragment="//ETypedElement/unique">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="lowerBound" fragment="//ETypedElement/lowerBound">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="upperBound" fragment="//ETypedElement/upperBound">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="many" fragment="//ETypedElement/many">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="required" fragment="//ETypedElement/required">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="eType" fragment="//ETypedElement/eType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eGenericType" fragment="//ETypedElement/eGenericType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EBigDecimal" fragment="//EBigDecimal">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EBigInteger" fragment="//EBigInteger">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EBoolean" fragment="//EBoolean">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EBooleanObject" fragment="//EBooleanObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EByte" fragment="//EByte">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EByteArray" fragment="//EByteArray">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EByteObject" fragment="//EByteObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EChar" fragment="//EChar">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ECharacterObject" fragment="//ECharacterObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EDate" fragment="//EDate">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EDiagnosticChain" fragment="//EDiagnosticChain">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EDouble" fragment="//EDouble">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EDoubleObject" fragment="//EDoubleObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EEList" fragment="//EEList">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="E" fragment="//EEList/E">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </exportedObjects>
+    <exportedObjects name="EEnumerator" fragment="//EEnumerator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EFeatureMap" fragment="//EFeatureMap">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EFeatureMapEntry" fragment="//EFeatureMapEntry">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EFloat" fragment="//EFloat">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EFloatObject" fragment="//EFloatObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EInt" fragment="//EInt">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EIntegerObject" fragment="//EIntegerObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EJavaClass" fragment="//EJavaClass">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="T" fragment="//EJavaClass/T">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </exportedObjects>
+    <exportedObjects name="EJavaObject" fragment="//EJavaObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ELong" fragment="//ELong">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="ELongObject" fragment="//ELongObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EMap" fragment="//EMap">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="K" fragment="//EMap/K">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </exportedObjects>
+    <exportedObjects name="V" fragment="//EMap/V">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </exportedObjects>
+    <exportedObjects name="EResource" fragment="//EResource">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EResourceSet" fragment="//EResourceSet">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EShort" fragment="//EShort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EShortObject" fragment="//EShortObject">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EString" fragment="//EString">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="EStringToStringMapEntry" fragment="//EStringToStringMapEntry">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="key" fragment="//EStringToStringMapEntry/key">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//EStringToStringMapEntry/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="ETreeIterator" fragment="//ETreeIterator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+    <exportedObjects name="E" fragment="//ETreeIterator/E">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//ETypeParameter"/>
+    </exportedObjects>
+    <exportedObjects name="EGenericType" fragment="//EGenericType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="eUpperBound" fragment="//EGenericType/eUpperBound">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eTypeArguments" fragment="//EGenericType/eTypeArguments">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eRawType" fragment="//EGenericType/eRawType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eLowerBound" fragment="//EGenericType/eLowerBound">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eTypeParameter" fragment="//EGenericType/eTypeParameter">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="eClassifier" fragment="//EGenericType/eClassifier">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ETypeParameter" fragment="//ETypeParameter">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="eBounds" fragment="//ETypeParameter/eBounds">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="EInvocationTargetException" fragment="//EInvocationTargetException">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EDataType"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGDataTypes.FiniteIntRanges.ecore">
+    <exportedObjects name="finiteintranges" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="FiniteIntRange" fragment="//FiniteIntRange">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="start" fragment="//FiniteIntRange/start">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="end" fragment="//FiniteIntRange/end">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="FiniteIntRangeOperator" fragment="//FiniteIntRangeOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThan" fragment="//LessThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThanOrEqual" fragment="//LessThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThan" fragment="//GreaterThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThanOrEqual" fragment="//GreaterThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="FiniteIntConstant" fragment="//FiniteIntConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//FiniteIntConstant/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="range" fragment="//FiniteIntConstant/range">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.eclipse.emf.edit_2.6.0.v20100914-1218.jar!/model/Tree.ecore">
+    <exportedObjects name="tree" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="TreeNode" fragment="//TreeNode">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="parent" fragment="//TreeNode/parent">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="children" fragment="//TreeNode/children">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="data" fragment="//TreeNode/data">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGDataTypes.ecore">
+    <exportedObjects name="datatypes" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="terms" fragment="//terms">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Declarations" fragment="//terms/Declarations">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="declaration" fragment="//terms/Declarations/declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Declaration" fragment="//terms/Declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="SortDecl" fragment="//terms/SortDecl">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="VariableDecl" fragment="//terms/VariableDecl">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="sort" fragment="//terms/VariableDecl/sort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Variable" fragment="//terms/Variable">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getSort" fragment="//terms/Variable/getSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="refvariable" fragment="//terms/Variable/refvariable">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Term" fragment="//terms/Term">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getSort" fragment="//terms/Term/getSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="Sort" fragment="//terms/Sort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="equals" fragment="//terms/Sort/equals">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="object" fragment="//terms/Sort/equals/object">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="isSuperSortOf" fragment="//terms/Sort/isSuperSortOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="sort" fragment="//terms/Sort/isSuperSortOf/sort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="leastCommonSuper" fragment="//terms/Sort/leastCommonSuper">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="sort" fragment="//terms/Sort/leastCommonSuper/sort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EParameter"/>
+    </exportedObjects>
+    <exportedObjects name="Operator" fragment="//terms/Operator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getInputSorts" fragment="//terms/Operator/getInputSorts">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getOutputSort" fragment="//terms/Operator/getOutputSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="subterm" fragment="//terms/Operator/subterm">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="NamedSort" fragment="//terms/NamedSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="def" fragment="//terms/NamedSort/def">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="BuiltInSort" fragment="//terms/BuiltInSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="MultiSetSort" fragment="//terms/MultiSetSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="basis" fragment="//terms/MultiSetSort/basis">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ProductSort" fragment="//terms/ProductSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="elementSort" fragment="//terms/ProductSort/elementSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="UserSort" fragment="//terms/UserSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="declaration" fragment="//terms/UserSort/declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="BuiltInOperator" fragment="//terms/BuiltInOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="BuiltInConst" fragment="//terms/BuiltInConst">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="MultiSetOperator" fragment="//terms/MultiSetOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Tuple" fragment="//terms/Tuple">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="UserOperator" fragment="//terms/UserOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="declaration" fragment="//terms/UserOperator/declaration">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="OperatorDecl" fragment="//terms/OperatorDecl">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="getInputSorts" fragment="//terms/OperatorDecl/getInputSorts">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="getOutPutSort" fragment="//terms/OperatorDecl/getOutPutSort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EOperation"/>
+    </exportedObjects>
+    <exportedObjects name="NamedOperator" fragment="//terms/NamedOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="parameters" fragment="//terms/NamedOperator/parameters">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="def" fragment="//terms/NamedOperator/def">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="dots" fragment="//dots">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Dot" fragment="//dots/Dot">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="DotConstant" fragment="//dots/DotConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="multisets" fragment="//multisets">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Cardinality" fragment="//multisets/Cardinality">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="CardinalityOf" fragment="//multisets/CardinalityOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Contains" fragment="//multisets/Contains">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Add" fragment="//multisets/Add">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="All" fragment="//multisets/All">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="refsort" fragment="//multisets/All/refsort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="NumberOf" fragment="//multisets/NumberOf">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Subtract" fragment="//multisets/Subtract">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="ScalarProduct" fragment="//multisets/ScalarProduct">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Empty" fragment="//multisets/Empty">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="refsort" fragment="//multisets/Empty/refsort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="booleans" fragment="//booleans">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="Equality" fragment="//booleans/Equality">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Inequality" fragment="//booleans/Inequality">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Bool" fragment="//booleans/Bool">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="BooleanOperator" fragment="//booleans/BooleanOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Or" fragment="//booleans/Or">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="And" fragment="//booleans/And">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Imply" fragment="//booleans/Imply">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Not" fragment="//booleans/Not">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="BooleanConstant" fragment="//booleans/BooleanConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//booleans/BooleanConstant/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="integers" fragment="//integers">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="IntegerOperator" fragment="//integers/IntegerOperator">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Addition" fragment="//integers/Addition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Subtraction" fragment="//integers/Subtraction">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Multiplication" fragment="//integers/Multiplication">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Division" fragment="//integers/Division">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThan" fragment="//integers/GreaterThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="GreaterThanOrEqual" fragment="//integers/GreaterThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThan" fragment="//integers/LessThan">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="LessThanOrEqual" fragment="//integers/LessThanOrEqual">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Modulo" fragment="//integers/Modulo">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Number" fragment="//integers/Number">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="NumberConstant" fragment="//integers/NumberConstant">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="type" fragment="//integers/NumberConstant/type">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="value" fragment="//integers/NumberConstant/value">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="Natural" fragment="//integers/Natural">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Positive" fragment="//integers/Positive">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Integer" fragment="//integers/Integer">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="platform:/resource/OntologyReastrictedNets/model/ORN.ecore">
+    <exportedObjects name="orn" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="ORNType" fragment="//ORNType">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="Place" fragment="//Place">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="pragmatics" fragment="//Place/pragmatics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Transition" fragment="//Transition">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="pragmatics" fragment="//Transition/pragmatics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Pragmatics" fragment="//Pragmatics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//Pragmatics/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Page" fragment="//Page">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="pragmatics" fragment="//Page/pragmatics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="ontology" fragment="//Page/ontology">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Arc" fragment="//Arc">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="inscription" fragment="//Arc/inscription">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Inscription" fragment="//Inscription">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="text" fragment="//Inscription/text">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="PragStructure" fragment="//PragStructure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//PragStructure/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="arguments" fragment="//PragStructure/arguments">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+    <exportedObjects name="RefPlace" fragment="//RefPlace">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="pragmatics" fragment="//RefPlace/pragmatics">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="Ontology" fragment="//Ontology">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="structure" fragment="//Ontology/structure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+    <exportedObjects name="OntologyStructure" fragment="//OntologyStructure">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="name" fragment="//OntologyStructure/name">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EAttribute"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+  <builderState:ResourceDescription URI="archive:file:/home/kent/usr/eclipse/plugins/org.pnml.tools.epnk.pntypes.hlpngs.datatypes_0.9.2.201106162130.jar!/model/HLPNGHelpers.ecore">
+    <exportedObjects name="hlpnghelpers" fragment="/">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EPackage"/>
+    </exportedObjects>
+    <exportedObjects name="ProxySort" fragment="//ProxySort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EClass"/>
+    </exportedObjects>
+    <exportedObjects name="sort" fragment="//ProxySort/sort">
+      <eClass href="http://www.eclipse.org/emf/2002/Ecore#//EReference"/>
+    </exportedObjects>
+  </builderState:ResourceDescription>
+</xmi:XMI>

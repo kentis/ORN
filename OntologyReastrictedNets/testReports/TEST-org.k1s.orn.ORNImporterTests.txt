@@ -1,5 +1,5 @@
 Testsuite: org.k1s.orn.ORNImporterTests
-Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 2.562 sec
+Tests run: 1, Failures: 0, Errors: 0, Time elapsed: 3.12 sec
 ------------- Standard Output ---------------
 adding place
 PRAGDEF: channel()
@@ -27,8 +27,8 @@ adding place
 adding place
 adding place
 adding place
-[orn.impl.PageImpl@d2f41a5 (id: cb4ec598-9d25-4384-8dc0-cb59985083b0)]
-[orn.impl.PlaceImpl@2392d604 (id: f64fd860-fe4d-4318-8d9b-36c03da50f37), orn.impl.PlaceImpl@7d20b2da (id: 47841771-c4c7-4407-8908-bbae0a7ff019), orn.impl.PageImpl@6dbe4663 (id: ff933314-5d07-4146-b8db-b5576b3848fa), orn.impl.PageImpl@66ff45de (id: 5ffbe8bc-898a-4200-8085-2a8100f94ac9)]
+[orn.impl.PageImpl@1c67c1a6 (id: 65216305-61a5-4440-8f08-fb83fe6c960d)]
+[orn.impl.PlaceImpl@4412dd76 (id: 58b80d43-cbea-467f-a681-7cf95de420bf), orn.impl.PlaceImpl@328990e4 (id: 4f757a0f-ad73-4a80-a1ad-499a8f6d2b39), orn.impl.PageImpl@658782a7 (id: 168e5713-cecb-49e3-b7f5-7ab38223d3cf), orn.impl.PageImpl@2392d604 (id: db915243-6889-4ec3-bc92-5e130a3cd22a)]
 ------------- ---------------- ---------------
 
-Testcase: testWS took 2.251 sec
+Testcase: testWS took 2.797 sec

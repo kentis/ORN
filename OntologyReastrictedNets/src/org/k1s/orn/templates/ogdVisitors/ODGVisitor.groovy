@@ -4,8 +4,10 @@ abstract class ODGVisitor {
 
 	abstract def visitElement(element);
 	
-	static void visitATT(att){
-		def visitors = [new ParameterVisitor(), new PrefixVisitor(), new TemplateVisitor()]
+	static void visitATT(att, bindings){
+		def visitors = [new ParameterVisitor(bindings: bindings), 
+						new PrefixVisitor(bindings: bindings), 
+						new TemplateVisitor(bindings: bindings)]
 		
 		def atts = flattenAtt(att, [])
 		
@@ -17,10 +19,10 @@ abstract class ODGVisitor {
 	}
 	
 	static def flattenAtt(att, list){
-		println att
+		println "${att}    ${att.correspondingNetElement}"
 		list << att
-		att.children.each { 
-			flattenAtt(it, list)	
+		att.children.each {
+			if(it != null) flattenAtt(it, list)	
 		}
 		return list
 	}

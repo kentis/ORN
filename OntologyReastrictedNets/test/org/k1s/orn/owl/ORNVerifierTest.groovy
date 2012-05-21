@@ -9,7 +9,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.Place;
 import org.pnml.tools.epnk.pnmlcoremodel.PnmlcoremodelFactory;
 import org.pnml.tools.epnk.pnmlcoremodel.Transition;
 import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLFactory;
-import org.semanticweb.HermiT.Reasoner;
+
 import org.semanticweb.owlapi.reasoner.InferenceType;
 import org.semanticweb.owlapi.reasoner.OWLReasoner;
 
@@ -265,8 +265,8 @@ class ORNVerifierTest {
 		
 		//OWLReasoner reasoner = new StructuralReasonerFactory().createReasoner(logoNet)
 		
-		OWLReasoner reasoner = new Reasoner(logoNet)
-		
+		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 //		
 //		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager)
 //		reasoner.setOntology(logoNet)
@@ -304,7 +304,8 @@ class ORNVerifierTest {
 	
 
 	
-		OWLReasoner reasoner = new Reasoner(logoNet)
+		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 		assertTrue(reasoner.isConsistent())
 		
 	}
@@ -371,7 +372,8 @@ class ORNVerifierTest {
 		
 		//OWLReasoner reasoner = new StructuralReasonerFactory().createReasoner(logoNet)
 		
-		OWLReasoner reasoner = new Reasoner(logoNet)
+		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 		
 //
 //		com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager)

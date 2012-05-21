@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<?metadataRepository version='1.1.0'?>
+<repository name='file:/home/kent/ws-ePNK/.metadata/.plugins/org.eclipse.pde.core/tempp2metadata - metadata' type='org.eclipse.equinox.internal.p2.metadata.repository.LocalMetadataRepository' version='1.0.0'>
+  <properties size='2'>
+    <property name='p2.timestamp' value='1333611968672'/>
+    <property name='p2.compressed' value='false'/>
+  </properties>
+  <units size='10'>
+    <unit id='org.cpntools.accesscpn.engine.highlevel' version='2.1.0'>
+      <update id='org.cpntools.accesscpn.engine.highlevel' range='[0.0.0,2.1.0)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='www.example.org'/>
+        <property name='df_LT.pluginName' value='Instance Model'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='12'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine.highlevel' version='2.1.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' version='2.1.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.checker' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.instance' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.instance.adapter' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.instance.cpnvalues' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.instance.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.instance.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.highlevel.utils' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='4'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine' range='2.0.2'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='2.1.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.engine.highlevel' version='2.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: org.cpntools.accesscpn.engine.highlevel,org.cpntools.accesscpn.engine.highlevel.checker,org.cpntools.accesscpn.engine.highlevel.instance,org.cpntools.accesscpn.engine.highlevel.instance.adapter,org.cpntools.accesscpn.engine.highlevel.instance.cpnvalues,org.cpntools.accesscpn.engine.highlevel.instance.impl,org.cpntools.accesscpn.engine.highlevel.instance.util,org.cpntools.accesscpn.engine.highlevel.utils&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibility:=reexport,org.cpntools.accesscpn.engine;bundle-version=&quot;2.0.2&quot;,org.cpntools.accesscpn.model;bundle-version=&quot;2.1.0&quot;&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 2.1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.engine.highlevel;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.cpntools.accesscpn.engine' version='2.0.2'>
+      <update id='org.cpntools.accesscpn.engine' range='[0.0.0,2.0.2)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='Engine Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='CPN Group, University of Aarhus'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine' version='2.0.2'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.engine' version='2.0.2'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.engine' version='2.0.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-Name: Engine Plug-in&#xA;Bundle-Version: 2.0.2&#xA;Export-Package: org.cpntools.accesscpn.engine&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.engine;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: CPN Group, University of Aarhus
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.cpntools.accesscpn.model.tests' version='2.1.0'>
+      <update id='org.cpntools.accesscpn.model.tests' range='[0.0.0,2.1.0)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='www.example.org'/>
+        <property name='df_LT.pluginName' value='Model Tests'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='9'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.tests' version='2.1.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.model.tests' version='2.1.0'/>
+        <provided namespace='java.package' name='.' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.cpntypes.tests' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.declaration.tests' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.graphics.tests' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.tests' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='8'>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore.xmi' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.junit' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model.importer' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='3.5.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.proxy' range='2.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.model.tests' version='2.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: .,org.cpntools.accesscpn.model.cpntypes.tests,org.cpntools.accesscpn.model.declaration.tests,org.cpntools.accesscpn.model.graphics.tests,org.cpntools.accesscpn.model.tests&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.cpntools.accesscpn.model;visibility:=reexport,org.eclipse.emf.ecore.xmi;visibility:=reexport,org.junit;visibility:=reexport,org.cpntools.accesscpn.engine.highlevel,org.cpntools.accesscpn.engine,org.cpntools.accesscpn.model.importer,org.eclipse.core.runtime;bundle-version=&quot;3.5.0&quot;,org.cpntools.accesscpn.engine.proxy;bundle-version=&quot;2.0.0&quot;&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 2.1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.model.tests;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: .,lib/javabdd-1.0b2.jar,lib/EfficientStorage.jar,lib/trove-3.0.1.jar&#xA;Manifest-Version: 1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='AccessCPNFeature.feature.jar' version='0.0.2'>
+      <properties size='3'>
+        <property name='org.eclipse.equinox.p2.name' value='AccessCPNFeature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='AccessCPNFeature.feature.jar' version='0.0.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='feature' version='1.0.0'/>
+        <provided namespace='org.eclipse.update.feature' name='AccessCPNFeature' version='0.0.2'/>
+      </provides>
+      <filter>
+        (org.eclipse.update.install.features=true)
+      </filter>
+      <artifacts size='1'>
+        <artifact classifier='org.eclipse.update.feature' id='AccessCPNFeature' version='0.0.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='zipped'>
+            true
+          </instruction>
+        </instructions>
+      </touchpointData>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='org.cpntools.accesscpn.cosimulation' version='2.0.2' singleton='false'>
+      <update id='org.cpntools.accesscpn.cosimulation' range='[0.0.0,2.0.2)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='org.cpntools.accesscpn.cosimulation'/>
+      </properties>
+      <provides size='3'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.cosimulation' version='2.0.2'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.cosimulation' version='2.0.2'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.proxy' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.cosimulation' version='2.0.2'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-Name: org.cpntools.accesscpn.cosimulation&#xA;Bundle-Version: 2.0.2&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.cosimulation&#xA;Manifest-Version: 1.0&#xA;Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Require-Bundle: org.cpntools.accesscpn.engine.highlevel;bundle-version=&quot;2.0.0&quot;,org.cpntools.accesscpn.model;bundle-version=&quot;2.0.0&quot;,org.cpntools.accesscpn.engine.proxy;bundle-version=&quot;2.0.0&quot;,org.eclipse.emf.common,org.eclipse.emf.ecore
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.cpntools.accesscpn.model.importer' version='2.1.0'>
+      <update id='org.cpntools.accesscpn.model.importer' range='[0.0.0,2.1.0)' severity='0'/>
+      <properties size='2'>
+        <property name='org.eclipse.equinox.p2.name' value='CPN Model Importer Plug-in'/>
+        <property name='org.eclipse.equinox.p2.provider' value='CPN Group, University of Aarhus'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.importer' version='2.1.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.model.importer' version='2.1.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.importer' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' range='2.1.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='2.1.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.model.importer' version='2.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-Name: CPN Model Importer Plug-in&#xA;Bundle-Version: 2.1.0&#xA;Require-Bundle: org.cpntools.accesscpn.engine.highlevel;bundle-version=&quot;2.1.0&quot;,org.cpntools.accesscpn.model;bundle-version=&quot;2.1.0&quot;&#xA;Export-Package: org.cpntools.accesscpn.model.importer; uses:=&quot;org.cpntools.accesscpn.model,  org.cpntools.accesscpn.model.declaration,  javax.xml.parsers,  org.cpntools.accesscpn.model.cpntypes,  org.w3c.dom&quot;&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.model.importer;singleton:=true&#xA;Manifest-Version: 1.0&#xA;Bundle-Vendor: CPN Group, University of Aarhus
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='AccessCPNFeature.feature.group' version='0.0.2' singleton='false'>
+      <update id='AccessCPNFeature.feature.group' range='[0.0.0,0.0.2)' severity='0'/>
+      <properties size='4'>
+        <property name='org.eclipse.equinox.p2.name' value='AccessCPNFeature'/>
+        <property name='org.eclipse.equinox.p2.description' value='[Enter Feature Description here.]'/>
+        <property name='org.eclipse.equinox.p2.description.url' value='http://www.example.com/description'/>
+        <property name='org.eclipse.equinox.p2.type.group' value='true'/>
+      </properties>
+      <provides size='1'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='AccessCPNFeature.feature.group' version='0.0.2'/>
+      </provides>
+      <requires size='9'>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.cosimulation' range='[2.0.2,2.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine' range='[2.0.2,2.0.2]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine.highlevel' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine.proxy' range='[2.0.0,2.0.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.exporter' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.importer' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.tests' range='[2.1.0,2.1.0]'/>
+        <required namespace='org.eclipse.equinox.p2.iu' name='AccessCPNFeature.feature.jar' range='[0.0.2,0.0.2]'>
+          <filter>
+            (org.eclipse.update.install.features=true)
+          </filter>
+        </required>
+      </requires>
+      <touchpoint id='null' version='0.0.0'/>
+      <licenses size='1'>
+        <license uri='http://www.example.com/license' url='http://www.example.com/license'>
+          [Enter License Description here.]
+        </license>
+      </licenses>
+      <copyright uri='http://www.example.com/copyright' url='http://www.example.com/copyright'>
+        [Enter Copyright Description here.]
+      </copyright>
+    </unit>
+    <unit id='org.cpntools.accesscpn.engine.proxy' version='2.0.0' singleton='false'>
+      <update id='org.cpntools.accesscpn.engine.proxy' range='[0.0.0,2.0.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='org.cpntools.accesscpn.engine.proxy'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.engine.proxy' version='2.0.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.proxy' version='2.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.engine.proxy' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' range='2.1.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='2.1.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.5.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.engine.proxy' version='2.0.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-Version: 2.0.0&#xA;Export-Package: org.cpntools.accesscpn.engine.proxy&#xA;Require-Bundle: org.cpntools.accesscpn.engine;bundle-version=&quot;2.0.0&quot;,org.cpntools.accesscpn.engine.highlevel;bundle-version=&quot;2.1.0&quot;,org.cpntools.accesscpn.model;bundle-version=&quot;2.1.0&quot;,org.eclipse.emf.common;bundle-version=&quot;2.5.0&quot;,org.eclipse.emf.ecore;bundle-version=&quot;2.5.0&quot;&#xA;Manifest-Version: 1.0&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.engine.proxy&#xA;Bundle-Name: org.cpntools.accesscpn.engine.proxy&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.cpntools.accesscpn.model' version='2.1.0'>
+      <update id='org.cpntools.accesscpn.model' range='[0.0.0,2.1.0)' severity='0'/>
+      <properties size='5'>
+        <property name='df_LT.providerName' value='www.example.org'/>
+        <property name='df_LT.pluginName' value='CPN Model'/>
+        <property name='org.eclipse.equinox.p2.name' value='%pluginName'/>
+        <property name='org.eclipse.equinox.p2.provider' value='%providerName'/>
+        <property name='org.eclipse.equinox.p2.bundle.localization' value='plugin'/>
+      </properties>
+      <provides size='19'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model' version='2.1.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.model' version='2.1.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.cpntypes' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.cpntypes.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.cpntypes.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.declaration' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.declaration.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.declaration.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.graphics' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.graphics.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.graphics.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.monitors' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.monitors.impl' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.monitors.util' version='0.0.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.util' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.localization' name='df_LT' version='1.0.0'/>
+      </provides>
+      <requires size='2'>
+        <required namespace='osgi.bundle' name='org.eclipse.core.runtime' range='0.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='0.0.0'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.model' version='2.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Export-Package: org.cpntools.accesscpn.model,org.cpntools.accesscpn.model.cpntypes,org.cpntools.accesscpn.model.cpntypes.impl,org.cpntools.accesscpn.model.cpntypes.util,org.cpntools.accesscpn.model.declaration,org.cpntools.accesscpn.model.declaration.impl,org.cpntools.accesscpn.model.declaration.util,org.cpntools.accesscpn.model.graphics,org.cpntools.accesscpn.model.graphics.impl,org.cpntools.accesscpn.model.graphics.util,org.cpntools.accesscpn.model.impl,org.cpntools.accesscpn.model.monitors,org.cpntools.accesscpn.model.monitors.impl,org.cpntools.accesscpn.model.monitors.util,org.cpntools.accesscpn.model.util&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Bundle-Localization: plugin&#xA;Require-Bundle: org.eclipse.core.runtime,org.eclipse.emf.ecore;visibility:=reexport&#xA;Bundle-Name: %pluginName&#xA;Bundle-Version: 2.1.0&#xA;Bundle-Vendor: %providerName&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.model;singleton:=true&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: .&#xA;Manifest-Version: 1.0
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+    <unit id='org.cpntools.accesscpn.model.exporter' version='2.1.0' singleton='false'>
+      <update id='org.cpntools.accesscpn.model.exporter' range='[0.0.0,2.1.0)' severity='0'/>
+      <properties size='1'>
+        <property name='org.eclipse.equinox.p2.name' value='org.cpntools.accesscpn.model.exporter'/>
+      </properties>
+      <provides size='4'>
+        <provided namespace='org.eclipse.equinox.p2.iu' name='org.cpntools.accesscpn.model.exporter' version='2.1.0'/>
+        <provided namespace='osgi.bundle' name='org.cpntools.accesscpn.model.exporter' version='2.1.0'/>
+        <provided namespace='java.package' name='org.cpntools.accesscpn.model.exporter' version='0.0.0'/>
+        <provided namespace='org.eclipse.equinox.p2.eclipse.type' name='bundle' version='1.0.0'/>
+      </provides>
+      <requires size='5'>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.model.importer' range='2.0.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.common' range='2.5.0'/>
+        <required namespace='osgi.bundle' name='org.eclipse.emf.ecore' range='2.5.0'/>
+        <required namespace='osgi.bundle' name='org.cpntools.accesscpn.engine.highlevel' range='2.0.2'/>
+      </requires>
+      <artifacts size='1'>
+        <artifact classifier='osgi.bundle' id='org.cpntools.accesscpn.model.exporter' version='2.1.0'/>
+      </artifacts>
+      <touchpoint id='org.eclipse.equinox.p2.osgi' version='1.0.0'/>
+      <touchpointData size='1'>
+        <instructions size='1'>
+          <instruction key='manifest'>
+            Bundle-ManifestVersion: 2&#xA;Bundle-RequiredExecutionEnvironment: JavaSE-1.6&#xA;Require-Bundle: org.cpntools.accesscpn.model;bundle-version=&quot;2.0.0&quot;,org.cpntools.accesscpn.model.importer;bundle-version=&quot;2.0.0&quot;,org.eclipse.emf.common;bundle-version=&quot;2.5.0&quot;,org.eclipse.emf.ecore;bundle-version=&quot;2.5.0&quot;,org.cpntools.accesscpn.engine.highlevel;bundle-version=&quot;2.0.2&quot;&#xA;Manifest-Version: 1.0&#xA;Bundle-Version: 2.1.0&#xA;Export-Package: org.cpntools.accesscpn.model.exporter&#xA;Bundle-SymbolicName: org.cpntools.accesscpn.model.exporter&#xA;Bundle-ActivationPolicy: lazy&#xA;Bundle-ClassPath: lib/collections-generic-4.01.jar,lib/colt-1.2.0.jar,lib/jung-algorithms-2.0.1.jar,lib/jung-api-2.0.1.jar,lib/jung-graph-impl-2.0.1.jar,.&#xA;Bundle-Name: org.cpntools.accesscpn.model.exporter
+          </instruction>
+        </instructions>
+      </touchpointData>
+    </unit>
+  </units>
+</repository>

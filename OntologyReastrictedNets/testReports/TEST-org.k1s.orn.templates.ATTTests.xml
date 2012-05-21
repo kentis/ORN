@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="shrubbery" name="org.k1s.orn.templates.ATTTests" tests="5" time="1.337" timestamp="2012-04-21T17:31:09">
+<testsuite errors="0" failures="0" hostname="shrubbery" name="org.k1s.orn.templates.ATTTests" tests="5" time="1.484" timestamp="2012-04-24T13:54:17">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -93,15 +93,15 @@
     <property name="java.specification.version" value="1.6" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildPrincipal" time="1.012" />
-  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildExternal" time="0.0050" />
+  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildPrincipal" time="1.11" />
+  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildExternal" time="0.0060" />
   <testcase classname="org.k1s.orn.templates.ATTTests" name="testFindNextnode" time="0.0020" />
-  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildSend" time="0.0030" />
-  <testcase classname="org.k1s.orn.templates.ATTTests" name="testATTForSimpleProtocol" time="0.033" />
+  <testcase classname="org.k1s.orn.templates.ATTTests" name="testAttBuilderBuildSend" time="0.0020" />
+  <testcase classname="org.k1s.orn.templates.ATTTests" name="testATTForSimpleProtocol" time="0.042" />
   <system-out><![CDATA[PRAGDEF: Send()
 PRAGDEF: External()
 PRAGDEF: Principal()
-orn.impl.PageImpl@20873723 (id: null)
+orn.impl.PageImpl@4a504ec1 (id: null)
 PRAGDEF: Send()
 PRAGDEF: External()
 PRAGDEF: Send()
@@ -109,12 +109,12 @@ PRAGDEF: External()
 PRAGDEF: Send()
 PRAGDEF: Principal()
 PRAGDEF: Principal()
-PRAGDEF: External(msg)
+PRAGDEF: External(msg, server)
 PRAGDEF: Send(msg)
-PRAGDEF: External(msg)
+PRAGDEF: External(portNo)
 PRAGDEF: Recieve(msg)
-orn.impl.PageImpl@3fde891b (id: null)
-orn.impl.PageImpl@5f0f0625 (id: null)
+orn.impl.PageImpl@25cbfa42 (id: null)
+orn.impl.PageImpl@1420c906 (id: null)
 ]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>

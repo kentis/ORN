@@ -1,10 +1,6 @@
 package org.k1s.orn
 
 
-import org.semanticweb.owl.model.OWLClass;
-import org.semanticweb.owl.model.OWLClassAxiom;
-import org.semanticweb.owl.model.OWLObjectProperty;
-import org.semanticweb.owl.model.OWLObjectPropertyAssertionAxiom;
 
 import org.semanticweb.owlapi.model.IRI;
 

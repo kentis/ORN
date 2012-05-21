@@ -1,51 +1,64 @@
 Testsuite: org.k1s.orn.templates.OntologyDrivenGeneratorTest
-Tests run: 2, Failures: 1, Errors: 0, Time elapsed: 1.744 sec
+Tests run: 2, Failures: 0, Errors: 1, Time elapsed: 3.534 sec
 ------------- Standard Output ---------------
-PRAGDEF: Send()
-PRAGDEF: External()
-PRAGDEF: Principal()
-|ROOT, ROOT, null|
-created |ROOT, ROOT, null|
-with children []
-[]
 PRAGDEF: Principal()
 PRAGDEF: Principal()
-PRAGDEF: External(msg)
+PRAGDEF: External(msg, server)
 PRAGDEF: Send(msg)
-PRAGDEF: External(msg)
+PRAGDEF: External(portNo)
 PRAGDEF: Recieve(msg)
-orn.impl.PageImpl@2dc0435 (id: null)
-orn.impl.PageImpl@23de4dd8 (id: null)
+orn.impl.PageImpl@212b19c5 (id: null)
+orn.impl.PageImpl@38d0357a (id: null)
 |ROOT, ROOT, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
 |null, null, null|
+|null, null, null|
 created |ROOT, ROOT, null|
-with children [|null, null, class Server {
+with children [|null, null, class Client {
 	%%yield%%
 }|, |null, null, class Server {
 	%%yield%%
 }|]
-[class Server {
-	def start(){
-	send(msg)
+[class Client {
+	def start(msg, server){
+	                DatagramSocket sock = new DatagramSocket()
+                DatagramPacket pack = new DatagramPacket(msg.bytes, msg.bytes.length, InetAddress.getByName(server.host), server.port)
+                sock.send pack
+
 }
 }, class Server {
-	def start(){
-	
+	def start(portNo){
+	                DatagramSocket sock = new DatagramSocket(portNo)
+                byte[] buff = new byte[2048]
+
+
+                DatagramPacket pack = new  DatagramPacket(buff, 2048)
+
+
+                sock.receive pack
+
+                println new String(pack.data)
+
 }
 }]
+hei
+platform:/resource/OntologyReastrictedNets/model/test.pnml
 ------------- ---------------- ---------------
 
-Testcase: testGenerate took 1.014 sec
-	FAILED
+Testcase: testSimpleProtocol took 2.976 sec
+Testcase: testWSNet took 0.176 sec
+	Caused an ERROR
+Cannot create a resource for 'platform:/resource/OntologyReastrictedNets/model/test.pnml'; a registered resource factory is needed
+java.lang.RuntimeException: Cannot create a resource for 'platform:/resource/OntologyReastrictedNets/model/test.pnml'; a registered resource factory is needed
+	at org.eclipse.emf.ecore.resource.impl.ResourceSetImpl.getResource(ResourceSetImpl.java:394)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite$PojoCachedMethodSiteNoUnwrapNoCoerce.invoke(PojoMetaMethodSite.java:229)
+	at org.codehaus.groovy.runtime.callsite.PojoMetaMethodSite.call(PojoMetaMethodSite.java:52)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCall(CallSiteArray.java:40)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:117)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:129)
+	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.getWebSocetNet(OntologyDrivenGeneratorTest.groovy:85)
+	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.testWSNet(OntologyDrivenGeneratorTest.groovy:76)
 
-junit.framework.AssertionFailedError: 
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:175)
-	at org.k1s.orn.templates.OntologyDrivenGeneratorTest.testGenerate(OntologyDrivenGeneratorTest.groovy:23)
-
-Testcase: testSimpleProtocol took 0.47 sec

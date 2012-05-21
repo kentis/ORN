@@ -1,0 +1,16 @@
+package org.k1s.petriNetTranslations.cpnTranslations
+
+import org.cpntools.accesscpn.model.PetriNet;
+import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
+
+class CPN2PNMLTranslator implements org.k1s.petriNetTranslations.Translator {
+
+	def translate(source){
+		return translate(source)
+	}
+	
+	PetriNet translate(PetriNet source){
+		
+	}
+	
+}

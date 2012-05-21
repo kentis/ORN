@@ -1,0 +1,153 @@
+package org.k1s.petriNetTranslations
+
+import org.k1s.nppn.domain.Place;
+
+
+
+
+
+import org.cpntools.accesscpn.model.Instance;
+import org.cpntools.accesscpn.model.Page;
+
+
+import org.k1s.nppn.domain.*;
+
+class Translator {
+
+	
+	PetriNet translate(org.cpntools.accesscpn.model.PetriNet pn){
+		PetriNet net = new PetriNet(name: pn.getName())
+		
+		Page page = findRoot(pn)[0]
+		
+		
+		def ports = [:]
+		translate(page, net, pn, ports)
+		
+		addPortReferences net, ports
+		return net
+	}
+	
+	void addPortReferences(net, ports){
+
+		net.substs.each{ SubstitutionTransition sub ->
+			def soc = sub.portsoc[0]
+			if(soc){
+				soc = soc.substring(1, soc.length()-1).split(",")
+				
+				ports[soc[0]].reference = ports[soc[1]]
+				ports[soc[1]].reference = ports[soc[0]]
+				
+			}			
+			addPortReferences sub, ports
+		}
+	}
+	
+	void translate(Page page, net, pn, ports = [:]){
+		
+		def arcs = [:]
+		def transs = [:]
+		def placess = [:]
+		def substs = [:]
+		
+		page.transition().iterator().each{ def trans ->
+			Transition t = new Transition(name: trans.name.text)
+			transs[trans.id] = t
+			net.transitions << t
+		}
+		
+		page.place().iterator().each { def place -> 
+			Place p = new Place()
+			p.name = place.name.text
+			placess[place.id] = p
+			net.places << p
+		}
+		
+		
+		page.portPlace().iterator().each { org.cpntools.accesscpn.model.RefPlace place ->
+			PortPlace p = new PortPlace()
+			p.name = place.name.text
+			placess[place.id] = p
+			net.places << p
+			
+
+			
+			if( place.getRef() != null && ports[place.getRef().id] != null){
+				p.reference = ports[place.getRef().id]
+				ports[place.getRef().id].reference = p
+			} 
+			
+			ports[place.id] = p
+		}
+		
+		page.instance().iterator().each { Instance sub -> 
+			SubstitutionTransition s = new SubstitutionTransition()
+			s.name = sub.name.text
+			substs[sub.id] = s
+			net.substs << s
+			sub.portsock << sub.portsock
+			
+			translate(getSubPage( sub.subPageID ,pn),s, pn, ports)
+			
+			sub.subPageID
+		}
+		
+		
+		
+		page.arc.each { org.cpntools.accesscpn.model.Arc arc ->
+			Arc a = new Arc()
+			
+			a.inscription = arc.hlinscription.getText()
+			
+			a.source = getElement(arc.source.id, transs, placess, substs)
+			if(a.source)a.source.outgoingArcs << a
+			a.target = getElement(arc.target.id, transs, placess, substs)
+			if(a.target) a.target.incomminArcs << a
+			
+			
+			
+			arcs[arc.id] = a
+			net.arcs << a
+		}
+		
+		
+	}
+	
+	
+	def getSubPage(id, pn){
+		Page subPage
+		pn.getPage().each{ page ->
+				if(page.id == id) subPage = page
+		}
+		return subPage
+	}
+	
+	def getElement(id, Map... maps){
+		def retval
+		maps.each { Map map ->
+			if(map.containsKey(id)) retval = map[id] 
+		}
+		return retval
+	}
+	
+	def findRoot(pn){
+		def root = []
+		def references = []
+
+		pn.getPage().each{ Page page ->
+				page.instance().each{ Instance i ->
+						references << i.subPageID
+				}
+		}
+
+		pn.getPage().each{ Page page ->
+				def isRoot = true
+				references.each {ref ->
+								if(page.id == ref) isRoot = false
+				}
+				if(isRoot) root << page
+		}
+
+		return root
+	}
+}

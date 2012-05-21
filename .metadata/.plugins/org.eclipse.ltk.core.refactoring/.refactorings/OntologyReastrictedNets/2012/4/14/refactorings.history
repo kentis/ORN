@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring accessors="true" comment="Delete 4 elements from project &apos;OntologyReastrictedNets&apos;&#x0A;- Original project: &apos;OntologyReastrictedNets&apos;&#x0A;- Original elements:&#x0A;     org.k1s.orn.MCHCompletionProcessor.java&#x0A;     org.k1s.orn.MCHConfiguration.java&#x0A;     org.k1s.orn.MCHEditor.java&#x0A;     org.k1s.orn.MCHScanner.java" description="Delete elements" element1="/src&lt;org.k1s.orn{MCHConfiguration.java" element2="/src&lt;org.k1s.orn{MCHCompletionProcessor.java" element3="/src&lt;org.k1s.orn{MCHEditor.java" element4="/src&lt;org.k1s.orn{MCHScanner.java" elements="4" flags="589830" id="org.eclipse.jdt.ui.delete" resources="0" stamp="1333357734284" subPackages="false" version="1.0"/>
+</session>

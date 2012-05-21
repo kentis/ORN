@@ -1,0 +1,276 @@
+what,kind,bundleId,bundleVersion,description,time
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1335947807088
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1335947808369
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335947811738
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335947814466
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1335947864434
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335947865117
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1335947865815
+error,log,,,"Could not get element's children.",1335947872106
+error,log,,,"Could not get element's children.",1335947872107
+error,log,,,"Could not get element's children.",1335947872108
+error,log,,,"Could not get element's children.",1335947872237
+error,log,,,"Could not get element's children.",1335947872238
+error,log,,,"Could not get element's children.",1335947872239
+error,log,,,"Could not get element's children.",1335947872240
+error,log,,,"Could not get element's children.",1335947872241
+error,log,,,"Could not get element's children.",1335947872332
+error,log,,,"Could not get element's children.",1335947872333
+error,log,,,"Could not get element's children.",1335947872334
+error,log,,,"Could not get element's children.",1335947872335
+error,log,,,"Could not get element's children.",1335947872337
+error,log,,,"Could not get element's children.",1335947872338
+error,log,,,"Could not get element's children.",1335947872339
+error,log,,,"Could not get element's children.",1335947872340
+error,log,,,"Could not get element's children.",1335947872340
+error,log,,,"Could not get element's children.",1335947872341
+error,log,,,"Could not get element's children.",1335947872342
+error,log,,,"Could not get element's children.",1335947872342
+error,log,,,"Could not get element's children.",1335947872343
+error,log,,,"Could not get element's children.",1335947872343
+error,log,,,"Could not get element's children.",1335947872344
+error,log,,,"Could not get element's children.",1335947872344
+error,log,,,"Could not get element's children.",1335947872345
+error,log,,,"Could not get element's children.",1335947872346
+error,log,,,"Could not get element's children.",1335947872346
+error,log,,,"Could not get element's children.",1335947872347
+error,log,,,"Could not get element's children.",1335947872347
+error,log,,,"Could not get element's children.",1335947872348
+error,log,,,"Could not get element's children.",1335947872348
+error,log,,,"Could not get element's children.",1335947872349
+error,log,,,"Could not get element's children.",1335947872350
+error,log,,,"Could not get element's children.",1335947872351
+error,log,,,"Could not get element's children.",1335947872351
+error,log,,,"Could not get element's children.",1335947872352
+error,log,,,"Could not get element's children.",1335947872352
+error,log,,,"Could not get element's children.",1335947872353
+error,log,,,"Could not get element's children.",1335947872353
+error,log,,,"Could not get element's children.",1335947872354
+error,log,,,"Could not get element's children.",1335947872355
+error,log,,,"Could not get element's children.",1335947872355
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335947873275
+error,log,,,"Could not get element's children.",1335947874602
+error,log,,,"Could not get element's children.",1335947874603
+error,log,,,"Could not get element's children.",1335947874604
+error,log,,,"Could not get element's children.",1335947874605
+error,log,,,"Could not get element's children.",1335947874607
+error,log,,,"Could not get element's children.",1335947874607
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335947879326
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335947888943
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335947899348
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947921896
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947922038
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947922207
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335947922461
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335947951971
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947962675
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947962829
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335947962998
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335947964940
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335947968712
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335947971087
+error,log,,,"Internal error logged from JDI Debug: ",1335947980779
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335947995386
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948029406
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948045226
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335948051924
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335948054729
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948056899
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948095117
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335948099758
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948100682
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948108929
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948135784
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948144783
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335948156944
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1335948173006
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.wordNext",1335948174025
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1335948174999
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335948183035
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1335948185077
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335948185402
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335948185539
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335948185700
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335948188347
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948190839
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1335948237266
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1335948258217
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948262096
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948271370
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1335948278440
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1335948283263
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335948285215
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1335948291385
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.text.contentAssist.proposals",1335948296992
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948301775
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948302452
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948303738
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948304965
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948307946
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948308519
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948328669
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948397042
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948398664
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948406568
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948407748
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335948407994
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335948408303
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948416678
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948449390
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335948855449
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335952184440
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335952184657
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335952199888
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964091596
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964105020
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964125022
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964130302
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964132740
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1335964133881
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.findReplace",1335964135564
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964135630
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964141768
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964143213
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964150648
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964198288
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964199179
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335964200079
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335967503691
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335967507151
+activated,editor,OWLEditors,0.0.2,"org.k1s.owleditors.fowl.FunctionalEditor",1335967508670
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335967523534
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1335967533451
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1335967537682
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335967539103
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335967543721
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1335967545179
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335967562671
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335967625796
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335967668303
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335978042132
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1335978051833
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1335978054953
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035152086
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035154344
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035178383
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336035179112
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336035183721
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1336035188883
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035201248
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1336035219136
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035220833
+opened,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336035235459
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336035237335
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336035237550
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336035254263
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035258592
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035293553
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1336035296821
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035309713
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035315337
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336035336833
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336035340114
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035367106
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035404787
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336035413700
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336035416860
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336035418357
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336035424229
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336036834862
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336036835035
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336036838902
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336041458953
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1336041474436
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336041481871
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336042198793
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045458711
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045459491
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045459494
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045803748
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336045803810
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1336045813009
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045988787
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045992686
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336045997197
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336047428337
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336047436941
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049790870
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049792449
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049825939
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336049826000
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049828089
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049833746
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336049834557
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051659804
+activated,view,org.eclipse.ui.console,3.5.0.v20100526,"org.eclipse.ui.console.ConsoleView",1336051660607
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051669369
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051671287
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051671925
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051680675
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051682997
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051684962
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336051805058
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336055817799
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336055832059
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336055870938
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336055874860
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336055920424
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336055949184
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336055962223
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336055965808
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336055975453
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336055978651
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336056002744
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336056004353
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336056004441
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336056054485
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336056060406
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336056064564
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336124125430
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336124193469
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336124302488
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336124506664
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336124553531
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336124571459
+error,log,,,"Internal error logged from JDI Debug: ",1336124577833
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineStart",1336124584303
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.select.lineEnd",1336124586088
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1336124587048
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.delete",1336124587534
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336124590221
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336124762933
+opened,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336124807228
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336124807426
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336124807462
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336125015882
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1336125028379
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1336125028826
+executed,command,org.eclipse.ui.workbench.texteditor,3.6.0.v20100520-0800,"org.eclipse.ui.edit.text.goto.lineEnd",1336125032216
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1336125040888
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1336125041525
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336125052838
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336125056531
+activated,editor,org.codehaus.groovy.eclipse.ui,2.0.2.xx-20100811-1700-e36,"org.codehaus.groovy.eclipse.editor.GroovyEditor",1336125127819
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336125145726
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336125347925
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336125352755
+opened,editor,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.CompilationUnitEditor",1336125364631
+activated,editor,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.CompilationUnitEditor",1336125365761
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336125365852
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336125374151
+activated,view,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.PackageExplorer",1336125388853
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336125404995
+activated,editor,org.eclipse.jdt.ui,3.6.0.v20100602-1600,"org.eclipse.jdt.ui.CompilationUnitEditor",1336125409957
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.copy",1336125417172
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336125418181
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.edit.paste",1336125422045
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336125431867
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336125432832
+deactivated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336125679705
+activated,workbench,org.eclipse.ui.workbench,3.6.0.I20100603-1100,"",1336125732762
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336125732941
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336125741581
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336125743234
+activated,editor,org.eclipse.ui.editors,3.6.0.v20100520-0800,"org.eclipse.ui.DefaultTextEditor",1336125792970
+executed,command,org.eclipse.ui,3.6.0.I20100603-1100,"org.eclipse.ui.file.save",1336125795777
+activated,view,org.eclipse.jdt.junit,3.6.0.v20100526-0800,"org.eclipse.jdt.junit.ResultView",1336125797686

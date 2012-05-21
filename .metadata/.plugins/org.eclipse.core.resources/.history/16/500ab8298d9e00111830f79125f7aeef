@@ -1,0 +1,31 @@
+
+# <copyright>
+# </copyright>
+#
+# $Id$
+
+bin.includes = .,\
+               model/,\
+               META-INF/,\
+               plugin.xml,\
+               plugin.properties,\
+               lib/,\
+               lib/pellet/aterm-java-1.6.jar,\
+               lib/pellet/pellet-cli.jar,\
+               lib/pellet/pellet-core.jar,\
+               lib/pellet/pellet-datatypes.jar,\
+               lib/pellet/pellet-dig.jar,\
+               lib/pellet/pellet-el.jar,\
+               lib/pellet/pellet-explanation.jar,\
+               lib/pellet/pellet-jena.jar,\
+               lib/pellet/pellet-modularity.jar,\
+               lib/pellet/pellet-pellint.jar,\
+               lib/pellet/pellet-query.jar,\
+               lib/pellet/pellet-rules.jar,\
+               lib/pellet/pellet-test.jar,\
+               lib/owlapi-bin.jar
+jars.compile.order = .
+source.. = src/
+output.. = bin/
+bin.excludes = lib/owlapi-src.jar,\
+               lib/org.semanticweb.HermiT.jar

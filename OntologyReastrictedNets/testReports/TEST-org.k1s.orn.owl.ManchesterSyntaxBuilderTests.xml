@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="1" hostname="shrubbery" name="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" tests="5" time="1.939" timestamp="2012-04-21T17:31:04">
+<testsuite errors="0" failures="1" hostname="shrubbery" name="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" tests="5" time="2.316" timestamp="2012-04-24T13:54:11">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -93,10 +93,10 @@
     <property name="java.specification.version" value="1.6" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildPlace" time="0.792" />
-  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildTransition" time="0.011" />
-  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildEmptyPage" time="0.085" />
-  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNet" time="0.064">
+  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildPlace" time="1.04" />
+  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildTransition" time="0.017" />
+  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildEmptyPage" time="0.094" />
+  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNet" time="0.081">
     <failure type="junit.framework.AssertionFailedError">junit.framework.AssertionFailedError: 
 	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallStatic(CallSiteArray.java:48)
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callStatic(AbstractCallSite.java:167)
@@ -104,10 +104,10 @@
 	at org.k1s.orn.owl.ManchesterSyntaxBuilderTests.testBuildSmallPetriNet(ManchesterSyntaxBuilderTests.groovy:108)
 </failure>
   </testcase>
-  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNetAndParse" time="0.696" />
-  <system-out><![CDATA[org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@41021f34 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@345c98f3 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@2b3d9460 (id: null)
+  <testcase classname="org.k1s.orn.owl.ManchesterSyntaxBuilderTests" name="testBuildSmallPetriNetAndParse" time="0.732" />
+  <system-out><![CDATA[org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@802b249 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@2fa6a1a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@64bef361 (id: null)
 Prefix: : <http://org.k1s/orn/customontology>
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -138,9 +138,9 @@ Individual: arc1
 	Fact: Arc
 	Types: Arc
 
-org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@6328edf2 (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@141dddba (id: null)
-org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@34c7e8a7 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.TransitionImpl@7df1bd98 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.PlaceImpl@9d686c1 (id: null)
+org.pnml.tools.epnk.pnmlcoremodel.impl.ArcImpl@6328edf2 (id: null)
 ]]></system-out>
   <system-err><![CDATA[org.semanticweb.owlapi.model.UnloadableImportException: Could not loaded imported ontology: <http://hib.no/SADLTest/cpn.owl> Cause: http://www.hib.no/SADLTest/cpn.owl
 	at uk.ac.manchester.cs.owl.owlapi.OWLOntologyManagerImpl.makeLoadImportRequest(OWLOntologyManagerImpl.java:1003)

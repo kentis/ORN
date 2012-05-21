@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Move element &apos;IndependentModelFactory.java&apos; to &apos;org.cpntools.accesscpn.model.importer/src/org.cpntools.accesscpn.model.impl&apos;&#x0A;- Original project: &apos;org.cpntools.accesscpn.model.importer&apos;&#x0A;- Destination element: &apos;org.cpntools.accesscpn.model.importer/src/org.cpntools.accesscpn.model.impl&apos;&#x0A;- Original element: &apos;org.cpntools.accesscpn.model.importer.IndependentModelFactory.java&apos;&#x0A;- Update references to refactored element" description="Move compilation unit" destination="/src&lt;org.cpntools.accesscpn.model.impl" element1="/src&lt;org.cpntools.accesscpn.model.importer{IndependentModelFactory.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.move" patterns="*" policy="org.eclipse.jdt.ui.moveResources" qualified="false" references="true" stamp="1333611317000" units="1" version="1.0"/>
+</session>

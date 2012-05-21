@@ -1,0 +1,114 @@
+package ontologyreastrictednets.popup.actions;
+
+import java.io.File;
+
+import org.eclipse.core.commands.AbstractHandler;
+import org.eclipse.core.commands.ExecutionEvent;
+import org.eclipse.core.commands.ExecutionException;
+import org.eclipse.jface.action.IAction;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.text.IDocument;
+import org.eclipse.jface.viewers.ISelection;
+import org.eclipse.jface.viewers.TreeSelection;
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.widgets.FileDialog;
+import org.eclipse.swt.widgets.Shell;
+import org.eclipse.ui.IEditorActionDelegate;
+import org.eclipse.ui.IEditorPart;
+import org.eclipse.ui.IObjectActionDelegate;
+import org.eclipse.ui.IWorkbenchPart;
+import org.eclipse.ui.IWorkbenchWindow;
+import org.eclipse.ui.handlers.HandlerUtil;
+
+import org.k1s.orn.ORNVerifier;
+import org.pnml.tools.epnk.pnmlcoremodel.PageLabelProxy;
+import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
+
+import orn.Ontology;
+
+public class ORNValidate extends AbstractHandler {
+
+	private Shell shell;
+	private IEditorPart targetEditor;
+	/**
+	 * Constructor for Action1.
+	 */
+	public ORNValidate() {
+		super();
+	}
+
+	
+	@Override
+	public Object execute(ExecutionEvent event) throws ExecutionException {
+		// TODO Auto-generated method stub
+		IWorkbenchWindow window = HandlerUtil.getActiveWorkbenchWindowChecked(event);
+		
+//		FileDialog dlg = new FileDialog(window.getShell(), SWT.OPEN);
+//	    String fileName = dlg.open();
+	    
+	    PetriNet pn = (PetriNet) ((TreeSelection)window.getSelectionService().getSelection()).getFirstElement();
+	    String fileName = null;
+	    for(Object label : pn.getPage().get(0).getPageLabelProxy()){
+	    	if(((PageLabelProxy)label).getLabel() instanceof Ontology){
+	    		String fileName = ((Ontology)((PageLabelProxy)label).getLabel()).getStructure().getName();
+	    	}
+	    }
+	    String fileName = ((Ontology)pn.getPage().get(0).getPageLabelProxy().get(0).getLabel()).getStructure().getName();
+	    
+	    ORNVerifier verifier = new ORNVerifier();
+	     
+	    boolean valid = verifier.isValid(pn, new File(fileName));
+	    
+	    String msg = null;
+	    if(valid){
+	    	msg = "The petrinet is consitent with the given ontology";
+	    } else {
+	    	msg = "The petrinet is NOT consitent with the given ontology";
+	    }
+	    
+	    MessageDialog.openInformation(
+				window.getShell(),
+				msg,
+				msg);
+	    
+		return new Boolean(valid);
+	}
+
+
+
+	
+//	/**
+//	 * @see IObjectActionDelegate#setActivePart(IAction, IWorkbenchPart)
+//	 */
+//	public void setActivePart(IAction action, IWorkbenchPart targetPart) {
+//		shell = targetPart.getSite().getShell();
+//		
+//	}
+//
+//	/**
+//	 * @see IActionDelegate#run(IAction)
+//	 */
+//	public void run(IAction action) {
+//		IDocument document =((MCHEditor)targetEditor).getDocumentProvider().getDocument(targetEditor.getEditorInput());
+//		String content = document.get();
+//		System.out.println(document.get());
+//		MessageDialog.openInformation(
+//			shell,
+//			"ORN Model",
+//			"validate was executed on: "+targetEditor.getClass().toString());
+//	}
+//
+//	/**
+//	 * @see IActionDelegate#selectionChanged(IAction, ISelection)
+//	 */
+//	public void selectionChanged(IAction action, ISelection selection) {
+//	}
+//
+//	public void setActiveEditor(IAction action, IEditorPart targetEditor) {
+//		this.targetEditor = targetEditor;
+//		
+//	}
+//
+
+
+}

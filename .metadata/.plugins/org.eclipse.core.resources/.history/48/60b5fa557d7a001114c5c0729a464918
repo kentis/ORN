@@ -1,0 +1,21 @@
+package org.k1s.orn;
+
+import org.eclipse.ui.editors.text.TextEditor;
+import org.eclipse.ui.texteditor.AbstractTextEditor;
+
+public class MCHEditor extends TextEditor {
+	
+	
+	public MCHEditor() {
+		
+		// install the source configuration
+		setSourceViewerConfiguration(new MCHConfiguration());
+		// install the document provider
+		//setDocumentProvider();
+	}
+
+	protected void createActions() {
+		super.createActions();
+		// ... add other editor actions here
+	}
+}

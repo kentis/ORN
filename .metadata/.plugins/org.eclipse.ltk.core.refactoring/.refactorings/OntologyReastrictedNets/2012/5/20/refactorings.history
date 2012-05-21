@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;loop.tmpl&apos; to &apos;groovy&apos;&#x0A;- Original project: &apos;OntologyReastrictedNets&apos;&#x0A;- Destination element: &apos;groovy&apos;&#x0A;- Original element: &apos;loop.tmpl&apos;" description="Copy file" element1="plattforms/groovy/loop.tmpl" files="1" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1336927156553" target="/OntologyReastrictedNets/plattforms/groovy" units="0" version="1.0"/>
+</session>

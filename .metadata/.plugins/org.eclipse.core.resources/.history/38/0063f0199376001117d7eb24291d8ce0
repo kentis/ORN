@@ -1,0 +1,101 @@
+package org.k1s.orn
+
+
+import org.semanticweb.owl.model.OWLClass;
+import org.semanticweb.owl.model.OWLClassAxiom;
+import org.semanticweb.owl.model.OWLObjectProperty;
+import org.semanticweb.owl.model.OWLObjectPropertyAssertionAxiom;
+
+import org.semanticweb.owlapi.model.IRI;
+
+
+import org.semanticweb.owlapi.model.OWLIndividual;
+import org.semanticweb.owlapi.model.OWLNamedIndividual;
+import org.semanticweb.owlapi.model.OWLOntology;
+import org.semanticweb.owlapi.model.OWLOntologyCreationException;
+import org.semanticweb.owlapi.model.OWLOntologyManager;
+
+import uk.ac.manchester.cs.owl.owlapi.OWLClassImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLDataFactoryImpl;
+import uk.ac.manchester.cs.owl.owlapi.OWLObjectPropertyImpl;
+
+
+class ORNUtils {
+
+	static String file2String(file){
+		return file.text
+	}
+	
+	static void closeTheWorldForIndiviuals(OWLOntology ontology){
+		def individs = []
+		Set individuals = ontology.getIndividualsInSignature()
+		
+		individuals.each { OWLNamedIndividual individual ->
+			println individual.getIRI().toString().substring( individual.getIRI().toString().lastIndexOf("/") + 1)
+			def name = individual.getIRI().toString().substring( individual.getIRI().toString().lastIndexOf("/") + 1)
+			individs << new Individual(name: name,
+									   fullName: individual.getIRI().toString(),
+									   namedIndividual: individual )
+			 
+		}
+		
+		def manager = ontology.getOWLOntologyManager()
+		OWLDataFactoryImpl factory = manager.getOWLDataFactory()
+		addThingSuperClass(ontology, factory, individuals)
+		addNegativeProperties(ontology, factory, individuals)
+		
+		
+	}
+
+	private static void addNegativeProperties(OWLOntology ontology, factory, individuals){
+		//For each property
+		def propertyAssertions = ontology.getObjectPropertiesInSignature()
+		propertyAssertions.each{
+			println it
+			println it.class
+		}
+		//for each individual
+		//check each individual is connected by proptery, if not, add negative assertion		
+		individuals.each{ OWLNamedIndividual ind ->
+			println ind.getProperties()
+			println ontology.getObjectPropertiesInSignature()
+			
+			
+			getObjectPropertiesForIndividual(ontology, ind)
+		}
+	}
+	
+	private static def getObjectPropertiesForIndividual(OWLOntology ontology, OWLIndividual individual){
+		println "opa: "+ontology.getObjectPropertyAssertionAxioms(individual)
+		return ontology.getObjectPropertyAssertionAxioms(individual)
+		
+//		Set properties = ontology.getObjectPropertiesInSignature()
+//		def retval = []
+//		properties.each{ org.semanticweb.owlapi.model.OWLObjectProperty prop ->
+//			println "*********************"
+//			println "prop: "+prop
+//			println "donains: "+prop.getDomains(ontology)
+//			println "referencing axioms: "+ prop.getReferencingAxioms(ontology)
+//			println "ranges: "+prop.getRanges(ontology)
+			
+//			println "*********************"
+//		}
+	}
+	
+	private static void addThingSuperClass(ontology, factory, individuals){
+		def oneOf = factory.getOWLObjectOneOf(individuals)
+		
+		OWLClassImpl owlThing = factory.getOWLClass(IRI.create("http://www.w3.org/2002/07/owl#Thing"))
+		
+		def subClassOf = factory.getOWLSubClassOfAxiom( owlThing, oneOf)
+		
+		ontology.getOWLOntologyManager().addAxiom(ontology, subClassOf)
+	}
+		
+}
+
+class Individual {
+	String name
+	String fullName
+	OWLNamedIndividual namedIndividual
+}

@@ -69,6 +69,7 @@ class ORNImporter {
 		
 		for(org.cpntools.accesscpn.model.Page cpnPage : pn.getPage()){
 			def page;
+			println "setting prag for page: ${cpnPage.name.text}"
 			if(allPages.containsKey(cpnPage.getId())){
 				page = allPages.get(cpnPage.getId());
 			}else{
@@ -81,6 +82,8 @@ class ORNImporter {
 			Name name = new PnmlcoremodelFactoryImpl().createName();
 			name.setText(cpnPage.getName().getText());
 			page.setName(name);
+			
+			//setPragmatic(page, cpnPage.name.text)
 			copyPage(cpnPage, page);
 		}
 		
@@ -182,6 +185,7 @@ class ORNImporter {
 			allPages.put(subst.getSubPageID(), page);
 		}
 		page.setGraphics(PnmlcoremodelFactoryImpl.eINSTANCE.createNodeGraphics());
+		setPragmatic page, subst.getName().getText()
 		return page;
 	}
 	
@@ -251,7 +255,7 @@ class ORNImporter {
 		
 		int pragStart = elemName.indexOf( "<<") + 2;
 		int pragEnd = elemName.indexOf(">>");
-		//println elemName
+		println elemName
 		String pragDef = elemName.substring(pragStart, pragEnd);
 		
 		if(!pragDef.contains("(")) pragDef = pragDef + "()";

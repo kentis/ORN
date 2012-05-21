@@ -10,7 +10,7 @@ import org.k1s.orn.owl.FuntionalSyntaxBuilder;
 import org.k1s.orn.owl.ORNConstants;
 import org.pnml.tools.epnk.pnmlcoremodel.Page;
 import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;
-import org.semanticweb.HermiT.Reasoner;
+
 import org.semanticweb.owlapi.apibinding.OWLManager;
 import org.semanticweb.owlapi.io.StringDocumentSource;
 import org.semanticweb.owlapi.model.IRI;
@@ -68,7 +68,8 @@ public class ORNVerifier {
 //			for(Object o : ontology.getAxioms()){
 //				System.out.println(o);
 //			}
-			OWLReasoner reasoner = new Reasoner(ontology);
+			com.clarkparsia.pellet.owlapiv3.Reasoner reasoner = new com.clarkparsia.pellet.owlapiv3.Reasoner(manager);
+			reasoner.setOntology(ontology);
 			boolean cons = reasoner.isConsistent();
 			consistent = System.currentTimeMillis();
 			

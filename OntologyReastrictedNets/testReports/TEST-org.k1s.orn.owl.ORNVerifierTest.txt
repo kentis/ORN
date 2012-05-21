@@ -1,5 +1,5 @@
 Testsuite: org.k1s.orn.owl.ORNVerifierTest
-Tests run: 4, Failures: 0, Errors: 1, Time elapsed: 3.129 sec
+Tests run: 4, Failures: 0, Errors: 1, Time elapsed: 3.494 sec
 ------------- Standard Output ---------------
 false
 PRAGDEF: fd(10)
@@ -7,9 +7,9 @@ PRAGDEF: pd()
 false
 ------------- ---------------- ---------------
 
-Testcase: testVerifyLogo took 1.145 sec
-Testcase: testInvalidNet took 0.725 sec
-Testcase: testPetiAugumentedNet took 0.749 sec
+Testcase: testVerifyLogo took 1.295 sec
+Testcase: testInvalidNet took 0.779 sec
+Testcase: testPetiAugumentedNet took 0.917 sec
 	Caused an ERROR
 No such property: pragmatics for class: org.pnml.tools.epnk.pnmlcoremodel.impl.PageImpl
 groovy.lang.MissingPropertyException: No such property: pragmatics for class: org.pnml.tools.epnk.pnmlcoremodel.impl.PageImpl
@@ -25,4 +25,4 @@ groovy.lang.MissingPropertyException: No such property: pragmatics for class: or
 	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.call(AbstractCallSite.java:129)
 	at org.k1s.orn.owl.ORNVerifierTest.testPetiAugumentedNet(ORNVerifierTest.groovy:296)
 
-Testcase: testRealInvalidNet took 0.181 sec
+Testcase: testRealInvalidNet took 0.175 sec

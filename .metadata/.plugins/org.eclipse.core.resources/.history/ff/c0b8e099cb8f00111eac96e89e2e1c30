@@ -1,0 +1,16 @@
+package org.k1s.orn.templates
+import org.semanticweb.owl.model.OWLOntology;
+
+
+
+class PNPattern {
+	
+	
+	
+	
+	static def getPatternd(OWLOntology ont){
+		
+	}
+	
+	
+}

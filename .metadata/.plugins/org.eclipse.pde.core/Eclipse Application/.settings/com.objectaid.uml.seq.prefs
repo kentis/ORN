@@ -1,0 +1,7 @@
+#Mon May 21 21:05:47 CEST 2012
+patterns/4=org\\.slf4j\\..*
+patterns/3=org\\.apache\\.log4j\\..*
+eclipse.preferences.version=1
+patterns/2=org\\.apache\\.commons\\.logging\\..*
+patterns/1=java\\.util\\.logging\\..*
+patterns/0=java\\.lang\\..*

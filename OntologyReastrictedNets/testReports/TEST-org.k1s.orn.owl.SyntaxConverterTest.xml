@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite errors="0" failures="0" hostname="shrubbery" name="org.k1s.orn.owl.SyntaxConverterTest" tests="2" time="1.356" timestamp="2012-04-21T17:30:39">
+<testsuite errors="0" failures="0" hostname="shrubbery" name="org.k1s.orn.owl.SyntaxConverterTest" tests="2" time="1.566" timestamp="2012-04-24T13:53:42">
   <properties>
     <property name="java.vendor" value="Sun Microsystems Inc." />
     <property name="sun.java.launcher" value="SUN_STANDARD" />
@@ -93,8 +93,8 @@
     <property name="java.specification.version" value="1.6" />
     <property name="ant.project.invoked-targets" value="test" />
   </properties>
-  <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testManchesterToRDF" time="1.007" />
-  <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testRDFXMLToManchester" time="0.043" />
+  <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testManchesterToRDF" time="1.118" />
+  <testcase classname="org.k1s.orn.owl.SyntaxConverterTest" name="testRDFXMLToManchester" time="0.065" />
   <system-out><![CDATA[Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
 Prefix: xml: <http://www.w3.org/XML/1998/namespace>

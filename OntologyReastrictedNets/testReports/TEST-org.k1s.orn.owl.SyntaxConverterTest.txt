@@ -1,5 +1,5 @@
 Testsuite: org.k1s.orn.owl.SyntaxConverterTest
-Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.356 sec
+Tests run: 2, Failures: 0, Errors: 0, Time elapsed: 1.566 sec
 ------------- Standard Output ---------------
 Prefix: xsd: <http://www.w3.org/2001/XMLSchema#>
 Prefix: owl: <http://www.w3.org/2002/07/owl#>
@@ -48,5 +48,5 @@ Class: <http://example.com/owl/families/Man>
 
 ------------- ---------------- ---------------
 
-Testcase: testManchesterToRDF took 1.006 sec
-Testcase: testRDFXMLToManchester took 0.043 sec
+Testcase: testManchesterToRDF took 1.117 sec
+Testcase: testRDFXMLToManchester took 0.065 sec

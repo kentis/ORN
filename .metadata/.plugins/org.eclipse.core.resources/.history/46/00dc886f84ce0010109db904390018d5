@@ -1,0 +1,54 @@
+uri "http://k1s.org/protocol" version
+"$Revision: 0.01 $ Last modified on $Date: 2011/06/03 20:16:57 $" .
+
+Pragmatic is a top-level class.
+Property is a top-level class.
+
+Entity is a type of Pragmatic.
+
+Operation is a type of Pragmatic.
+
+Channel is a type of Pragmatic, described by property with values of type Property .
+
+
+//Print is a type of Operation, described by property with values of type Property.
+
+
+Channelporoperty is a type of Property , must be one of{GuaranteedDelivery, preservesOrder}.
+
+
+
+Stream is a type of Channel.
+Datagram is a type of Channel.
+//a Stream has property GuaranteedDelivery.
+//a Stream has property preservesOrder.
+
+//a Channel is a Stream only if property has value preservesOrder. 
+
+Rule stream
+ given c is any Channel
+ if property of c is GuaranteedDelivery
+ 	property of c is preservesOrder
+ then c is a Stream .
+
+Rule datagram
+ given c is any Channel
+ then c is a Datagram .
+
+
+TCP is a Channel.
+
+TCP has property GuaranteedDelivery.
+TCP has property preservesOrder.
+
+UDP is a Channel.
+
+
+Test: TCP is a Pragmatic.
+Test: TCP is a Channel.
+Test: TCP is a Stream.
+
+Test: UDP is a Pragmatic.
+Test: UDP is a Channel.
+Test: UDP is a Datagram.
+Test: UDP is not a Stream.
