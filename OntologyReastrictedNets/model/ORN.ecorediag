@@ -182,4 +182,16 @@
     <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qcZtoFgFEeGAd74NFerpuA" id="(0.5,0.0)"/>
     <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_qcZtoVgFEeGAd74NFerpuA" id="(0.4954128440366973,1.0)"/>
   </edges>
+  <edges xmi:type="notation:Edge" xmi:id="_Q6DcwOLWEeG8kZD5roxY-Q" type="3002" source="_qYznEFgFEeGAd74NFerpuA" target="_qYxK0FgFEeGAd74NFerpuA">
+    <children xmi:type="notation:Node" xmi:id="_Q6ED0OLWEeG8kZD5roxY-Q" type="4011">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Q6ED0eLWEeG8kZD5roxY-Q" x="-148" y="-14"/>
+    </children>
+    <children xmi:type="notation:Node" xmi:id="_Q6Eq4OLWEeG8kZD5roxY-Q" type="4012">
+      <layoutConstraint xmi:type="notation:Location" xmi:id="_Q6Eq4eLWEeG8kZD5roxY-Q" x="10" y="10"/>
+    </children>
+    <styles xmi:type="notation:ConnectorStyle" xmi:id="_Q6DcweLWEeG8kZD5roxY-Q" lineColor="4210752"/>
+    <styles xmi:type="notation:FontStyle" xmi:id="_Q6DcwuLWEeG8kZD5roxY-Q" fontColor="4210752" fontName="Cantarell" fontHeight="10"/>
+    <element xmi:type="ecore:EReference" href="ORN.ecore#//Arc/Pragmatics"/>
+    <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_Q6Dcw-LWEeG8kZD5roxY-Q" points="[5, 22, 5, 22]$[5, 22, 5, 22]"/>
+  </edges>
 </notation:Diagram>

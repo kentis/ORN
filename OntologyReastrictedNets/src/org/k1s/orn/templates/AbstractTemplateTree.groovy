@@ -34,8 +34,13 @@ class AbstractTemplateTree {
 			
 		return "|SEQ|"
 	}
-	
-	
+	static rnd = new Random()
+	String toGraphString(i){
+		if(correspondingNetElement != null)
+		return "<html>$i<br>${correspondingNetElement.name.text}<br/> ${correspondingNetElement.getClass()}<br/> ${correspondingNetElement.pragmatics[0]?.text}</html>"
+		
+	return "<html>$i<br>|SEQ|${rnd.nextInt()}</html>"
+	}
 	
 	static def attForNet(pn, Bindings bindings){
 		def rootPage = pn.page[0]
@@ -101,7 +106,7 @@ class AbstractTemplateTree {
 						def nextAtt = attForNode(nextNode, bindings, att, usedNodes)
 						if(nextAtt != null) att.children << nextAtt 
 						
-						nextNode = findNextNode(nextNode, parent)
+						nextNode = findNextNode(nextNode, parent, nextAtt)
 						println "found: $nextNode"
 					} else {
 						//escape loop
@@ -117,16 +122,16 @@ class AbstractTemplateTree {
 		
 		node.out.each { outArc -> 
 			def seq = new AbstractTemplateTree()
-			seq.label = outArc.name.text
+			seq.label = outArc.name == null ? "" : outArc.name.text
 			seq.setTemplateText "%%yield%%"
 			def nextNode = outArc.target
-			while(nextNode != null && !nodeIsMerge(nextNode)){
+			while(nextNode != null && !nodeIsMerge(nextNode)&&!nodeIsLoopEnd(node)){
 				if(!usedNodes.contains(nextNode)){
 					usedNodes << nextNode
 					def nextAtt = attForNode(nextNode, bindings, seq, usedNodes)
 					if(nextAtt != null) seq.children << nextAtt
 					
-					nextNode = findNextNode(nextNode, parent)
+					nextNode = findNextNode(nextNode, parent, nextAtt)
 				} else {
 					//escape loop
 					nextNode = null
@@ -140,7 +145,7 @@ class AbstractTemplateTree {
 		return att
 	}
 	
-	static def findNextNode(node, parent){
+	static def findNextNode(node, parent, att = null){
 		println "finding next for $node.name"
 		switch(node){
 			case Transition:
@@ -159,7 +164,8 @@ class AbstractTemplateTree {
 							idCandidate.target.pragmatics[0] != null &&
 						 (idCandidate.target.pragmatics[0].structure.name == "Id" ||
 							 idCandidate.target.pragmatics[0].structure.name == "Cond" ||
-							 idCandidate.target.pragmatics[0].structure.name == "Loop"
+							 idCandidate.target.pragmatics[0].structure.name == "Loop" ||
+							 idCandidate.target.pragmatics[0].structure.name == "EndLop"
 						)) idNodes << idCandidate.target
 					}
 					if(idNodes.size() > 1) throw new RuntimeException("Too many places to go from $node")
@@ -167,7 +173,22 @@ class AbstractTemplateTree {
 				}
 
 			case Place:
-				if(node.out.size() == 1){
+				
+				if(nodeIsLoop(node)){
+					println "FIND NEXT FOR: $node    ${node.pragmatics[0].text}"
+					def loopEnd = findLoopEnd(att, node)
+					if(loopEnd == null) throw new ATTNotOKException("Loop has no End")
+					def nextNode
+					loopEnd.out.each {
+						def target = it.target
+						if(target.out.size() == 1 && target.out[0].target == node){
+							//ignore this path
+						} else {
+							nextNode = target
+						}
+					}
+					return nextNode
+				} else if(node.out.size() == 1){
 					return node.out.target[0]
 				}
 				break
@@ -175,6 +196,22 @@ class AbstractTemplateTree {
 				return findStartForPage(node)
 				break;
 		}
+	}
+	
+	static def findLoopEnd(att, node){
+		def retval
+		att.children[0].children.each{
+			if(nodeIsLoopEnd(it.correspondingNetElement)){
+				def hasNodeAsSuccessor = false
+				it.correspondingNetElement.out.target.each{ target ->
+					if(target.out.size() > 0 && target.out[0].target == node)
+						hasNodeAsSuccessor = true
+				}
+				if(hasNodeAsSuccessor)
+					retval = it.correspondingNetElement
+			}
+		}
+		return retval
 	}
 	
 	static def nodeIsId(node){
@@ -188,13 +225,21 @@ class AbstractTemplateTree {
 	}
 
 	static def nodeIsLoop(node){
-		if(nodeIsId(node)){
-			node.pragmatics[0].structure.parameters.contains "Loop"
+		if(node.pragmatics.size() > 0){
+			//return node.pragmatics[0].structure.params.contains("Loop") 
+		//} else {
+			return  node.pragmatics[0].structure.name == "Loop"
 		}
+	}
+	
+	static def nodeIsLoopEnd(node){
+			return node.pragmatics[0].structure.name == "EndLop" || node.pragmatics[0].structure.name == "EndLoop"
 	}
 		
 	static def nodeIsMerge(node){
+		if(node.pragmatics.size() > 0){
 		return node.pragmatics[0].structure.name == "Merge"
+		} else return false
 	}
 	
 	static def findStartForPage(page){

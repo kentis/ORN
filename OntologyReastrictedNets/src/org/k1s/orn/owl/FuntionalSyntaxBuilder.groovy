@@ -10,7 +10,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.RefPlace;
 
 
 import org.pnml.tools.epnk.pnmlcoremodel.Transition;
-import org.codehaus.groovy.tools.ast.TranformTestHelper;
+//import org.codehaus.groovy.tools.ast.TranformTestHelper;
 import org.pnml.tools.epnk.pnmlcoremodel.Arc;
 import org.pnml.tools.epnk.pnmlcoremodel.Page;
 import org.pnml.tools.epnk.pnmlcoremodel.PetriNet;

@@ -7,6 +7,9 @@ import org.pnml.tools.epnk.pnmlcoremodel.PnmlcoremodelFactory;
 import org.pnml.tools.epnk.pnmlcoremodel.RefPlace;
 import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLFactory;
 
+import orn.Inscription;
+import orn.OrnFactory;
+
 class ePNKBuilder {
 	
 	def pn
@@ -118,8 +121,13 @@ class ePNKBuilder {
 	}
 	
 	def createArc(args){
-		Arc arc = PnmlcoremodelFactory.eINSTANCE.createArc()
-		if(args.size() == 3){
+		orn.Arc arc = factory.createArc()
+		if(args.size() >= 4){
+			def insc = factory.eINSTANCE.createInscription()
+			insc.setText args[3]
+			arc.setInscription insc
+		}
+		if(args.size() >= 3){
 			arc.setName getName(args[2])
 		} else {
 			arc.setName getName("arc1")
@@ -137,9 +145,11 @@ class ePNKBuilder {
 		labels.keySet().each { labelName ->
 			println "setting label: $labelName" 
 			if(node.hasProperty(labelName) && labelsMap.containsKey(labelName)){
+				println "setting label: $labelName"
 				def label = labelsMap[labelName].newInstance()
 				label.setText(labels[labelName])
 				label.setStructure(label.parse(label.text))
+				println "to: ${label.getText()}"
 				node."$labelName" << label
 			}
 		}

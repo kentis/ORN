@@ -1,5 +1,8 @@
 package org.k1s.orn.templates.ogdVisitors
 
+import org.k1s.orn.att.Container;
+import org.k1s.orn.templates.AbstractTemplateTree;
+
 abstract class ODGVisitor {
 
 	abstract def visitElement(element);
@@ -21,8 +24,10 @@ abstract class ODGVisitor {
 	static def flattenAtt(att, list){
 		println "${att}    ${att.correspondingNetElement}"
 		list << att
-		att.children.each {
-			if(it != null) flattenAtt(it, list)	
+		if(att instanceof AbstractTemplateTree || att instanceof Container){
+			att.children.each {
+				if(it != null) flattenAtt(it, list)	
+			}
 		}
 		return list
 	}

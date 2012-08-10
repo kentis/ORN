@@ -1,10 +1,26 @@
 package org.k1s.orn.test
+import org.k1s.orn.att.Container;
 
+import org.k1s.orn.templates.AbstractTemplateTree;
+
+
+
+import java.awt.Color;
+import java.awt.Dimension;
+import java.awt.Graphics2D;
+import java.awt.image.BufferedImage;
+
+import javax.imageio.ImageIO;
 import javax.swing.JFrame;
 
+import edu.uci.ics.jung.algorithms.layout.BalloonLayout;
+import edu.uci.ics.jung.algorithms.layout.RadialTreeLayout
 import edu.uci.ics.jung.algorithms.layout.TreeLayout;
 import edu.uci.ics.jung.graph.DelegateForest;
+import edu.uci.ics.jung.graph.DelegateTree;
 import edu.uci.ics.jung.graph.Graph;
+import edu.uci.ics.jung.graph.OrderedKAryTree;
+
 import edu.uci.ics.jung.visualization.VisualizationViewer;
 import edu.uci.ics.jung.visualization.decorators.ToStringLabeller;
 
@@ -21,20 +37,59 @@ class ATTVisualizer {
 		jf.setVisible(true);
 	}
 	
+	void writeATTImage(att, String filename) {
+		Graph g = getGraph(att);
+		TreeLayout<String, Integer> layout = new TreeLayout<String, Integer>(g, 100, 75)
+		println layout.getSize()
+		//layout.setSize(new Dimension(2000,2000))
+		VisualizationViewer vv = new VisualizationViewer(layout, new Dimension(2000,2000));
+		
+		vv.getRenderContext().setVertexLabelTransformer(new ToStringLabeller())
+		//vv.getRenderContext().getRendererPane().setMaximumSize(new Dimension(2000,2000));
+		
+		//vv.setLayout(new BalloonLayout(g) )
+		//int width = vv.getLayout().getCurrentSize().width;
+		//int height = vv.getLayout().getCurrentSize().height;
+		//Color bg = getBackground();
+	
+		BufferedImage bi = new BufferedImage(2000,2000,BufferedImage.TYPE_INT_BGR);
+		Graphics2D graphics = bi.createGraphics();
+		graphics.setColor(Color.GRAY);
+		graphics.fillRect(0,0, 2000, 2000);
+		vv.paintComponent(graphics);
+	
+		try{
+		   ImageIO.write(bi,"png",new File("/tmp/$filename"));
+		}catch(Exception e){e.printStackTrace();}
+	}
+	
+	  
 	
 	def getGraph(att){
-		def graph = new DelegateForest<String,Integer>();
-		graph.addVertex(att.toString())
-		addChildren(att.children, graph, att.toString())
+		def graph = new DelegateTree<String,Integer>();//new OrderedKAryTree<String, Integer>(500)//
+		graph.addVertex(att.toGraphString(0))
+		
+		addChildren(att.children, graph, att.toGraphString(0))
 		
 		return graph
 	}
 	int a = 0
+	
 	def addChildren(children, graph, parent){
-		children.each { att ->
-			graph.addEdge(a++, parent, att.toString());
-			if(att != null)
-			addChildren(att.children, graph, att.toString())
+		
+		children.eachWithIndex { att, i ->
+			if(att != null){
+			println "adding $att"
+			//graph.addChild(att.toGraphString(i))
+//			println graph.class
+//			println graph.metaClass.methods
+//			println graph.whyDoYouNotChange()
+			def node = att.toGraphString((i+1))
+			graph.addEdge(a, parent, node );
+			a++
+			if(att != null && (att instanceof AbstractTemplateTree || att instanceof Container)) addChildren(att.children, graph, node)
+			
+			}
 		}
 	}
 }

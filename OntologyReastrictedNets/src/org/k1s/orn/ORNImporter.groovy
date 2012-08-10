@@ -29,6 +29,7 @@ import org.pnml.tools.epnk.pnmlcoremodel.Name;
 import org.pnml.tools.epnk.pnmlcoremodel.Node;
 import org.pnml.tools.epnk.pnmlcoremodel.Page;
 import org.pnml.tools.epnk.pnmlcoremodel.PlaceNode;
+import org.pnml.tools.epnk.pnmlcoremodel.ToolInfo;
 import org.pnml.tools.epnk.pnmlcoremodel.impl.PnmlcoremodelFactoryImpl;
 //import org.pnml.tools.epnk.pntypes.hlpng.pntd.hlpngdefinition.Page;
 import org.pnml.tools.epnk.pntypes.hlpng.pntd.hlpngdefinition.HlpngdefinitionPackage;
@@ -62,8 +63,8 @@ class ORNImporter {
 			pn = DOMParser.parse(cpn, "");
 		} catch (Exception e) {
 			// TODO Auto-generated catch block
-			e.printStackTrace();d
-			throw new RuntimeException(e);
+			e.printStackTrace();
+				throw new RuntimeException(e);
 		}
 		
 		
@@ -167,9 +168,9 @@ class ORNImporter {
 		refs.put(place.getId(), p);
 		sRefs.put(place.getId(), place);
 		
-		Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics();
-		prag.setText(getPrag(place.getName().getText()));
-		
+//		Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics();
+//		prag.setText(getPrag(place.getName().getText()));
+//		
 		//p.getPragmatics().add(prag);
 		return p;
 	}
@@ -185,7 +186,7 @@ class ORNImporter {
 			allPages.put(subst.getSubPageID(), page);
 		}
 		page.setGraphics(PnmlcoremodelFactoryImpl.eINSTANCE.createNodeGraphics());
-		setPragmatic page, subst.getName().getText()
+		setPragmatics page, subst.getName().getText()
 		return page;
 	}
 	
@@ -209,7 +210,7 @@ class ORNImporter {
 		trans.setGraphics(PnmlcoremodelFactoryImpl.eINSTANCE.createNodeGraphics());
 		Name name = createName(delPrag(sTrans.getName().getText()));
 		trans.setName(name);
-		setPragmatic(trans, sTrans.getName().getText() )
+		setPragmatics(trans, sTrans.getName().getText() )
 //		Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics();
 //		prag.setText(getPrag(sTrans.getName().getText()));
 //		trans.getPragmatics().add(prag);
@@ -223,7 +224,18 @@ class ORNImporter {
 		p.setName(createName(delPrag(place.getName().getText())));
 		places.put(place.getId(), p);
 		
-		setPragmatic(p,place.getName().getText() )
+		setPragmatics(p,place.getName().getText() )
+		
+		//if(place.getInitialMarking() != null){
+		def ti = PnmlcoremodelFactoryImpl.eINSTANCE.createToolInfoText()
+		if(place.getInitialMarking() != null){
+			ti.setInfo(place.getInitialMarking().getText())
+		}else{
+			ti.setInfo("null")
+		}
+		p.getToolspecific() << ti
+		//}
+		
 		//		Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics();
 		//		prag.setText(getPrag(place.getName().getText()));
 		//		
@@ -237,6 +249,7 @@ class ORNImporter {
 		return name;
 	}
 	
+	@Deprecated
 	def setPragmatic(element, name){
 		Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics()
 		prag.setText(getPrag(name))
@@ -247,6 +260,21 @@ class ORNImporter {
 			element.getPragmatics().add(prag);
 	}
 	
+	def setPragmatics(element, name){
+		
+		getPrags(name).each{
+			Pragmatics prag = OrnFactory.eINSTANCE.createPragmatics()
+			prag.setText(it)
+		
+			prag.setStructure(prag.parse(prag.getText()))
+		
+			if(prag.getText() != null && !prag.getText().equals(""))
+				element.getPragmatics().add(prag);
+		}
+	}
+	
+	
+	@Deprecated
 	protected String getPrag(String elemName){
 		if(elemName == null) return "";
 		String retval = null;
@@ -260,6 +288,33 @@ class ORNImporter {
 		
 		if(!pragDef.contains("(")) pragDef = pragDef + "()";
 		return pragDef;
+	}
+	
+	
+	protected def getPrags(String elemName){
+		
+		def retval = []
+		try{
+		if(elemName == null) return retval;
+		//String retval = null;
+		def start = 0
+		
+		while(elemName.indexOf("<<", start) > 0 ) {
+		
+			int pragStart = elemName.indexOf("<<", start) + 2;
+			int pragEnd = elemName.indexOf(">>", start);
+			
+			String pragDef = elemName.substring(pragStart, pragEnd);
+			
+			if(!pragDef.contains("(")) pragDef = pragDef + "()";
+			retval << pragDef
+			start = pragEnd +1
+		}
+		return retval;
+		}catch(Exception ex){
+			throw new Exception("Unnable to parse $elemName",ex)
+		}
+		
 	}
 	
 	protected String delPrag(String elemName){

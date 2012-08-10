@@ -1,0 +1,9 @@
+<%if(cond){%>
+  if($cond){
+    __TOKEN__ = $condTrueExpr
+  } else {
+    __TOKEN__ = $condFalseExpr
+  }
+<%} else {%>
+  __TOKEN__ = params[0]
+<%}%>

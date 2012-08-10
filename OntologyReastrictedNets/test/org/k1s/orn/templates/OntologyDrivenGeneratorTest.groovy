@@ -17,8 +17,10 @@ import org.pnml.tools.epnk.pnmlcoremodel.impl.PetriNetDocImpl;
 import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLResource;
 import org.pnml.tools.epnk.pnmlcoremodel.serialisation.PNMLResourceFactory;
 
+import orn.Ontology
 import orn.OrnFactory;
 import orn.OrnPackage;
+import orn.impl.OntologyImpl
 import orn.impl.PragmaticsImpl;
 
 import static org.junit.Assert.*;
@@ -141,6 +143,33 @@ class OntologyDrivenGeneratorTest {
 		
 		assertThat file[0], containsString("while")
 		assertThat file[0], containsString("println")
+		
+		assertThat file[0], containsString("dilldall")
+		
+	}
+	
+	
+	@Test
+	void testSimpleLoopingNetEndCond(){
+		def pn = ATTTests.getImplicitLoopingNet()
+		
+		/*Set the ontology */
+		Ontology ont = new OntologyImpl()
+		ont.setText "/home/kent/ws-ePNK/OntologyReastrictedNets/ontologies/nppn.fowl"
+		ont.setStructure(ont.parse(ont.getText()))
+		pn.page[0].getOntology() << ont
+		
+		def bindings = ORNTestUtils.createGroovyBindings()
+		assertThat pn, is(not(null))
+		def file = new OntologyDrivenGenerator().generate( pn, bindings )
+		assertThat pn.page[0].object[1].pragmatics[0], is(not(null))
+		println "output: $file"
+		assertThat file, is(not(null))
+		
+		assertThat file[0], containsString("while")
+		assertThat file[0], containsString("println")
+		
+		assertThat file[0], containsString("dilldall")
 		
 	}
 	

@@ -1,4 +1,6 @@
 def __LOOP_VAR__ = true
 while(__LOOP_VAR__){
 	%%yield%%
+	
+<%if(binding.variables.containsKey("end_cond") && end_cond){%>__LOOP_VAR__ = $end_cond<%}%>
 }

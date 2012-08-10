@@ -1,14 +1,32 @@
 package org.k1s.orn.templates;
 
+import java.lang.reflect.InvocationTargetException;
+
+import org.eclipse.emf.common.notify.Adapter;
+import org.eclipse.emf.common.notify.Notification;
+import org.eclipse.emf.common.util.EList;
+import org.eclipse.emf.common.util.TreeIterator;
+import org.eclipse.emf.ecore.EClass;
+import org.eclipse.emf.ecore.EObject;
+import org.eclipse.emf.ecore.EOperation;
+import org.eclipse.emf.ecore.EReference;
+import org.eclipse.emf.ecore.EStructuralFeature;
+import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.emf.ecore.xml.type.AnyType;
 import org.junit.Test;
 import org.k1s.orn.ORNImporter;
 import org.k1s.orn.test.ATTVisualizer;
 import org.k1s.orn.test.ORNTestUtils;
 import org.k1s.orn.test.ePNKBuilder;
+import org.pnml.tools.epnk.pnmlcoremodel.Graphics;
 import org.pnml.tools.epnk.pnmlcoremodel.Page;
+import org.pnml.tools.epnk.pnmlcoremodel.ToolInfo;
 import org.pnml.tools.epnk.pnmlcoremodel.Transition;
 
+import orn.Ontology;
+import orn.OntologyStructure;
 import orn.OrnFactory;
+import orn.impl.OntologyImpl;
 import orn.impl.PragmaticsImpl;
 
 import static org.junit.Assert.*;
@@ -227,17 +245,22 @@ class ATTTests {
 		def pages = new ORNImporter().translate("/home/kent/projects/ws/websocket/codegen/cpnmodel/ProtocolModel.cpn")
 		def bindings = ORNTestUtils.createGroovyBindings()
 		def pn = ORNTestUtils.getPetriNet()
+		
 		pn.page << pages[0]
+		Ontology ont = new OntologyImpl()
+		ont.setText "/home/kent/ws-ePNK/OntologyReastrictedNets/ontologies/nppn.fowl"
+		ont.setStructure(ont.parse(ont.getText()))
+		pn.page[0].getOntology() << ont
+		
 		assertThat pn, is(not(null))
+		
+		new OntologyDrivenGenerator().addExtraPragmatics(pn)
 		
 		def att = AbstractTemplateTree.attForNet(pn, bindings)
 		
-		def th = Thread.start{
-			new ATTVisualizer().show att
-		}
-		th.join()
-		Thread.sleep(50000)
-	
+		
+		new ATTVisualizer().writeATTImage att, "protomodel.png"
+		
 	}
 	
 	static def getBranchingNet(){
@@ -319,41 +342,98 @@ class ATTTests {
 				def ch = place(name:'channel', labels:[pragmatics: "Channel()"])
 				
 				page(name: 'Client', labels:[pragmatics: "Principal()"]){
+					page(name: 'Sned', labels:[pragmatics: "External(outMsg)"]){
 					
-					def ext = transition(name:'send', labels:[pragmatics: "External(outMsg)"])
-					
-					def outMsg = place(name:'outMsg')
-					arc(ext, outMsg)
-					
-					def loopStart = place(name:'loopStart', labels:[pragmatics: "Loop()"])
-					arc(ext, loopStart)
-					
-					def nextMsg = transition(name:'nextMsg', labels:[pragmatics: "RemoveHead(outMsg, msg)"])
-					arc(outMsg, nextMsg)
-					arc(loopStart, nextMsg)
-					
-					def waitSend = place(name: 'waitSend', labels:[pragmatics: "Id()"] )
-					arc(nextMsg, waitSend)
-					
-					def send = transition(name: 'send', labels:[pragmatics: "Print(msg)"])
-					arc(waitSend, send)
-					
-					
-					def loopEnd = place(name:'loopStart', labels:[pragmatics: "EndLoop(cond: '(eq (sizeOf outMsg) 0)')"])
-					arc(send, loopEnd)
-					
-					def nextLoop = transition(name:'nextLoop')
-					arc(loopEnd, nextLoop, 'next')
-					arc(nextLoop, loopStart)
-					
-					def	noop = place(name: 'noop')
-					arc(loopEnd,noop, 'break')
-					
+						def ext = transition(name:'send', labels:[pragmatics: "External(outMsg)"])
+						
+						def outMsg = place(name:'outMsg')
+						arc(ext, outMsg)
+						
+						def loopStart = place(name:'loopStart', labels:[pragmatics: "Loop()"])
+						arc(ext, loopStart)
+						
+						def nextMsg = transition(name:'nextMsg', labels:[pragmatics: "RemoveHead(outMsg, msg)"])
+						arc(outMsg, nextMsg)
+						arc(loopStart, nextMsg)
+						
+						def waitSend = place(name: 'waitSend', labels:[pragmatics: "Id()"] )
+						arc(nextMsg, waitSend)
+						
+						def send = transition(name: 'send', labels:[pragmatics: "Print(msg)"])
+						arc(waitSend, send)
+						
+						
+						def loopEnd = place(name:'loopEnd', labels:[pragmatics: "EndLop(cond: '(eq (sizeOf outMsg) 0)')"])
+						arc(send, loopEnd)
+						
+						def nextLoop = transition(name:'nextLoop')
+						arc(loopEnd, nextLoop, 'next')
+						arc(nextLoop, loopStart)
+						
+						def loopFinished = transition(name: 'loopFinished', labels:[pragmatics: "Print('dilldall')"])
+						arc(loopEnd, loopFinished, 'break')
+						
+						def	noop = place(name: 'noop', labels:[pragmatics: "Id()"])
+						arc(loopFinished,noop, 'break')
+						
+						def noopTrans = transition(name: 'noopTrans')
+						arc(noop, noopTrans)
+					}
 				}
 			}
 		}
 	}
 	
+	
+	static def getImplicitLoopingNet(){
+		def builder = new ePNKBuilder(OrnFactory.eINSTANCE, , [pragmatics: PragmaticsImpl.class])
+		
+		def pn = builder.make {
+			page(name:'root'){
+				def ch = place(name:'channel', labels:[pragmatics: "Channel()"])
+				
+				page(name: 'Client', labels:[pragmatics: "Principal()"]){
+					page(name: 'Send', labels:[pragmatics: "External(outMsg)"]){
+					
+						def ext = transition(name:'send', labels:[pragmatics: "External(outMsg)"])
+						
+						def outMsg = place(name:'outMsg')
+						arc(ext, outMsg)
+						
+						def loopStart = place(name:'loopStart', labels:[pragmatics: "Id()"])
+						arc(ext, loopStart)
+						
+						def nextMsg = transition(name:'nextMsg', labels:[pragmatics: "RemoveHead(outMsg, msg)"])
+						arc(outMsg, nextMsg)
+						arc(loopStart, nextMsg)
+						
+						def waitSend = place(name: 'waitSend', labels:[pragmatics: "Id()"] )
+						arc(nextMsg, waitSend)
+						
+						def send = transition(name: 'send', labels:[pragmatics: "Print(msg)"])
+						arc(waitSend, send)
+						
+						
+						def loopEnd = place(name:'loopEnd', labels:[pragmatics: "Id()"])
+						arc(send, loopEnd)
+						
+						def nextLoop = transition(name:'nextLoop')
+						arc(loopEnd, nextLoop, 'next')
+						arc(nextLoop, loopStart)
+						
+						def loopFinished = transition(name: 'loopFinished', labels:[pragmatics: "Print('dilldall')"])
+						arc(loopEnd, loopFinished, 'break')
+						
+						def	noop = place(name: 'noop', labels:[pragmatics: "Id()"])
+						arc(loopFinished,noop, 'break')
+						
+						def noopTrans = transition(name: 'noopTrans')
+						arc(noop, noopTrans)
+					}
+				}
+			}
+		}
+	}
 	
 	def getSendTransition(){
 		def transition = ORNTestUtils.getTransition("sender")

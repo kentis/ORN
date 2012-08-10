@@ -21,8 +21,9 @@ class ORNUtils {
 	static String file2String(file){
 		return file.text
 	}
-	
+	static int numClosingAxioms =  0
 	static void closeTheWorldForIndiviuals(OWLOntology ontology){
+		numClosingAxioms =  0
 		def individs = []
 		Set individuals = ontology.getIndividualsInSignature()
 		
@@ -41,6 +42,7 @@ class ORNUtils {
 		addNegativeProperties(ontology, factory, individuals)
 		
 		
+		println "added $numClosingAxioms axioms"
 	}
 
 	private static void addNegativeProperties(OWLOntology ontology, OWLDataFactoryImpl factory, individuals){
@@ -63,6 +65,8 @@ class ORNUtils {
 				}
 				nonConnectedInds.each { 
 					def axiom = factory.getOWLNegativeObjectPropertyAssertionAxiom(oop, ind, it)
+					//println "addning neg axiom: $axiom"
+					numClosingAxioms++
 					ontology.getOWLOntologyManager().addAxiom(ontology, axiom)
 				}
 			}
@@ -103,8 +107,10 @@ class ORNUtils {
 		OWLClassImpl owlThing = factory.getOWLClass(IRI.create("http://www.w3.org/2002/07/owl#Thing"))
 		
 		def subClassOf = factory.getOWLSubClassOfAxiom( owlThing, oneOf)
-		
+		numClosingAxioms++
 		ontology.getOWLOntologyManager().addAxiom(ontology, subClassOf)
+		
+		println "closing thing: $subClassOf"
 	}
 		
 }

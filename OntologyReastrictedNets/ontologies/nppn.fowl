@@ -28,20 +28,45 @@
   SubClassOf( :Send ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
   SubClassOf( :Send  basic:Implicit)
   Declaration( NamedIndividual( :SendImplicitPattern ) )
-  DataPropertyAssertion( :pttrn :SendImplicitPattern "new PNPattern(adjacentPatterns: [new PNPattern(pragmatics:[\"Channel\"], backlink: true)])" )
+  DataPropertyAssertion( :pttrn :SendImplicitPattern "new PNPattern(adjacentPatterns: [new PNPattern(adjacentPatterns: [new PNPattern(pragmatics:[\"Channel\"], backlink: true)])])" )
   
    
   SubClassOf( :Recieve basic:Pragmatic )
   SubClassOf( :Recieve ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
   
+   SubClassOf( :Partition basic:Pragmatic )
+  SubClassOf( :Partition ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
 
   
   SubClassOf( :OpenChannel basic:Pragmatic )
   SubClassOf( :OpenChannel ObjectAllValuesFrom( :belongsTo cpn:Transition ) )
   SubClassOf( :OpenChannel  basic:Implicit)
-  Declaration( NamedIndividual( :OpenChannelImplicitPattern ) )
-  DataPropertyAssertion( :pttrn :OpenChannelImplicitPattern "new PNPattern(adjacentPatterns: [new PNPattern(pragmatics:[\"Channel\"], backlink: false)])" )
+  
+  
 
+  
+  
+  Declaration( NamedIndividual( :OpenChannelImplicitPattern ) )
+  DataPropertyAssertion( :pttrn :OpenChannelImplicitPattern "new PNPattern(outArcInscription: 'CreateEndpointName')" )
+
+
+
+
+  SubClassOf( :Loop basic:Pragmatic )
+  SubClassOf( :Loop ObjectAllValuesFrom( :belongsTo cpn:Place ) )
+  SubClassOf( :Loop  basic:Implicit)
+  Declaration( NamedIndividual( :LoopImplicitPattern ) )
+  DataPropertyAssertion( :pttrn :LoopImplicitPattern "new PNPattern(pragmatics: [\"Id\"], minInEdges: 2)" )
+  
+  
+  SubClassOf( :EndLop basic:Pragmatic )
+  SubClassOf( :EndLop ObjectAllValuesFrom( :belongsTo cpn:Place ) )
+  SubClassOf( :EndLop  basic:Implicit)
+  Declaration( NamedIndividual( :EndLopImplicitPattern ) )
+  DataPropertyAssertion( :pttrn :EndLopImplicitPattern "new PNPattern(adjacentPatterns: null, pragmatics: [\"Id\"], minOutEdges: 2)" )
+  DataPropertyAssertion( :setCond :EndLopImplicitPattern "true" )
+  
+  DisjointClasses(:Loop :EndLop)
   
   SubClassOf( :CloseChannel basic:Pragmatic )
   SubClassOf( :CloseChannel ObjectAllValuesFrom( :belongsTo cpn:Transition ) )

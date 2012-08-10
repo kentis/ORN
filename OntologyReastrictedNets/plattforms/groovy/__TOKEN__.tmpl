@@ -1,0 +1,6 @@
+
+${node.pragmatics[0].structure.name == 'External' ? 'def' : ''} __TOKEN__<%
+if(binding.variables.containsKey('controlflow_outgoing_arc') && controlflow_outgoing_arc != null  ){
+%> = ${controlflow_outgoing_arc.inscription.text}<%
+}
+%>

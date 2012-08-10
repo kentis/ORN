@@ -107,6 +107,26 @@ class PNPatternsTest {
 		assertThat matches[0].name.text, is("fdsdfds")
 	}
 	
+	@Test
+	void testOutArcInscription(){
+		def pn = new ePNKBuilder(OrnFactory.eINSTANCE,[pragmatics: PragmaticsImpl.class]).make{
+			page(name:"dill"){
+				def p = place(name: "dilldall", labels:[pragmatics: "Channel()"])
+				def t = transition(name:"fdsdfds")
+				arc(t,p, 'arc1', "CreateEndpointName(rhost,rport)")
+			}
+		}
+		
+		def pattern = new PNPattern(outArcInscription: 'CreateEndpointName')
+		
+		def matches = pattern.match(pn)
+		
+		println matches
+		assertThat(matches.size(), is(1))
+		assertThat matches[0], is(instanceOf(Transition.class))
+		assertThat matches[0].name.text, is("fdsdfds")
+	}
+	
 	
 	@Test
 	void testfindRefPlaceAdjacentPragmatic(){

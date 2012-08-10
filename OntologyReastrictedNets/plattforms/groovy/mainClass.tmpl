@@ -1,3 +1,15 @@
 class ${name} {
+<%
+	if(binding.variables.containsKey('lcvs')){
+		for(lcv in lcvs.keySet()){
+		%>def $lcv ${lcvs[lcv].info == '()' ? '= true' : ''}\n<%
+		}
+	}
+	if(binding.variables.containsKey('fields')){
+		for(field in fields){
+		%>def $field<%
+		}
+	}
+	%>
 	%%yield%%
 }
